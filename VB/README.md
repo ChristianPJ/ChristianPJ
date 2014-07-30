@@ -1,6 +1,8 @@
 Desarrollo de una Aplicación de Contabilidad para una Empresa de Alimentación
 ===========
 
+# ![logo](http://uppic.es/images/2014/07/30/presupuesto.png)
+
 El proyecto consiste en la elaboración de una aplicación de Contabilidad para una empresa. Este software realizará las tareas básicas exigidas en la economía de una empresa, desde trabajar con apuntes y facturas, ya sea creándolos, modificándolos, o borrándolos, hasta mostrar listados de Balances y Presupuestos. Además, cumplirá una serie de requisitos mínimos de agrupación de distintos tipos de códigos para facilitar la tarea de los trabajadores. También será necesario que la aplicación guarde información relativa a los clientes, para poder utilizarlos en otros apartados.
 
 Para poder utilizarla, además, dividiremos el programa en distintos apartados que serán accesibles para unos usuarios y para otros no, por lo que deberemos crear una opción donde poder crear, aparte de los usuarios, distintos tipos de privilegios.
