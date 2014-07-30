@@ -1,0 +1,380 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+proyecto
+</name>
+</assembly>
+<members>
+<member name="T:proyecto.proyectoDataSet.AsientoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaClientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaConceptoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaConceptoCambioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaCosteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaCosteCambioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaCuentaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaCuentaCambioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaDepartamentoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaDepartamentoCambioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaDiarioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaDiarioCambioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaFacturasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaPrivilegioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaProyectoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaProyectoCambioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaSubcuentaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaSubcuentaCambioDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TemporalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.UsuariosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.AsientoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaClientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaConceptoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaConceptoCambioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaCosteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaCosteCambioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaCuentaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaCuentaCambioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaDepartamentoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaDepartamentoCambioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaDiarioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaDiarioCambioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaFacturasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaPrivilegioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaProyectoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaProyectoCambioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaSubcuentaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaSubcuentaCambioRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TemporalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.UsuariosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.AsientoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaClientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaConceptoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaConceptoCambioRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaCosteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaCosteCambioRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaCuentaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaCuentaCambioRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaDepartamentoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaDepartamentoCambioRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaDiarioRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaDiarioCambioRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaFacturasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaPrivilegioRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaProyectoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaProyectoCambioRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaSubcuentaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TablaSubcuentaCambioRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.TemporalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet.UsuariosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:proyecto.proyectoDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.AsientoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaClientesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaConceptoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaConceptoCambioTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaCosteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaCosteCambioTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaCuentaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaCuentaCambioTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaDepartamentoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaDepartamentoCambioTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaDiarioTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaDiarioCambioTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaFacturasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaPrivilegioTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaProyectoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaProyectoCambioTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaSubcuentaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TablaSubcuentaCambioTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TemporalTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.UsuariosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:proyecto.proyectoDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(proyecto.proyectoDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:proyecto.proyectoDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(proyecto.proyectoDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:proyecto.proyectoDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(proyecto.proyectoDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:proyecto.proyectoDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:proyecto.proyectoDataSetTableAdapters.TableAdapterManager.UpdateAll(proyecto.proyectoDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:proyecto.proyectoDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:proyecto.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:proyecto.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:proyecto.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

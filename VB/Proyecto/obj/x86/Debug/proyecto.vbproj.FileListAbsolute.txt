@@ -1,0 +1,59 @@
+C:\Users\usuario\AppData\Local\Temporary Projects\proyecto\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\usuario\AppData\Local\Temporary Projects\proyecto\obj\x86\Debug\proyecto.Cuentas.resources
+C:\Users\usuario\AppData\Local\Temporary Projects\proyecto\obj\x86\Debug\proyecto.Resources.resources
+C:\Users\usuario\AppData\Local\Temporary Projects\proyecto\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\usuario\AppData\Local\Temporary Projects\proyecto\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\bin\Debug\proyecto.exe
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\bin\Debug\proyecto.pdb
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\bin\Debug\proyecto.xml
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Conceptos.resources
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Cuentas.resources
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Diarios.resources
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Resources.resources
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Subcuentas.resources
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.exe
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.xml
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.pdb
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.CentrosdeCoste.resources
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Departamentos.resources
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Proyectos.resources
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Apufac.resources
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Menupr.resources
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Principal.resources
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\bin\Debug\proyecto.exe.config
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Consultas.resources
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Balances.resources
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Presupuestos.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\bin\Debug\proyecto.exe.config
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.exe
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.xml
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.pdb
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\bin\Debug\proyecto.exe
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\bin\Debug\proyecto.pdb
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\bin\Debug\proyecto.xml
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Apufac.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Balances.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.CentrosdeCoste.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Conceptos.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Consultas.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Cuentas.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Departamentos.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Diarios.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Gráficos.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Menupr.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Resources.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Presupuestos.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Principal.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Proyectos.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Subcuentas.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Clientes.resources
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Usuarios.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Clientes.resources
+C:\Users\Christian\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.Usuarios.resources
+C:\Users\usuario\Documents\Visual Studio 2010\Projects\proyecto\proyecto\obj\x86\Debug\proyecto.ApufacM.resources
