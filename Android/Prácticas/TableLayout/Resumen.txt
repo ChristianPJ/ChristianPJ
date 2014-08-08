@@ -1,0 +1,7 @@
+Lo normal es que el ancho de cada columna se corresponda con el mayor ancho del componente de esa columna, pero para modificar esto existen una serie de propiedades:
+
+android: stretchColumns: indica las columnas que se pueden expandir para coger el espacio libre dejado por el resto de columnas a la derecha de la pantalla.
+
+android: shrinkColumns: indica las columnas que se pueden contraer para dejar espacio al resto de columnas que puede que se salgan por la derecha de la pantalla.
+
+android: collapseColumns: indica las columnas que se quieren ocultar totalmente.
