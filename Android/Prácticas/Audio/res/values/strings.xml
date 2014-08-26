@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Audio!</string>
+	<string name="app_name">Learnimbus, Audio</string>
+	<string name="directions">
+		Presiona una tecla para escuchar un sonido: 
+		Arriba, Izquierda, Abajo, Derecha, Enter,
+		A, S, D, o F.
+   	</string>
+</resources>
