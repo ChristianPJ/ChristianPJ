@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Se relaciona" directorySegmentName="seg_0" id="E7D5B3A8-1F85-5963-56BB-F3ED929F2453">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:54:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>C76E6B6F-317E-9B29-26CA-DDD442B98B66</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>756A2ED4-8953-F1D4-5FE7-53A0831D50BA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Función" id="E02EC5AD-753E-CBFC-048F-C16F79C9E96B">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 14:28:12 UTC</createdTime>
+<generatorID>2F5159C4-B806-9754-EECC-A8EF2A51A653</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</attribute>
+<attribute name="Cad Min" id="08AC7AA8-78AE-1E3D-AA87-CA226AD68F75">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 14:28:12 UTC</createdTime>
+<generatorID>1B2E8EE5-7CE5-6612-496B-50E8A171F080</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+</attribute>
+<attribute name="Cad Max" id="0E2644AF-379F-359D-A29A-1248BADB4C04">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 14:28:12 UTC</createdTime>
+<generatorID>DD8EE429-9EDF-63FC-D814-05D2B73D0857</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+</attribute>
+</attributes>
+</Relation>

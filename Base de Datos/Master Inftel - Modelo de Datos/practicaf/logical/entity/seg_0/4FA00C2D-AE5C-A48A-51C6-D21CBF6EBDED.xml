@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4FA00C2D-AE5C-A48A-51C6-D21CBF6EBDED" name="RelacionIdentificación">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:19:25 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="R Esquema Nombre" id="2BB108EF-9D8D-DE9C-1E8C-77ADA8568FC2">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:19:56 UTC</createdTime>
+<generatorID>04EAB50F-C97D-D226-8362-0B7E1CEC03E7</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<referedAttribute>DA1A4F8D-4511-3D23-2B80-B75A55B9BAD0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="R TipoDato Nombre" id="D5DB4FC7-0745-6ED2-E2D2-5E17E4B34AFC">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:19:56 UTC</createdTime>
+<generatorID>04EAB50F-C97D-D226-8362-0B7E1CEC03E7</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<referedAttribute>2A097BE8-3BB4-639A-F3FE-E75C4E262474</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="ED Esquema Nombre" id="8F3B731F-C42F-5A84-ECB3-41CA579BC3AC">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:12 UTC</createdTime>
+<generatorID>1C1927F3-878B-90B2-A292-B8C90BCD1740</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<referedAttribute>08BD61E4-B5F2-F45C-4860-13521B7EB20F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="ED TipoDato Nombre" id="70AFEA60-313A-5654-C1A7-899410F5CB4B">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:12 UTC</createdTime>
+<generatorID>1C1927F3-878B-90B2-A292-B8C90BCD1740</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<referedAttribute>682EB646-037C-5650-76CD-539C04EA7EE6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E278F656-1983-E75D-C14C-C1E014F4D5F1" name="RelacionIdentificación_PK">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:19:56 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2BB108EF-9D8D-DE9C-1E8C-77ADA8568FC2</attributeRef>
+<attributeRef>D5DB4FC7-0745-6ED2-E2D2-5E17E4B34AFC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

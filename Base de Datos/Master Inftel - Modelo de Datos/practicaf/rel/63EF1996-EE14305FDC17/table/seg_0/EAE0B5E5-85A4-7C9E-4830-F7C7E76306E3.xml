@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EAE0B5E5-85A4-7C9E-4830-F7C7E76306E3" name="Se_relaciona">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:54:50 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="E_Esquema_Nombre" id="7435B2F7-8278-5569-0920-D105A3E59E36">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:54:50 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>20A5F7DF-B882-5573-2683-0C3ECC33254A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2127C8B6-314D-4F6D-E809-6566CA6764C1" referredColumn="20A5F7DF-B882-5573-2683-0C3ECC33254A"/>
+</associations>
+</Column>
+<Column name="E_TipoDato_Nombre" id="0C6BA914-95EB-A916-8608-6A7C62C9EDFF">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:54:50 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>6DE57BB3-1A41-3D54-9B46-5011A2112B7A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2127C8B6-314D-4F6D-E809-6566CA6764C1" referredColumn="6DE57BB3-1A41-3D54-9B46-5011A2112B7A"/>
+</associations>
+</Column>
+<Column name="R_Esquema_Nombre" id="F744C3C7-3640-4CA5-FE0D-F6319CDD5BA9">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:54:50 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>7AB022B4-FB06-E427-CAFC-7BD28DA01814</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4075770D-BC7D-AB6D-2323-226D825D1DBA" referredColumn="7AB022B4-FB06-E427-CAFC-7BD28DA01814"/>
+</associations>
+</Column>
+<Column name="R_TipoDato_Nombre" id="89BCF08B-5ED1-E987-E95A-AFA17AC7706C">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:54:50 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>AA5FDCBF-DC87-2BC3-DF16-6FF6EAC8116D</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4075770D-BC7D-AB6D-2323-226D825D1DBA" referredColumn="AA5FDCBF-DC87-2BC3-DF16-6FF6EAC8116D"/>
+</associations>
+</Column>
+<Column name="Función" id="2F5159C4-B806-9754-EECC-A8EF2A51A653">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 14:23:39 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cad_Min" id="1B2E8EE5-7CE5-6612-496B-50E8A171F080">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 14:24:17 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cad_Max" id="DD8EE429-9EDF-63FC-D814-05D2B73D0857">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 14:24:34 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F81A827C-5D02-63A4-C894-7034AA60198E" name="Se_relaciona_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:54:50 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7435B2F7-8278-5569-0920-D105A3E59E36"/>
+<colUsage columnID="0C6BA914-95EB-A916-8608-6A7C62C9EDFF"/>
+<colUsage columnID="F744C3C7-3640-4CA5-FE0D-F6319CDD5BA9"/>
+<colUsage columnID="89BCF08B-5ED1-E987-E95A-AFA17AC7706C"/>
+<colUsage columnID="2F5159C4-B806-9754-EECC-A8EF2A51A653"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1FE8FA95-1433-4E0A-9FF8-750FF7F03342" name="FK_ASS_11">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:54:50 UTC</createdTime>
+<generatorID>E7D5B3A8-1F85-5963-56BB-F3ED929F2453</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7435B2F7-8278-5569-0920-D105A3E59E36"/>
+<colUsage columnID="0C6BA914-95EB-A916-8608-6A7C62C9EDFF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0956A8AA-68D6-E34B-DF8C-DE4B01778532" name="FK_ASS_12">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:54:50 UTC</createdTime>
+<generatorID>E7D5B3A8-1F85-5963-56BB-F3ED929F2453</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F744C3C7-3640-4CA5-FE0D-F6319CDD5BA9"/>
+<colUsage columnID="89BCF08B-5ED1-E987-E95A-AFA17AC7706C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

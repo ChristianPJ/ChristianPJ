@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43360297-C767-BC18-6771-F0F90B3E7886" name="TipoDato">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:16:35 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nombre" id="A91A2EBF-A78E-4B88-5102-BA091C218465">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:17:27 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Esquema_Nombre" id="AF0461CB-84AA-CAEF-C6F4-1F6597754F38">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:18:31 UTC</createdTime>
+<generatorID>3189D973-059B-B573-B332-0937F6EAEBF2</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>C972B48D-8076-9750-C4B2-630EA1B9DB56</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E818E7F8-AD33-2B0C-C03C-4D5D95FD84DC" referredColumn="C972B48D-8076-9750-C4B2-630EA1B9DB56"/>
+</associations>
+</Column>
+<Column name="Discriminador" id="57FCB18B-255F-8609-05A7-0A46D978C9CD">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:37:23 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F853122E-3080-0119-7AB9-FACF9DCBA499" name="TipoDato_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:18:31 UTC</createdTime>
+<generatorID>8AD0846F-262A-56DE-8973-CCD4B937CFD2</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF0461CB-84AA-CAEF-C6F4-1F6597754F38"/>
+<colUsage columnID="A91A2EBF-A78E-4B88-5102-BA091C218465"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50B5AC58-0578-9474-9F8B-D21B7F423C1B" name="TipoDato_Esquema_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:18:31 UTC</createdTime>
+<generatorID>310770DB-42ED-F47B-B83E-AECE3791861B</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF0461CB-84AA-CAEF-C6F4-1F6597754F38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

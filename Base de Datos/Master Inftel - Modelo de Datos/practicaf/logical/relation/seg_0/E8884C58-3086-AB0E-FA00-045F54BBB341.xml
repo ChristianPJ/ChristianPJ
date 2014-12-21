@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Atributo Atributo FK" directorySegmentName="seg_0" id="E8884C58-3086-AB0E-FA00-045F54BBB341">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:38:47 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<targetPk>C7F57DA5-D869-020C-4C06-E45147901822</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4D48CCC3-7347-7581-8123-166EF11B0858</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4D48CCC3-7347-7581-8123-166EF11B0858</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

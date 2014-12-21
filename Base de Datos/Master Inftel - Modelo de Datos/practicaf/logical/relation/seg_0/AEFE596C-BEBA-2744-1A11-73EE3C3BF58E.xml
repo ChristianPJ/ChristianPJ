@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SuperClase Cat" directorySegmentName="seg_0" id="AEFE596C-BEBA-2744-1A11-73EE3C3BF58E">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:50:06 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>2775E543-FAF1-7F8B-9729-23F550729910</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C76E6B6F-317E-9B29-26CA-DDD442B98B66</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

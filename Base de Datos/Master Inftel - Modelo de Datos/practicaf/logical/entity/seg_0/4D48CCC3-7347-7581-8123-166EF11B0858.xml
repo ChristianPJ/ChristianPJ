@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4D48CCC3-7347-7581-8123-166EF11B0858" name="Atributo">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:31:42 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nombre" id="73F163E2-BA4B-E097-4026-7F35E4984364">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:31:52 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="Default" id="4E4EE73D-6B41-A146-80CD-85B2260514B6">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:32:17 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="Multivaluado" id="F3FC1122-924D-0692-62AE-94927E4AA72C">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:33:00 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="Derivado" id="10271366-4374-D94E-A1A2-1CFE7294994B">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:33:40 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="Clave" id="47525D4A-CF0D-5CA6-653B-40D795188213">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:34:07 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="Esquema Nombre" id="1215240F-4D2A-DE60-83C7-1A8FB865EE1B">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:35:20 UTC</createdTime>
+<generatorID>041D4A79-59AA-640E-0A6B-0DD8C4FBE08D</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<referedAttribute>3189D973-059B-B573-B332-0937F6EAEBF2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="TipoDato Nombre" id="E94F3932-6B0F-9A80-A65A-0D3658AA60E6">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:35:20 UTC</createdTime>
+<generatorID>041D4A79-59AA-640E-0A6B-0DD8C4FBE08D</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<referedAttribute>826ECCEA-DE99-D82E-7BA4-10E549DD26C5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="Atrib Nombre" id="8AD90B4F-E629-3FC5-5293-B4A36DC8404A">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:38:47 UTC</createdTime>
+<generatorID>E8884C58-3086-AB0E-FA00-045F54BBB341</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<referedAttribute>73F163E2-BA4B-E097-4026-7F35E4984364</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="Atrib Esquema Nombre" id="FB06EE6F-CF74-F430-BFD9-BCA6F3676534">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:38:47 UTC</createdTime>
+<generatorID>E8884C58-3086-AB0E-FA00-045F54BBB341</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<referedAttribute>1215240F-4D2A-DE60-83C7-1A8FB865EE1B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="Atrib TipoDato Nombre" id="9921CF06-C679-F37B-5932-D80F5F81562F">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:38:47 UTC</createdTime>
+<generatorID>E8884C58-3086-AB0E-FA00-045F54BBB341</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<referedAttribute>E94F3932-6B0F-9A80-A65A-0D3658AA60E6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C7F57DA5-D869-020C-4C06-E45147901822" name="Atributo_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:32:15 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>73F163E2-BA4B-E097-4026-7F35E4984364</attributeRef>
+<attributeRef>1215240F-4D2A-DE60-83C7-1A8FB865EE1B</attributeRef>
+<attributeRef>E94F3932-6B0F-9A80-A65A-0D3658AA60E6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

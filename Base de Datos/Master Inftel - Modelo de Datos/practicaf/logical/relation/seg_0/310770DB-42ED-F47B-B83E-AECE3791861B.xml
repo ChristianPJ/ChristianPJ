@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TipoDato Esquema FK" directorySegmentName="seg_0" id="310770DB-42ED-F47B-B83E-AECE3791861B">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:18:02 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<sourcePk>B11613D1-ED92-5EE5-EE8B-BBAFCF215B34</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>84BBFDCB-B541-69FA-DBE8-EDED6169F8AC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3262F1B1-383F-7C1A-E36D-91C9F93EBB35</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

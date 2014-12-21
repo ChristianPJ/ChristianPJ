@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="2775E543-FAF1-7F8B-9729-23F550729910" name="Categoria" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3262F1B1-383F-7C1A-E36D-91C9F93EBB35" name="TipoDato" seqName="seg_0"/>
+   <object objectType="Entity" objectID="4D48CCC3-7347-7581-8123-166EF11B0858" name="Atributo" seqName="seg_0"/>
+   <object objectType="Entity" objectID="4FA00C2D-AE5C-A48A-51C6-D21CBF6EBDED" name="RelacionIdentificación" seqName="seg_0"/>
+   <object objectType="Entity" objectID="756A2ED4-8953-F1D4-5FE7-53A0831D50BA" name="Relacion" seqName="seg_0"/>
+   <object objectType="Entity" objectID="84BBFDCB-B541-69FA-DBE8-EDED6169F8AC" name="Esquema" seqName="seg_0"/>
+   <object objectType="Entity" objectID="911BFFA2-1A16-36A0-E727-92026C96970D" name="Especializacion" seqName="seg_0"/>
+   <object objectType="Entity" objectID="C76E6B6F-317E-9B29-26CA-DDD442B98B66" name="Entidad" seqName="seg_0"/>
+   <object objectType="Entity" objectID="E6D77DBD-5BE5-8C82-73E5-3CD480A856ED" name="EntidadDebil" seqName="seg_0"/>
+   <object objectType="Relation" objectID="041D4A79-59AA-640E-0A6B-0DD8C4FBE08D" name="Atributo TipoDato FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="04EAB50F-C97D-D226-8362-0B7E1CEC03E7" name="RelacionIdentificación Relacion FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="1C1927F3-878B-90B2-A292-B8C90BCD1740" name="RelacionIdentificación EntidadDebil FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2B3171CF-344C-D20D-1540-D4EACFBBC315" name="SubClase Esp" seqName="seg_0"/>
+   <object objectType="Relation" objectID="310770DB-42ED-F47B-B83E-AECE3791861B" name="TipoDato Esquema FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="3DD8CA63-B669-67A3-AC20-A3949C983AC4" name="SuperClase Esp" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5C6AA14F-279D-1E2C-1B5C-C439BBDF5AF0" name="SubClase Cat" seqName="seg_0"/>
+   <object objectType="Relation" objectID="90D7DC9C-6437-4B33-B4E3-E021B9CA5FE2" name="EntidadDebil Entidad FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="9A43C6B6-8B03-4A59-08CE-9D83D9618A1B" name="Relacion TipoDato FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="AEFE596C-BEBA-2744-1A11-73EE3C3BF58E" name="SuperClase Cat" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B07FAE0A-B2F6-F085-D18A-C9C0922DCA6B" name="Entidad TipoDato FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="E7D5B3A8-1F85-5963-56BB-F3ED929F2453" name="Se relaciona" seqName="seg_0"/>
+   <object objectType="Relation" objectID="E8884C58-3086-AB0E-FA00-045F54BBB341" name="Atributo Atributo FK" seqName="seg_0"/>
+   <object objectType="Arc" objectID="35A694B8-18F8-B5A6-CE53-11A100E1A9D7" name="Arc_1" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

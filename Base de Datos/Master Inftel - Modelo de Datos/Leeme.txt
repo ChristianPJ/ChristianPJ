@@ -1,0 +1,28 @@
+Archivo contiene:
+
+
+* documentacion.pdf: Requisitos iniciales para el proyecto y futura craeción de la Base de Datos.
+
+* esquema.jpg: Esquema inicial del proyecto a mano.
+
+
+* practicaf.dmd: Archivo Dmd
+
+* relacional.jpg: Imagen del Modelo Relacional creado mediante Data Modeler.
+
+* logico.jpg:Imagen del Modelo Logico creado mediante Data Modeler.
+
+* ddlDataModeler: Script final generado con Data Modeler.
+
+
+* export.sql: Archivo creado exportando la Base de Datos con SQL Developer (datos incluidos).
+
+
+* Datos.docx: Documento con solo la insercion de Datos.
+
+
+* Consultas.pdf: Realizacion de las consultas a BD requeridas.
+
+
+Christian Pareja Jensen
+- Master Inftel -
