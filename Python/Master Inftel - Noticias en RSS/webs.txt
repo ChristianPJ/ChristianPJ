@@ -1,0 +1,4 @@
+http://rss.nytimes.com/services/xml/rss/nyt/InternationalHome.xml
+http://www.20minutos.es/rss/
+http://www.periodistadigital.com/periodistadigital.rss
+
