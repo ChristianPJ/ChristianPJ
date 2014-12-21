@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SubClase Esp" directorySegmentName="seg_0" id="2B3171CF-344C-D20D-1540-D4EACFBBC315">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:47:37 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>911BFFA2-1A16-36A0-E727-92026C96970D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C76E6B6F-317E-9B29-26CA-DDD442B98B66</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="practicaf" id="B0DFFEAF-426D-FD1C-1ED9-41D5C2B51D37" version="3.5">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:12:33 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practica</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B0DFFEAF-426D-FD1C-1ED9-41D5C2B51D37</designId>
+</OSDM_Design>

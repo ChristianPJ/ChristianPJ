@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="84BBFDCB-B541-69FA-DBE8-EDED6169F8AC" name="Esquema">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:17:42 UTC</createdTime>
+<generatorID>1B97C64D-F829-6FFF-FF96-200E28DB94F7</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nombre" id="0593E71A-1DE9-4B7D-31E8-277AA03A51F3">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:17:42 UTC</createdTime>
+<generatorID>C972B48D-8076-9750-C4B2-630EA1B9DB56</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="Autor" id="8FA1792F-3B21-68F2-1234-CD84EEC432A3">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:17:42 UTC</createdTime>
+<generatorID>317B08B2-9691-FF4A-74F6-91892298D304</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="Version" id="862A5191-7B5C-706E-39C1-CA98DE2718E0">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:17:42 UTC</createdTime>
+<generatorID>2F957C6F-429F-F3C8-39FD-42E33C6956AD</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="Fecha" id="1F2E0519-01CF-A5F6-2122-12094A165218">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:17:42 UTC</createdTime>
+<generatorID>35D1389D-49A3-CFB4-0B26-C8CA14D6A1D1</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B11613D1-ED92-5EE5-EE8B-BBAFCF215B34" name="Esquema PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:17:42 UTC</createdTime>
+<generatorID>B8EB1135-0F84-B91A-B685-F3BE31D24C18</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0593E71A-1DE9-4B7D-31E8-277AA03A51F3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

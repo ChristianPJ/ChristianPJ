@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1443470E-F4D4-AB84-D4DB-5028F5F68731" name="EntidadDebil">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:01 UTC</createdTime>
+<generatorID>E6D77DBD-5BE5-8C82-73E5-3CD480A856ED</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Esquema_Nombre" id="887C1BFB-10F5-A0EB-CDF5-297DFCCE478D">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:01 UTC</createdTime>
+<generatorID>08BD61E4-B5F2-F45C-4860-13521B7EB20F</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>20A5F7DF-B882-5573-2683-0C3ECC33254A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="85865B10-5EC5-EF14-5A01-EB195E516B67" referredColumn="20A5F7DF-B882-5573-2683-0C3ECC33254A"/>
+</associations>
+</Column>
+<Column name="TipoDato_Nombre" id="AE36DE76-4781-1BB9-F9C2-9AFBEF9B83BC">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:01 UTC</createdTime>
+<generatorID>682EB646-037C-5650-76CD-539C04EA7EE6</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>6DE57BB3-1A41-3D54-9B46-5011A2112B7A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="85865B10-5EC5-EF14-5A01-EB195E516B67" referredColumn="6DE57BB3-1A41-3D54-9B46-5011A2112B7A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2AB041A3-5CAC-7DA2-9099-305D371CF15B" name="EntidadDebil_PK">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:01 UTC</createdTime>
+<generatorID>8C0D88D6-914B-8C96-F2BB-549DC60F5D8E</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="887C1BFB-10F5-A0EB-CDF5-297DFCCE478D"/>
+<colUsage columnID="AE36DE76-4781-1BB9-F9C2-9AFBEF9B83BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3BA5C2B3-0913-08A3-0B6C-8E6BD06A7F87" name="EntidadDebil_Entidad_FK">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:01 UTC</createdTime>
+<generatorID>90D7DC9C-6437-4B33-B4E3-E021B9CA5FE2</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="887C1BFB-10F5-A0EB-CDF5-297DFCCE478D"/>
+<colUsage columnID="AE36DE76-4781-1BB9-F9C2-9AFBEF9B83BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

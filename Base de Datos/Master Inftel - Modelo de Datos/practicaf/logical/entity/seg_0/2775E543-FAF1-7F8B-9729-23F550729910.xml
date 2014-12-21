@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2775E543-FAF1-7F8B-9729-23F550729910" name="Categoria">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:49:28 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nombre" id="46DDE114-08E0-E7DE-F2D5-7276DB24C261">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:49:37 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4C5DEED5-C218-409B-C1B2-6AB98D6B85B9" name="Categoria_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:49:53 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>46DDE114-08E0-E7DE-F2D5-7276DB24C261</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

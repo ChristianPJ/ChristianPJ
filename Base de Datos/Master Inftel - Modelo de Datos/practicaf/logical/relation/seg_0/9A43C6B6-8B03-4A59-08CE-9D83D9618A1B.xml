@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relacion TipoDato FK" directorySegmentName="seg_0" id="9A43C6B6-8B03-4A59-08CE-9D83D9618A1B">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:43:07 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<sourcePk>8AD0846F-262A-56DE-8973-CCD4B937CFD2</sourcePk>
+<targetPk>0ECC31D7-E68D-8119-23FD-01A6613AD404</targetPk>
+<arc>35A694B8-18F8-B5A6-CE53-11A100E1A9D7</arc>
+<dominantRole>3262F1B1-383F-7C1A-E36D-91C9F93EBB35</dominantRole>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3262F1B1-383F-7C1A-E36D-91C9F93EBB35</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>756A2ED4-8953-F1D4-5FE7-53A0831D50BA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Atributo TipoDato FK" directorySegmentName="seg_0" id="041D4A79-59AA-640E-0A6B-0DD8C4FBE08D">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:35:20 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<sourcePk>8AD0846F-262A-56DE-8973-CCD4B937CFD2</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3262F1B1-383F-7C1A-E36D-91C9F93EBB35</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4D48CCC3-7347-7581-8123-166EF11B0858</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D64B3B6-1F9F-471D-07EF-479AC39432DE" name="Atributo">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:35:29 UTC</createdTime>
+<generatorID>4D48CCC3-7347-7581-8123-166EF11B0858</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nombre" id="99C551FA-760D-DAB0-9974-849F6F6F9FE9">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:35:29 UTC</createdTime>
+<generatorID>73F163E2-BA4B-E097-4026-7F35E4984364</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Default" id="BDBA7BF5-8804-EF01-A68B-4841BEEEA713">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:35:29 UTC</createdTime>
+<generatorID>4E4EE73D-6B41-A146-80CD-85B2260514B6</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Multivaluado" id="28DE4C55-7AAF-7818-96CC-49012FE6FEC2">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:35:29 UTC</createdTime>
+<generatorID>F3FC1122-924D-0692-62AE-94927E4AA72C</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Derivado" id="587B8890-0F24-340B-FD93-0BC121C8164A">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:35:29 UTC</createdTime>
+<generatorID>10271366-4374-D94E-A1A2-1CFE7294994B</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Clave" id="5CCA51F8-9122-5C4A-0A15-EAC077D7CFC7">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:35:29 UTC</createdTime>
+<generatorID>47525D4A-CF0D-5CA6-653B-40D795188213</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Esquema_Nombre" id="BE6B1FD7-2C75-3FDB-9ABE-274D10BC4FB6">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:35:29 UTC</createdTime>
+<generatorID>1215240F-4D2A-DE60-83C7-1A8FB865EE1B</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>AF0461CB-84AA-CAEF-C6F4-1F6597754F38</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A4C691C7-73B6-F63F-853D-4892C454C96E" referredColumn="AF0461CB-84AA-CAEF-C6F4-1F6597754F38"/>
+</associations>
+</Column>
+<Column name="TipoDato_Nombre" id="F47811CB-3C05-2669-2460-CCA4317C883F">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:35:29 UTC</createdTime>
+<generatorID>E94F3932-6B0F-9A80-A65A-0D3658AA60E6</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>A91A2EBF-A78E-4B88-5102-BA091C218465</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A4C691C7-73B6-F63F-853D-4892C454C96E" referredColumn="A91A2EBF-A78E-4B88-5102-BA091C218465"/>
+</associations>
+</Column>
+<Column name="Atrib_Nombre" id="F2D212C9-55F9-BC27-0D6B-2148C699BFC9">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:39:06 UTC</createdTime>
+<generatorID>8AD90B4F-E629-3FC5-5293-B4A36DC8404A</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>99C551FA-760D-DAB0-9974-849F6F6F9FE9</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0810283A-7332-8D17-4E8E-D9BB5F8671FF" referredColumn="99C551FA-760D-DAB0-9974-849F6F6F9FE9"/>
+</associations>
+</Column>
+<Column name="Atrib_Esquema_Nombre" id="AA7BE57E-A652-D851-3802-2F95105A4C6A">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:39:06 UTC</createdTime>
+<generatorID>FB06EE6F-CF74-F430-BFD9-BCA6F3676534</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>BE6B1FD7-2C75-3FDB-9ABE-274D10BC4FB6</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0810283A-7332-8D17-4E8E-D9BB5F8671FF" referredColumn="BE6B1FD7-2C75-3FDB-9ABE-274D10BC4FB6"/>
+</associations>
+</Column>
+<Column name="Atrib_TipoDato_Nombre" id="8FF6E26A-2C10-5D03-E191-505C5F06FA22">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:39:06 UTC</createdTime>
+<generatorID>9921CF06-C679-F37B-5932-D80F5F81562F</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>F47811CB-3C05-2669-2460-CCA4317C883F</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0810283A-7332-8D17-4E8E-D9BB5F8671FF" referredColumn="F47811CB-3C05-2669-2460-CCA4317C883F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FAF35AA4-C776-C6E6-F0EF-D7F7D12962CC" name="Atributo_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:35:29 UTC</createdTime>
+<generatorID>C7F57DA5-D869-020C-4C06-E45147901822</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99C551FA-760D-DAB0-9974-849F6F6F9FE9"/>
+<colUsage columnID="BE6B1FD7-2C75-3FDB-9ABE-274D10BC4FB6"/>
+<colUsage columnID="F47811CB-3C05-2669-2460-CCA4317C883F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BAD7FB01-120D-4641-7383-CF1FAB0A9A1D" name="Atributo_TipoDato_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:35:29 UTC</createdTime>
+<generatorID>041D4A79-59AA-640E-0A6B-0DD8C4FBE08D</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE6B1FD7-2C75-3FDB-9ABE-274D10BC4FB6"/>
+<colUsage columnID="F47811CB-3C05-2669-2460-CCA4317C883F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8CBBECEC-8034-5977-246D-A409C93D77CD" name="Atributo_Atributo_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:39:06 UTC</createdTime>
+<generatorID>E8884C58-3086-AB0E-FA00-045F54BBB341</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2D212C9-55F9-BC27-0D6B-2148C699BFC9"/>
+<colUsage columnID="AA7BE57E-A652-D851-3802-2F95105A4C6A"/>
+<colUsage columnID="8FF6E26A-2C10-5D03-E191-505C5F06FA22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

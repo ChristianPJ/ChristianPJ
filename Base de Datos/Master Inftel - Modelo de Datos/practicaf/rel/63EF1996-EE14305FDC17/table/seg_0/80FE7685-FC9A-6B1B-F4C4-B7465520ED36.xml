@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="80FE7685-FC9A-6B1B-F4C4-B7465520ED36" name="Categoria">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:50:43 UTC</createdTime>
+<generatorID>2775E543-FAF1-7F8B-9729-23F550729910</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nombre" id="565BB59F-593A-0502-A6BB-1486F7BD5DF0">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:50:43 UTC</createdTime>
+<generatorID>46DDE114-08E0-E7DE-F2D5-7276DB24C261</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="34032B77-67F6-EB7A-DC54-6C237E833183" name="Categoria_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:50:43 UTC</createdTime>
+<generatorID>4C5DEED5-C218-409B-C1B2-6AB98D6B85B9</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="565BB59F-593A-0502-A6BB-1486F7BD5DF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

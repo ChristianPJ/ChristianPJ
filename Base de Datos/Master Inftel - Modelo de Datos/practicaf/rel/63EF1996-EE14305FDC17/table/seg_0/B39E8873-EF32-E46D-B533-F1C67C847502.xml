@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B39E8873-EF32-E46D-B533-F1C67C847502" name="RelacionIdentificación">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:01 UTC</createdTime>
+<generatorID>4FA00C2D-AE5C-A48A-51C6-D21CBF6EBDED</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="R_Esquema_Nombre" id="3F5C4488-2E6B-450B-8EB9-4F04E7A0D793">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:01 UTC</createdTime>
+<generatorID>2BB108EF-9D8D-DE9C-1E8C-77ADA8568FC2</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>7AB022B4-FB06-E427-CAFC-7BD28DA01814</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90CC7452-D897-A138-EE34-EDA5D8FEB812" referredColumn="7AB022B4-FB06-E427-CAFC-7BD28DA01814"/>
+</associations>
+</Column>
+<Column name="R_TipoDato_Nombre" id="B2744E10-CE4A-47B5-816B-A2BA80EFB20A">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:01 UTC</createdTime>
+<generatorID>D5DB4FC7-0745-6ED2-E2D2-5E17E4B34AFC</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>AA5FDCBF-DC87-2BC3-DF16-6FF6EAC8116D</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90CC7452-D897-A138-EE34-EDA5D8FEB812" referredColumn="AA5FDCBF-DC87-2BC3-DF16-6FF6EAC8116D"/>
+</associations>
+</Column>
+<Column name="ED_Esquema_Nombre" id="8AC528D7-63FB-8EB7-D958-CC34C8082D42">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:23 UTC</createdTime>
+<generatorID>8F3B731F-C42F-5A84-ECB3-41CA579BC3AC</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>887C1BFB-10F5-A0EB-CDF5-297DFCCE478D</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="43514070-79FC-476B-FA8E-296AE096C237" referredColumn="887C1BFB-10F5-A0EB-CDF5-297DFCCE478D"/>
+</associations>
+</Column>
+<Column name="ED_TipoDato_Nombre" id="9F254807-1042-6AEC-2476-8A03D424435D">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:23 UTC</createdTime>
+<generatorID>70AFEA60-313A-5654-C1A7-899410F5CB4B</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>AE36DE76-4781-1BB9-F9C2-9AFBEF9B83BC</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="43514070-79FC-476B-FA8E-296AE096C237" referredColumn="AE36DE76-4781-1BB9-F9C2-9AFBEF9B83BC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="195BCFEC-30BF-FF95-239D-4E067DA51AE3" name="RelacionIdentificación_PK">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:01 UTC</createdTime>
+<generatorID>E278F656-1983-E75D-C14C-C1E014F4D5F1</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F5C4488-2E6B-450B-8EB9-4F04E7A0D793"/>
+<colUsage columnID="B2744E10-CE4A-47B5-816B-A2BA80EFB20A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A07534FC-A10F-4D94-7337-0F2F51D28599" name="EntidadIdentificación__IDX">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:23 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>1C1927F3-878B-90B2-A292-B8C90BCD1740</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8AC528D7-63FB-8EB7-D958-CC34C8082D42"/>
+<colUsage columnID="9F254807-1042-6AEC-2476-8A03D424435D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5763196E-719F-937D-67EA-FB0A046AEA37" name="RI_Relacion_FK">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:01 UTC</createdTime>
+<generatorID>04EAB50F-C97D-D226-8362-0B7E1CEC03E7</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F5C4488-2E6B-450B-8EB9-4F04E7A0D793"/>
+<colUsage columnID="B2744E10-CE4A-47B5-816B-A2BA80EFB20A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C8ABAAA-A2B4-36B1-5FCA-D058FF00B593" name="RI_EntidadDebil_FK">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:20:23 UTC</createdTime>
+<generatorID>1C1927F3-878B-90B2-A292-B8C90BCD1740</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8AC528D7-63FB-8EB7-D958-CC34C8082D42"/>
+<colUsage columnID="9F254807-1042-6AEC-2476-8A03D424435D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

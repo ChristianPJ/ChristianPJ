@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C76E6B6F-317E-9B29-26CA-DDD442B98B66" name="Entidad">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:42:13 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Esquema Nombre" id="77CD38A4-95FE-5634-3B64-38643D8BB90B">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:42:38 UTC</createdTime>
+<generatorID>B07FAE0A-B2F6-F085-D18A-C9C0922DCA6B</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<referedAttribute>3189D973-059B-B573-B332-0937F6EAEBF2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="TipoDato Nombre" id="E4FBD570-554B-649D-901C-9EE19901AA60">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:42:38 UTC</createdTime>
+<generatorID>B07FAE0A-B2F6-F085-D18A-C9C0922DCA6B</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<referedAttribute>826ECCEA-DE99-D82E-7BA4-10E549DD26C5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7F87C006-6A6E-A873-74B1-89306463A391" name="Entidad_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:44:02 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>77CD38A4-95FE-5634-3B64-38643D8BB90B</attributeRef>
+<attributeRef>E4FBD570-554B-649D-901C-9EE19901AA60</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

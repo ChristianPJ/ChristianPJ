@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E6D77DBD-5BE5-8C82-73E5-3CD480A856ED" name="EntidadDebil">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:19:08 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Esquema Nombre" id="08BD61E4-B5F2-F45C-4860-13521B7EB20F">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:19:49 UTC</createdTime>
+<generatorID>90D7DC9C-6437-4B33-B4E3-E021B9CA5FE2</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<referedAttribute>77CD38A4-95FE-5634-3B64-38643D8BB90B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="TipoDato Nombre" id="682EB646-037C-5650-76CD-539C04EA7EE6">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:19:49 UTC</createdTime>
+<generatorID>90D7DC9C-6437-4B33-B4E3-E021B9CA5FE2</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<referedAttribute>E4FBD570-554B-649D-901C-9EE19901AA60</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8C0D88D6-914B-8C96-F2BB-549DC60F5D8E" name="EntidadDebil_PK">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:19:49 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>08BD61E4-B5F2-F45C-4860-13521B7EB20F</attributeRef>
+<attributeRef>682EB646-037C-5650-76CD-539C04EA7EE6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

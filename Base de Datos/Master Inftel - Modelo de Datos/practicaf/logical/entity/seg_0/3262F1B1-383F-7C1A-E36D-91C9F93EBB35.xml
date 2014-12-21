@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3262F1B1-383F-7C1A-E36D-91C9F93EBB35" name="TipoDato">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:17:42 UTC</createdTime>
+<generatorID>43360297-C767-BC18-6771-F0F90B3E7886</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nombre" id="826ECCEA-DE99-D82E-7BA4-10E549DD26C5">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:17:42 UTC</createdTime>
+<generatorID>A91A2EBF-A78E-4B88-5102-BA091C218465</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="Esquema Nombre" id="3189D973-059B-B573-B332-0937F6EAEBF2">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:18:02 UTC</createdTime>
+<generatorID>310770DB-42ED-F47B-B83E-AECE3791861B</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<referedAttribute>0593E71A-1DE9-4B7D-31E8-277AA03A51F3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+</Attribute>
+<Attribute name="Discriminador" id="652D90CD-7624-E74F-FD7D-0AC17BE5A9DE">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 13:03:44 UTC</createdTime>
+<generatorID>57FCB18B-255F-8609-05A7-0A46D978C9CD</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8AD0846F-262A-56DE-8973-CCD4B937CFD2" name="TipoDato_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 22:18:02 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3189D973-059B-B573-B332-0937F6EAEBF2</attributeRef>
+<attributeRef>826ECCEA-DE99-D82E-7BA4-10E549DD26C5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

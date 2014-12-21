@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EntidadDebil Entidad FK" directorySegmentName="seg_0" id="90D7DC9C-6437-4B33-B4E3-E021B9CA5FE2">
+<createdBy>inftel18</createdBy>
+<createdTime>2014-11-26 11:19:49 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<engineerTo>
+<item key="63EF1996-62AC-A570-988F-EE14305FDC17" value="true"/>
+</engineerTo>
+<sourcePk>7F87C006-6A6E-A873-74B1-89306463A391</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C76E6B6F-317E-9B29-26CA-DDD442B98B66</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>E6D77DBD-5BE5-8C82-73E5-3CD480A856ED</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

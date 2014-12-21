@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="219F6412-826A-28E1-A06B-54F611A75B29" name="SuperClase_Esp">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:47:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Especializacion_Nombre" id="2BFC4DB5-5124-601B-3A1B-ED2353BA4FF4">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:47:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>40277CD6-9243-6410-8CF7-13F221EEF3D4</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="88642D91-94AF-EFC4-15E8-8BD5109A3656" referredColumn="40277CD6-9243-6410-8CF7-13F221EEF3D4"/>
+</associations>
+</Column>
+<Column name="Esquema_Nombre" id="2ABB234F-4D1C-AF34-799E-C8E44B6133F4">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:47:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>20A5F7DF-B882-5573-2683-0C3ECC33254A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="885DF55E-E77F-E356-9C26-1B4745DE7E48" referredColumn="20A5F7DF-B882-5573-2683-0C3ECC33254A"/>
+</associations>
+</Column>
+<Column name="TipoDato_Nombre" id="094A0102-E6DC-A1A5-83B7-476D79F72691">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:47:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<delegate>6DE57BB3-1A41-3D54-9B46-5011A2112B7A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="885DF55E-E77F-E356-9C26-1B4745DE7E48" referredColumn="6DE57BB3-1A41-3D54-9B46-5011A2112B7A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6BAE3824-04A9-3E8D-6E53-DC7236BECAA4" name="SuperClase_Esp_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:47:54 UTC</createdTime>
+<generatorID>Generado por el Usuario</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BFC4DB5-5124-601B-3A1B-ED2353BA4FF4"/>
+<colUsage columnID="2ABB234F-4D1C-AF34-799E-C8E44B6133F4"/>
+<colUsage columnID="094A0102-E6DC-A1A5-83B7-476D79F72691"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C05398D-1C10-2021-0080-F4CA3A275E8B" name="FK_ASS_5">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:47:54 UTC</createdTime>
+<generatorID>3DD8CA63-B669-67A3-AC20-A3949C983AC4</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BFC4DB5-5124-601B-3A1B-ED2353BA4FF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63DF14FB-E97F-BFB9-BC17-3CD3CE85B2B3" name="FK_ASS_6">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:47:54 UTC</createdTime>
+<generatorID>3DD8CA63-B669-67A3-AC20-A3949C983AC4</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2ABB234F-4D1C-AF34-799E-C8E44B6133F4"/>
+<colUsage columnID="094A0102-E6DC-A1A5-83B7-476D79F72691"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

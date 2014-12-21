@@ -1,0 +1,238 @@
+-- Generado por Oracle SQL Developer Data Modeler 4.0.3.853
+--   en:        2014-11-27 13:17:18 CET
+--   sitio:      Oracle Database 11g
+--   tipo:      Oracle Database 11g
+
+
+
+
+CREATE TABLE Atributo
+  (
+    Nombre                VARCHAR2 (32 CHAR) NOT NULL ,
+    "Default"             VARCHAR2 (32 CHAR) ,
+    Multivaluado          VARCHAR2 (32 CHAR) ,
+    Derivado              VARCHAR2 (32 CHAR) ,
+    Clave                 VARCHAR2 (32 CHAR) ,
+    Esquema_Nombre        VARCHAR2 (32 CHAR) NOT NULL ,
+    TipoDato_Nombre       VARCHAR2 (32 CHAR) NOT NULL ,
+    Atrib_Nombre          VARCHAR2 (32 CHAR) ,
+    Atrib_Esquema_Nombre  VARCHAR2 (32 CHAR) ,
+    Atrib_TipoDato_Nombre VARCHAR2 (32 CHAR)
+  ) ;
+ALTER TABLE Atributo ADD CONSTRAINT Atributo_PK PRIMARY KEY ( Nombre, Esquema_Nombre, TipoDato_Nombre ) ;
+
+CREATE TABLE Categoria
+  ( Nombre VARCHAR2 (32 CHAR) NOT NULL
+  ) ;
+ALTER TABLE Categoria ADD CONSTRAINT Categoria_PK PRIMARY KEY ( Nombre ) ;
+
+CREATE TABLE Entidad
+  (
+    Esquema_Nombre  VARCHAR2 (32 CHAR) NOT NULL ,
+    TipoDato_Nombre VARCHAR2 (32 CHAR) NOT NULL
+  ) ;
+ALTER TABLE Entidad ADD CONSTRAINT Entidad_PK PRIMARY KEY ( Esquema_Nombre, TipoDato_Nombre ) ;
+
+CREATE TABLE EntidadDebil
+  (
+    Esquema_Nombre  VARCHAR2 (32 CHAR) NOT NULL ,
+    TipoDato_Nombre VARCHAR2 (32 CHAR) NOT NULL
+  ) ;
+ALTER TABLE EntidadDebil ADD CONSTRAINT EntidadDebil_PK PRIMARY KEY ( Esquema_Nombre, TipoDato_Nombre ) ;
+
+CREATE TABLE Especializacion
+  (
+    Nombre   VARCHAR2 (32 CHAR) NOT NULL ,
+    Disjunta VARCHAR2 (1 CHAR) ,
+    Total    VARCHAR2 (1 CHAR)
+  ) ;
+ALTER TABLE Especializacion ADD CONSTRAINT Especializacion_PK PRIMARY KEY ( Nombre ) ;
+
+CREATE TABLE Esquema
+  (
+    Nombre  VARCHAR2 (32 CHAR) NOT NULL ,
+    Autor   VARCHAR2 (32 CHAR) ,
+    Version VARCHAR2 (32 CHAR) ,
+    Fecha   DATE NOT NULL
+  ) ;
+ALTER TABLE Esquema ADD CONSTRAINT Esquema_PK PRIMARY KEY ( Nombre ) ;
+
+CREATE TABLE Relacion
+  (
+    Esquema_Nombre  VARCHAR2 (32 CHAR) NOT NULL ,
+    TipoDato_Nombre VARCHAR2 (32 CHAR) NOT NULL
+  ) ;
+ALTER TABLE Relacion ADD CONSTRAINT Relacion_PK PRIMARY KEY ( Esquema_Nombre, TipoDato_Nombre ) ;
+
+CREATE TABLE RelacionIdentificaci?n
+  (
+    R_Esquema_Nombre   VARCHAR2 (32 CHAR) NOT NULL ,
+    R_TipoDato_Nombre  VARCHAR2 (32 CHAR) NOT NULL ,
+    ED_Esquema_Nombre  VARCHAR2 (32 CHAR) NOT NULL ,
+    ED_TipoDato_Nombre VARCHAR2 (32 CHAR) NOT NULL
+  ) ;
+CREATE UNIQUE INDEX EntidadIdentificaci?n__IDX ON RelacionIdentificaci?n
+  (
+    ED_Esquema_Nombre ASC , ED_TipoDato_Nombre ASC
+  )
+  ;
+  ALTER TABLE RelacionIdentificaci?n ADD CONSTRAINT RelacionIdentificaci?n_PK PRIMARY KEY ( R_Esquema_Nombre, R_TipoDato_Nombre ) ;
+
+CREATE TABLE Se_relaciona
+  (
+    E_Esquema_Nombre  VARCHAR2 (32 CHAR) NOT NULL ,
+    E_TipoDato_Nombre VARCHAR2 (32 CHAR) NOT NULL ,
+    R_Esquema_Nombre  VARCHAR2 (32 CHAR) NOT NULL ,
+    R_TipoDato_Nombre VARCHAR2 (32 CHAR) NOT NULL ,
+    Funci?n           VARCHAR2 (32 CHAR) NOT NULL ,
+    Cad_Min           VARCHAR2 (2 CHAR) ,
+    Cad_Max           VARCHAR2 (2 CHAR)
+  ) ;
+ALTER TABLE Se_relaciona ADD CONSTRAINT Se_relaciona_PK PRIMARY KEY ( E_Esquema_Nombre, E_TipoDato_Nombre, R_Esquema_Nombre, R_TipoDato_Nombre, Funci?n ) ;
+
+CREATE TABLE SubClase_Cat
+  (
+    Categoria_Nombre VARCHAR2 (32 CHAR) NOT NULL ,
+    Esquema_Nombre   VARCHAR2 (32 CHAR) NOT NULL ,
+    TipoDato_Nombre  VARCHAR2 (32 CHAR) NOT NULL
+  ) ;
+ALTER TABLE SubClase_Cat ADD CONSTRAINT SubClase_Cat_PK PRIMARY KEY ( Categoria_Nombre, Esquema_Nombre, TipoDato_Nombre ) ;
+
+CREATE TABLE SubClase_Esp
+  (
+    Especializacion_Nombre VARCHAR2 (32 CHAR) NOT NULL ,
+    Esquema_Nombre         VARCHAR2 (32 CHAR) NOT NULL ,
+    TipoDato_Nombre        VARCHAR2 (32 CHAR) NOT NULL
+  ) ;
+ALTER TABLE SubClase_Esp ADD CONSTRAINT SubClase_Esp_PK PRIMARY KEY ( Especializacion_Nombre, Esquema_Nombre, TipoDato_Nombre ) ;
+
+CREATE TABLE SuperClase_Cat
+  (
+    Categoria_Nombre VARCHAR2 (32 CHAR) NOT NULL ,
+    Esquema_Nombre   VARCHAR2 (32 CHAR) NOT NULL ,
+    TipoDato_Nombre  VARCHAR2 (32 CHAR) NOT NULL
+  ) ;
+ALTER TABLE SuperClase_Cat ADD CONSTRAINT SuperClase_Cat_PK PRIMARY KEY ( Categoria_Nombre, Esquema_Nombre, TipoDato_Nombre ) ;
+
+CREATE TABLE SuperClase_Esp
+  (
+    Especializacion_Nombre VARCHAR2 (32 CHAR) NOT NULL ,
+    Esquema_Nombre         VARCHAR2 (32 CHAR) NOT NULL ,
+    TipoDato_Nombre        VARCHAR2 (32 CHAR) NOT NULL
+  ) ;
+ALTER TABLE SuperClase_Esp ADD CONSTRAINT SuperClase_Esp_PK PRIMARY KEY ( Especializacion_Nombre, Esquema_Nombre, TipoDato_Nombre ) ;
+
+CREATE TABLE TipoDato
+  (
+    Nombre         VARCHAR2 (32 CHAR) NOT NULL ,
+    Esquema_Nombre VARCHAR2 (32 CHAR) NOT NULL ,
+    Discriminador  INTEGER
+  ) ;
+ALTER TABLE TipoDato ADD CONSTRAINT FKArc_1_LOV CHECK ( Discriminador IN ( '0', '1' ) ) ;
+ALTER TABLE TipoDato ADD CONSTRAINT FKArc_1_NN CHECK ( Discriminador IS NOT NULL ) ;
+ALTER TABLE TipoDato ADD CONSTRAINT TipoDato_PK PRIMARY KEY ( Esquema_Nombre, Nombre ) ;
+
+ALTER TABLE Atributo ADD CONSTRAINT Atributo_Atributo_FK FOREIGN KEY ( Atrib_Nombre, Atrib_Esquema_Nombre, Atrib_TipoDato_Nombre ) REFERENCES Atributo ( Nombre, Esquema_Nombre, TipoDato_Nombre ) ;
+
+ALTER TABLE Atributo ADD CONSTRAINT Atributo_TipoDato_FK FOREIGN KEY ( Esquema_Nombre, TipoDato_Nombre ) REFERENCES TipoDato ( Esquema_Nombre, Nombre ) ;
+
+ALTER TABLE EntidadDebil ADD CONSTRAINT EntidadDebil_Entidad_FK FOREIGN KEY ( Esquema_Nombre, TipoDato_Nombre ) REFERENCES Entidad ( Esquema_Nombre, TipoDato_Nombre ) ;
+
+ALTER TABLE Entidad ADD CONSTRAINT Entidad_TipoDato_FK FOREIGN KEY ( Esquema_Nombre, TipoDato_Nombre ) REFERENCES TipoDato ( Esquema_Nombre, Nombre ) ;
+
+ALTER TABLE SubClase_Cat ADD CONSTRAINT FK_ASS_10 FOREIGN KEY ( Esquema_Nombre, TipoDato_Nombre ) REFERENCES Entidad ( Esquema_Nombre, TipoDato_Nombre ) ;
+
+ALTER TABLE Se_relaciona ADD CONSTRAINT FK_ASS_11 FOREIGN KEY ( E_Esquema_Nombre, E_TipoDato_Nombre ) REFERENCES Entidad ( Esquema_Nombre, TipoDato_Nombre ) ;
+
+ALTER TABLE Se_relaciona ADD CONSTRAINT FK_ASS_12 FOREIGN KEY ( R_Esquema_Nombre, R_TipoDato_Nombre ) REFERENCES Relacion ( Esquema_Nombre, TipoDato_Nombre ) ;
+
+ALTER TABLE SubClase_Esp ADD CONSTRAINT FK_ASS_3 FOREIGN KEY ( Especializacion_Nombre ) REFERENCES Especializacion ( Nombre ) ;
+
+ALTER TABLE SubClase_Esp ADD CONSTRAINT FK_ASS_4 FOREIGN KEY ( Esquema_Nombre, TipoDato_Nombre ) REFERENCES Entidad ( Esquema_Nombre, TipoDato_Nombre ) ;
+
+ALTER TABLE SuperClase_Esp ADD CONSTRAINT FK_ASS_5 FOREIGN KEY ( Especializacion_Nombre ) REFERENCES Especializacion ( Nombre ) ;
+
+ALTER TABLE SuperClase_Esp ADD CONSTRAINT FK_ASS_6 FOREIGN KEY ( Esquema_Nombre, TipoDato_Nombre ) REFERENCES Entidad ( Esquema_Nombre, TipoDato_Nombre ) ;
+
+ALTER TABLE SuperClase_Cat ADD CONSTRAINT FK_ASS_7 FOREIGN KEY ( Categoria_Nombre ) REFERENCES Categoria ( Nombre ) ;
+
+ALTER TABLE SuperClase_Cat ADD CONSTRAINT FK_ASS_8 FOREIGN KEY ( Esquema_Nombre, TipoDato_Nombre ) REFERENCES Entidad ( Esquema_Nombre, TipoDato_Nombre ) ;
+
+ALTER TABLE SubClase_Cat ADD CONSTRAINT FK_ASS_9 FOREIGN KEY ( Categoria_Nombre ) REFERENCES Categoria ( Nombre ) ;
+
+ALTER TABLE RelacionIdentificaci?n ADD CONSTRAINT RI_EntidadDebil_FK FOREIGN KEY ( ED_Esquema_Nombre, ED_TipoDato_Nombre ) REFERENCES EntidadDebil ( Esquema_Nombre, TipoDato_Nombre ) ;
+
+ALTER TABLE RelacionIdentificaci?n ADD CONSTRAINT RI_Relacion_FK FOREIGN KEY ( R_Esquema_Nombre, R_TipoDato_Nombre ) REFERENCES Relacion ( Esquema_Nombre, TipoDato_Nombre ) ;
+
+ALTER TABLE Relacion ADD CONSTRAINT Relacion_TipoDato_FK FOREIGN KEY ( Esquema_Nombre, TipoDato_Nombre ) REFERENCES TipoDato ( Esquema_Nombre, Nombre ) ;
+
+ALTER TABLE TipoDato ADD CONSTRAINT TipoDato_Esquema_FK FOREIGN KEY ( Esquema_Nombre ) REFERENCES Esquema ( Nombre ) ;
+
+CREATE OR REPLACE TRIGGER ARC_FKArc_1_Entidad BEFORE
+  INSERT OR
+  UPDATE OF Esquema_Nombre,
+    TipoDato_Nombre ON Entidad FOR EACH ROW DECLARE d INTEGER;
+  BEGIN
+    SELECT A.Discriminador
+    INTO d
+    FROM TipoDato A
+    WHERE A.Esquema_Nombre = :New.Esquema_Nombre
+    AND A.Nombre           = :New.TipoDato_Nombre ;
+    IF (d                 IS NULL OR d <> '0') THEN
+      raise_application_error(-20223,'FK Entidad.Entidad_TipoDato_FK in Table Entidad violates Arc constraint on Table TipoDato - only one FK is permitted');
+    END IF;
+  END;
+  /
+CREATE OR REPLACE TRIGGER ARC_FKArc_1_Relacion BEFORE
+  INSERT OR
+  UPDATE OF Esquema_Nombre,
+    TipoDato_Nombre ON Relacion FOR EACH ROW DECLARE d INTEGER;
+  BEGIN
+    SELECT A.Discriminador
+    INTO d
+    FROM TipoDato A
+    WHERE A.Esquema_Nombre = :New.Esquema_Nombre
+    AND A.Nombre           = :New.TipoDato_Nombre ;
+    IF (d                 IS NULL OR d <> '1') THEN
+      raise_application_error(-20223,'FK Relacion.Relacion_TipoDato_FK in Table Relacion violates Arc constraint on Table TipoDato - only one FK is permitted');
+    END IF;
+  END;
+  /
+
+
+-- Informe de Resumen de Oracle SQL Developer Data Modeler: 
+-- 
+-- CREATE TABLE                            14
+-- CREATE INDEX                             1
+-- ALTER TABLE                             34
+-- CREATE VIEW                              0
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           2
+-- ALTER TRIGGER                            0
+-- CREATE COLLECTION TYPE                   0
+-- CREATE STRUCTURED TYPE                   0
+-- CREATE STRUCTURED TYPE BODY              0
+-- CREATE CLUSTER                           0
+-- CREATE CONTEXT                           0
+-- CREATE DATABASE                          0
+-- CREATE DIMENSION                         0
+-- CREATE DIRECTORY                         0
+-- CREATE DISK GROUP                        0
+-- CREATE ROLE                              0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE SEQUENCE                          0
+-- CREATE MATERIALIZED VIEW                 0
+-- CREATE SYNONYM                           0
+-- CREATE TABLESPACE                        0
+-- CREATE USER                              0
+-- 
+-- DROP TABLESPACE                          0
+-- DROP DATABASE                            0
+-- 
+-- REDACTION POLICY                         0
+-- 
+-- ERRORS                                   0
+-- WARNINGS                                 0

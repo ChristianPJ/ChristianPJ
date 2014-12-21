@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0023F0B-4B85-6A78-D075-B2DFE56C4890" name="Especializacion">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:46:47 UTC</createdTime>
+<generatorID>911BFFA2-1A16-36A0-E727-92026C96970D</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nombre" id="40277CD6-9243-6410-8CF7-13F221EEF3D4">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:46:47 UTC</createdTime>
+<generatorID>84E0B825-46FC-7DDF-05EC-D95EFBEFFDF6</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Disjunta" id="4BFEC307-2BB9-7399-45E1-D2AB367D4CD4">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:46:47 UTC</createdTime>
+<generatorID>D14E5548-D65D-8DB3-B0C9-DAC5CF75230C</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Total" id="F0BD6B6C-1240-8730-A393-54B3AD00996C">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:46:47 UTC</createdTime>
+<generatorID>8DEE7A15-A8AF-B44C-19A9-456889B73236</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="36191E07-3709-9140-A72D-2FF595202D1D" name="Especializacion_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2014-11-25 23:46:47 UTC</createdTime>
+<generatorID>037DAA84-BB1E-268F-865B-AFCDE781C7BC</generatorID>
+<ownerDesignName>practicaf</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40277CD6-9243-6410-8CF7-13F221EEF3D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
