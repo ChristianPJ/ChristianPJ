@@ -1,0 +1,37 @@
+{"hoteles":[
+  {
+    "nombre": "CORINTHIA HOTEL LONDON",
+    "descripcion": "Situado en el centro neurálgico de Londres, junto al río Támesis, el Corinthia Hotel London es la joya indiscutible de nuestra corona. A tan solo unos pasos de Trafalgar Square, Westminster y Covent Garden, también está cerca de Mayfair y la City. Este magnífico edificio victoriano de 1885 ha cobrado nueva vida gracias a las bonitas habitaciones, las elegantes suites y los imaginativos áticos que ofrecen el máximo lujo del siglo XXI.",
+    "fotoext": "http://www.localnomad.com/es/blog/wp-content/uploads/2013/01/CHL_Twilight_Exterior_794x386.jpg",
+    "fotomext" : "http://www.localnomad.com/es/blog/wp-content/uploads/2013/01/CHL_Twilight_Exterior_794x386.jpg",
+    "fotoint1": "http://cdn.kiwicollection.com/media/property/PR008132/xl/008132-14-Superior%20Room%20Corinthia%20Hotel%20London.jpg",
+    "fotomint1": "http://cdn.kiwicollection.com/media/property/PR008132/xl/008132-14-Superior%20Room%20Corinthia%20Hotel%20London.jpg",
+    "fotoint2":"http://0.tqn.com/y/luxurytravel/1/S/I/Z/-/-/Corinthia-Hotel-London-Vitality-Pool-ESPA-Life-Spa.jpg",
+    "fotomint2":"http://0.tqn.com/y/luxurytravel/1/S/I/Z/-/-/Corinthia-Hotel-London-Vitality-Pool-ESPA-Life-Spa.jpg",
+    "enlace":"http://www.corinthia.com/hotels/london/"
+    
+  },
+  {
+    "nombre": "CENTRAL PARK HOTEL",
+    "descripcion": "Ya sea por negocios o placer, su estancia en el Central Park Hotel le será muy agradable, con nuestras 295 habitaciones renovadas conforme a un estilo elegante para garantizar su comodidad. Atender a sus necesidades es nuestra política principal, nuestro personal multilingüe estará siempre a mano. El servicio de habitaciones funciona durante todo el día y el salón del bar está abierto hasta la 1 de la madrugada. Nuestro conserje organizará su asistencia al West End Theatre, sus reservas para conciertos de música, cines, alquiler de coches, visitas guiadas, lugares de interés, museos; y cualquiera de las atracciones de Londres, todas las cuales son accesibles.",
+    "fotoext": "http://admin.greatstay.com/HotelImages/208229/Central-Park-Hotel-Classic-Facade-London-GB_z.jpg?timestamp=1412640000085",
+    "fotomext" : "http://admin.greatstay.com/HotelImages/208229/Central-Park-Hotel-Classic-Facade-London-GB_z.jpg?timestamp=1412640000085",
+    "fotoint1": "http://travelbieber.com/wp-content/uploads/centralpark/central-park-hotel-london-booking.com-19636926jpg-w3twkviu.jpg",
+    "fotomint1": "http://travelbieber.com/wp-content/uploads/centralpark/central-park-hotel-london-booking.com-19636926jpg-w3twkviu.jpg",
+     "fotoint2":"http://www.parklanemewshotel.net/default/includes/themes/parklanemewshotel-new/images/slider/home-2.jpg",
+    "fotomint2":"http://www.parklanemewshotel.net/default/includes/themes/parklanemewshotel-new/images/slider/home-2.jpg",
+    "enlace":"http://www.centralparklondon.co.uk/es/"
+  },
+  {
+    "nombre": "Holiday Inn Express London",
+    "descripcion": "Reserve una habitación en el moderno Holiday Inn Express London-City, ubicado en una zona con vida nocturna y a un paseo de la City.Diríjase directamente desde la animada Old Street al luminoso y acogedor hall del Holiday Inn Express London-City. Nos encontramos junto a los bares y discotecas más modernas de Hoxton Square, y a 10 minutos a pie de la pintoresca Brick Lane. La estación de metro Old Street está a 2 minutos a pie del hotel y la estación de Liverpool Street, que lleva al aeropuerto Stansted de Londres, se encuentra a 10 minutos andando. Llegue al aeropuerto de Heathrow en 45 minutos en taxi.El Holiday Inn Express London-City se encuentra a un paseo de Bishopsgate y de muchas de las empresas y oficinas locales de Finsbury Square. Súbase al autobús número 8 para llegar a las mejores tiendas de Oxford Street, en tan solo 20 minutos.",
+    "fotoext": "http://www.ihg.com/hotelmedia/repository/hotelimages/LONGM/WELCM_EXTR_2_E.jpg",
+    "fotomext" : "http://www.ihg.com/hotelmedia/repository/hotelimages/LONGM/WELCM_EXTR_2_E.jpg",
+    "fotoint1": "http://cdn.londonandpartners.com/asset/e7cc0871b4c044b7b1d3bcf2c6092e17.jpg",
+    "fotomint1": "http://cdn.londonandpartners.com/asset/e7cc0871b4c044b7b1d3bcf2c6092e17.jpg",
+    "fotoint2":"http://admin.greatstay.com/HotelImages/362352/Holiday-Inn-Express-London-Heathrow-T-5-Excellent--Bar-Slough-GB_z.jpg",
+    "fotomint2":"http://admin.greatstay.com/HotelImages/362352/Holiday-Inn-Express-London-Heathrow-T-5-Excellent--Bar-Slough-GB_z.jpg",
+    "enlace":"http://www.ihg.com/holidayinnexpress/hotels/us/es/london/lonct/hoteldetail"
+  }
+]
+}

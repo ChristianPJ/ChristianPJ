@@ -1,0 +1,444 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Big Picture by HTML5 UP</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+                <script src="js/malaga/showhoteles.js"></script>
+                
+                
+                
+                <script src="js/londres/jquery.min.js"></script>
+		<script src="js/londres/jquery.poptrox.min.js"></script>
+		<script src="js/londres/jquery.scrolly.min.js"></script>
+		<script src="js/londres/jquery.scrollgress.min.js"></script>
+		<script src="js/londres/skel.min.js"></script>
+		<script src="js/londres/init.js"></script>
+                <script type="text/javascript" src="carousel/js/modernizr.custom.79639.js"></script>
+                
+                <link rel="stylesheet" type="text/css" href="carousel/css/style.css" />
+                <link rel="stylesheet" type="text/css" href="carousel/css/custom.css" />
+                
+		<noscript>
+                
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+			<link rel="stylesheet" href="css/style-normal.css" />
+                        <link rel="stylesheet" type="text/css" href="carousel/css/styleNoJS.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+
+				<!-- Logo -->
+					<h1 id="logo">Big Picture</h1>
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro">Intro</a></li>
+							<li><a href="#one">What I Do</a></li>
+							<li><a href="#two">Who I Am</a></li>
+							<li><a href="#work">My Work</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+
+			</header>
+			
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content container small">
+					<header>
+						<h2>Hey.</h2>
+					</header>
+					<p>Welcome to <strong>Big Picture</strong> a responsive site template designed
+					by <a href="http://html5up.net">HTML5 UP</a>, built on <strong>skel</strong>,
+					and released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>.</p>
+					<footer>
+						<a href="#one" class="button style2 down">More</a>
+					</footer>
+				</div>
+			</section>
+		
+		<!-- One -->
+			<section id="one" class="main style2 left dark fullscreen">
+                                
+                                <h2>Restaurantes</h2>
+                                
+                                <select id="select1" onChange="seleccionar();">
+                                    <option>Todo</option>
+                                    <option>Pizzeria</option>
+                                    <option>Carnes</option>
+                                    <option>Pescados</option>
+                                    <option>Tapeo</option>
+                                    <option>Variado</option>
+                                </select>
+                                
+                                
+                                <div class="restaurants" id="info">
+                                   <!-- Carga información de Javascript-->
+                                </div>
+                            
+                                <a href="#work" class="button style2 down anchored">Next</a>
+			</section>
+			
+		
+		<!-- Two -->
+			<section id="two" >
+                            <!--Carousel-->
+                            <div class="container demo-2" id="carousel">
+                                
+                           </div>
+                            <!--Endcarousel-->
+				<!--<a href="#work" class="button style2 down anchored">Next</a>-->
+			</section>
+			
+		        <!-- Work -->
+			<section id="work" class="main style3 primary">
+                           <div class="content container" id="galeria">
+
+                         <!-- script galeria-->
+                          </div>
+                      </section>
+			
+		         <!-- Contact -->
+			<section id="contact" class="main style3 secondary">
+				<div class="content container">
+					<header>
+						<h2>Say Hello.</h2>
+						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
+					</header>
+					<div class="box container small">
+					
+					<!-- Contact Form -->
+							<form method="post" action="#">
+								<div class="row half">
+									<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u"><input type="email" name="email" placeholder="Email" /></div>
+								</div>
+								<div class="row half">
+									<div class="12u"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
+								</div>
+								<div class="row">
+									<div class="12u">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+
+					</div>
+				</div>
+			</section>
+			
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Icons -->
+					<ul class="actions">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+			
+			</footer>
+                
+                 <!-- crear clase hotel -->
+
+                 <script type="text/javascript">
+
+                 
+                 showhotels();
+                 </script>
+
+           <!--Script Carousel -->
+               
+                <script type="text/javascript" src="carousel/js/jquery.ba-cond.min.js"></script>
+                <script type="text/javascript" src="carousel/js/jquery.slitslider.js"></script>
+                <script type="text/javascript">	
+                   $(function() {
+			
+				var Page = (function() {
+
+					var $nav = $( '#nav-dots > span' ),
+						slitslider = $( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+							
+						},
+						initEvents = function() {
+
+							$nav.each( function( i ) {
+							
+								$( this ).on( 'click', function( event ) {
+									
+									var $dot = $( this );
+									
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+									
+									}
+									
+									slitslider.jump( i + 1 );
+									return false;
+								
+								} );
+								
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/**
+				 * Notes: 
+				 * 
+				 * example how to add items:
+				 */
+
+				
+				
+				//var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+				
+				// call the plugin's add method
+				//ss.add($items);
+
+				
+			
+		});
+	</script>
+        
+        
+        
+        
+        
+        
+        <!-- Script for elemets of carousel-->
+                <script type="text/javascript">
+                    function Place(title,description,cite,image){
+                        this.title = title;
+                        this.description = description;
+                        this.cite = cite;
+                        this.image=image;
+                    }
+                    
+                    
+                    function ShowPlaces(){
+                        
+                        var places = new Array();
+                            
+                        // Obtenemos los places del Json
+                        $.ajax({
+                            url: "json/londres/placesJson.json",
+                            async: false,
+                            dataType: 'json',
+                            success: function(data) {
+                                    places = data.places;    
+                                }
+                        });
+                        // Fin de lectura del Json
+                            
+                        var p;
+                        
+                        
+                        var html='';
+                        html += "<div id=\"slider\" class=\"sl-slider-wrapper\">" ;
+                        html += "<div class=\"sl-slider\">";
+                        
+                        var cont=0;
+                        for (p in places){
+                             if (cont % 2 ==0){ // si es par será de una clase, si no de otra
+                                 html += "<div class=\"sl-slide\" data-orientation=\"horizontal\" data-slice1-rotation=\"-25\" data-slice2-rotation=\"-25\" data-slice1-scale=\"2\" data-slice2-scale=\"2\">";
+                             }else{
+                                 html += "<div class=\"sl-slide\" data-orientation=\"vertical\" data-slice1-rotation=\"10\" data-slice2-rotation=\"-15\" data-slice1-scale=\"1.5\" data-slice2-scale=\"1.5\">";
+                             }
+                             cont++;
+                             
+                             //todo
+                             html += "<div class=\"sl-slide-inner\">";
+                             
+                             
+                             
+                             html += "<div class=\"bg-img\" style=\"background-image: url("+places[p].image+")\"></div>";
+
+                             
+                             html += "<h2>"+places[p].title+"</h2>";
+                             html += "<blockquote><p>"+places[p].description+"</p><cite>"+places[p].cite+"</cite></blockquote>";
+                             
+                             html += "</div>";
+                             html += "</div>";
+                        }
+                        
+                        html += "</div><!-- /sl-slider -->";
+                        
+                        //dots
+                        if (places.length>0){
+                            html += "<nav id=\"nav-dots\" class=\"nav-dots\">";
+                            html += "<span class=\"nav-dot-current\"></span>";
+                            for (i=1;i<places.length;i++){
+                                html += "<span></span>";
+                            }
+                            html += "</nav>";
+                        }
+                        
+                        html += "</div><!-- /slider-wrapper -->"  ;
+                        
+                        //var node = document.getElementById("carousel");
+                        //node.innerHTML = html;
+                        $('#carousel').html(html);
+                        
+                        
+                       
+                    }
+                    
+                    
+                     ShowPlaces();
+                     
+                     
+                </script>
+                
+                
+               
+                
+                
+                <!--vEnd Script for elemets of carousel-->
+                        
+                  <script type="text/javascript">
+                function Restaurant(name,type,place,photo,text,link){
+                    this.name = name;
+                    this.type = type;
+                    this.place = place;
+                    this.photo = photo;
+                    this.text = text;
+                    this.link = link;
+                }
+                
+                function Filtro(restaurants,tipo){
+                    var x=0;
+                    var rest = new Array();
+                    for (x in restaurants)
+                    {
+                        if (restaurants[x].type == tipo)
+                        {
+                            rest.push(restaurants[x]);
+                        }             
+                    }
+                    return rest;
+                }
+
+                function ShowRestaurant(tipo){
+
+                    var rest = new Array();
+
+                    $.getJSON("json/malaga/newjson.json",function(json){
+
+                        rest = json.restaurants;
+                        var res = new Array();
+                        
+                        if(tipo != "Todo"){
+                            rest = Filtro(json.restaurants,tipo);
+                        }
+                        
+                        for (i=0;i<3;i++){
+                            var name = rest[i].name;
+                            var type = rest[i].type;
+                            var place = rest[i].place;
+                            var photo = rest[i].photo;
+                            var text = rest[i].text;
+                            var link = rest[i].link;
+                            res[i] = new Restaurant(name,type,place,photo,text,link);
+                        }
+
+                        var html='';
+
+                        var r;
+
+                        for (r in res){
+
+                            html += "<div class=\"restaurantclass\">";
+                            html += "<p id=\"titulo\">"+res[r].name+"</p>";
+                            html += "<center> <img src='"+res[r].photo+"' alt=\"Foto "+res[r].name+" height=\"120\" width=\"180\"  style=\"border:3px solid black\"> </center>";
+                            html += "<span class=\"titles\">Tipo: </span><span class=\"info\">"+res[r].type+"</span><br>";
+                            html += "<span class=\"titles\">Lugar: </span><span class=\"info\">"+res[r].place+"</span><br>";
+                            if(res[r].text.length>50){
+                                var nuevo = res[r].text.substring(0,47);
+                                nuevo = nuevo.concat(" ...");
+                                res[r].text = nuevo;
+
+                            }
+                            html += "<span class=\"titles\">Descripción: </span><span class=\"info\">"+res[r].text+"</span><br>";
+                            html += "<span class=\"titles\">Enlace: </span><span class=\"info\"><a href="+res[r].link+" id=\"enlace\">"+res[r].link+"</a></span><br>";
+                            html += "</div>";
+
+                        }
+
+                        $('#info').html(html);
+
+                    });
+                }
+            
+            
+            var tipo = "Todo";
+            
+            ShowRestaurant(tipo);
+            
+            function seleccionar(){
+                
+                    /*var myindex  = dropdown.selectedIndex;
+                    var SelValue = dropdown.options[myindex].value;*/
+                    ShowRestaurant($('#select1').val());
+
+            }
+            
+            
+            
+        </script>
+
+                 
+                 
+                 
+                 
+	</body>
+</html>

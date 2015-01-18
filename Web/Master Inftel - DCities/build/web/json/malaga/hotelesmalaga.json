@@ -1,0 +1,38 @@
+{"hoteles":[
+  {
+    "nombre": "NH MALAGA",
+    "descripcion": "Desde visitas a los restaurantes y bares mas modernos hasta las antiguas catedrales, el hotel de cuatro estrellas NH Malaga te permite disfrutar de la mejor aventura andaluza. Convenientemente ubicado a solo 600 metros de la estacian de tren, en el corazan del centro historico de la ciudad, el hotel ofrece facil acceso a las principales atracciones de la zona. Todas las habitaciones ofrecen un amplio oasis con ropa de cama de lujo, TV via satelite, un mini bar y conexion a Internet (WiFi). Amplia variedad de comodidades disponibles para que tu estancia sea agradable y relajada, como lavanderia y servicio de niñera.Servicio de alquiler de vehiculos en las instalaciones y el garaje de pago. El restaurante y bar ofrece vinos y comidas de nivel internacional.",
+    "fotoext": "http://www.malagacon.com/db_img/1263162076.jpg",
+    "fotomext" : "http://www.malagacon.com/db_img/1263162076.jpg",
+    "fotoint1": "http://exp.cdn-hotels.com/hotels/1000000/530000/523400/523310/523310_102_z.jpg",
+    "fotomint1": "http://exp.cdn-hotels.com/hotels/1000000/530000/523400/523310/523310_102_z.jpg",
+    "fotoint2":"http://exp.cdn-hotels.com/hotels/1000000/530000/523400/523310/523310_82_z.jpg",
+    "fotomint2":"http://exp.cdn-hotels.com/hotels/1000000/530000/523400/523310/523310_82_z.jpg",
+    "enlace":"http://www.nh-hoteles.es/nh/es/hoteles/espana/malaga/nh-malaga.html"
+    
+  },
+  {
+    "nombre": "AC HOTEL MALAGA PALACIO",
+    "descripcion": "El hotel es una impresionante construccion moderna con 214 habitaciones.Su inmejorable ubicacion entre la Catedral de Malaga y el Paseo del Parque, asi como sus espectaculares vistas del puerto, convierten a este hotel en uno de los mas emblematicos de la ciudad. Se encuentra cerca del Museo Picasso, la Alcazaba, el Castillo de Gibralfaro y la playa de La Malagueta. El menu del restaurante del AC Hotel Malaga Palacio se basa en la cocina regional con gran variedad de platos de todo el mundo. En verano, visite el bar y el restaurante atico en la planta 15.™, la terraza del hotel. Nuestro hotel en la Costa del Sol es ideal para viajes de negocios, asi como para las vacaciones.El hotel esta a 2 km de la estacion de trenes y a solo diez minutos en coche del aeropuerto de Malaga.",
+    "fotoext": "http://www.9thisvlv-malaga2014.com/images/gallery/AC-Hotel-M%C3%A1laga-Palacio-by-Marriott.jpg",
+    "fotomext" : "http://www.9thisvlv-malaga2014.com/images/gallery/AC-Hotel-M%C3%A1laga-Palacio-by-Marriott.jpg",
+    "fotoint1": "http://photos1.hotelsearch.com/0105/2353/ac-malaga-palacio-malaga_big.jpg",
+    "fotomint1": "http://photos1.hotelsearch.com/0105/2353/ac-malaga-palacio-malaga_big.jpg",
+    "fotoint2":"http://static.panoramio.com/photos/large/13840990.jpg",
+    "fotomint2":"http://static.panoramio.com/photos/large/13840990.jpg",
+    "enlace":"http://www.espanol.marriott.com/hotels/travel/agpmg-ac-hotel-malaga-palacio/"
+    
+  },
+  {
+    "nombre": "ATARAZANAS MALAGA BOUTIQUE HOTEL",
+    "descripcion": "Situado en un edificio historico, este hotel esta situado en pleno centro de la ciudad muy cerca de la calle Marques de Larios, a 5 min del Museo Picasso o Thyssen y 20 min de la playa.Eleccion ideal para alojarse si se planea hacer turismo por la ciudad, por negocios, congresos, para cruceros, y mucho mas. Dispone de elegantes y confortables habitaciones con Canal Plus, Canal Satelite y WIFI gratuito ademas dispone de servicio de restaurante de cocina tradicional. Tiene una ubicacion excelente para llegar a el en tren (15 min a pie de la estacion) o del aeropuerto, con facil acceso tanto en taxi como en otro medio de transporte (tren de cercanias o bus expres tienen su parada a escasos 100 metros del hotel). Facilidades para llegar en coche, cuenta con un reservado a la entrada para carga y descarga de equipaje.",
+    "fotoext": "http://static.laterooms.com/hotelphotos/laterooms/145915/gallery/atarazanas-malaga-boutique-hotel-malaga_210620121800452696.jpg",
+    "fotomext" : "http://static.laterooms.com/hotelphotos/laterooms/145915/gallery/atarazanas-malaga-boutique-hotel-malaga_210620121800452696.jpg",
+    "fotoint1": "http://media-cdn.tripadvisor.com/media/photo-s/02/ea/ee/73/fotosalcedo.jpg",
+    "fotomint1": "http://media-cdn.tripadvisor.com/media/photo-s/02/ea/ee/73/fotosalcedo.jpg",
+    "fotoint2":"http://images.travelnow.com/hotelimages/s/012000/012152B.jpg",
+    "fotomint2":"http://images.travelnow.com/hotelimages/s/012000/012152B.jpg",
+    "enlace":"http://hotel-atarazanas-malaga.com"
+  }
+]
+}

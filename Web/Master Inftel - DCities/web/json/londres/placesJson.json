@@ -1,0 +1,13 @@
+{
+    "places": [
+        {"title": "Plaza de Toros", 
+         "description": "La plaza de toros de Málaga es un lugar...",
+         "cite": "Arte del Toreo",
+         "image": "http://hardtimesnews.files.wordpress.com/2011/07/malaga.jpg"},
+        {"title": "Paseo del Parque", 
+         "description": "El paseo del parque de Málaga es un lugar...",
+         "cite": "El buen paseo",
+         "image": "http://1.bp.blogspot.com/-IL4ntzIRIJw/Tc6gESb8QZI/AAAAAAAAAIo/tibMKsq-Yyc/s1600/1+%25286%2529.jpg"}
+     
+    ]
+}

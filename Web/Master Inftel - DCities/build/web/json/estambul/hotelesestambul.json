@@ -1,0 +1,36 @@
+{"hoteles":[
+  {
+    "nombre": "Grand Hyatt Istanbul",
+    "descripcion": "Este lujoso hotel de Estambul está situado en el corazón de la ciudad, a pocos pasos de la plaza Taksim y de los principales centros de convenciones y exposiciones. Dispone de una piscina al aire libre, un spa y gimnasio y modernas salas de reuniones.El Grand Hyatt Istanbul cuenta con lujosas habitaciones decoradas en tonos claros. Todas sus habitaciones disponen de una zona de estar, TV LCD y una zona de trabajo. Los baños de mármol cuentan con bañera y ducha de efecto lluvia acristalada.El bar restaurante Mezzanine ofrece cocina internacional y especialidades turcas tradicionales servidas en bufé y a la carta. El bar restaurante Library sirve una amplia selección de vinos. El Gazebo prepara platos deliciosos, bebidas y postres.El spa y gimnasio Gaia ofrece tratamientos de spa modernos y auténticos rituales de hammam. También hay una pista de tenis iluminada.",
+    "fotoext": "http://www.istanbulagent.com/hotel/wp-content/uploads/Grand-Hyatt-Istanbul.jpg",
+    "fotomext" : "http://www.istanbulagent.com/hotel/wp-content/uploads/Grand-Hyatt-Istanbul.jpg",
+    "fotoint1": "http://www.ola.ua/photo/Grand_Hyatt_Istanbul_28722.jpg",
+    "fotomint1": "http://www.ola.ua/photo/Grand_Hyatt_Istanbul_28722.jpg",
+    "fotoint2":"http://www.htrviajesturquia.com/wp-content/uploads/2014/07/1280x427xGrand-Hyatt-Istanbul-The-Mansion-Living-Room.jpg",
+    "fotomint2":"http://www.htrviajesturquia.com/wp-content/uploads/2014/07/1280x427xGrand-Hyatt-Istanbul-The-Mansion-Living-Room.jpg",
+    "enlace":"http://istanbul.grand.hyatt.com/en/hotel/home.html"
+    
+  },
+  {
+    "nombre": "Sura Hagia Sophia Hotel",
+    "descripcion": "El Sura Hagia Sophia Hotel, situado en el centro de la zona de Sultanahmet de la península histórica, dispone de un restaurante a la carta, un restaurante buffet y bar. El hotel ofrece piscina al aire libre, un jardín precioso y conexión Wi-Fi gratuita.Las habitaciones del Sura Hagia Sophia cuentan con aire acondicionado, TV de pantalla plana con canales vía satélite, minibar completo y un hervidor de agua eléctrico. Disponen de baño privado con secador de pelo, artículos de aseo gratuitos y zapatillas. Algunas habitaciones ofrecen vistas a la ciudad y otras tienen vistas a Santa Sofía.El hotel sirve un desayuno buffet. El restaurante Sura Kebap House sirve platos de comida turca para el almuerzo y la cena, y platos elaborados con verduras y carne ecológica. El alojamiento cuenta con una zona de estar con chimenea, además de un jardín en la cafetería Sura.",
+    "fotoext": "http://media-cdn.tripadvisor.com/media/photo-s/05/db/bd/d1/sura-hagia-sophia-hotel.jpg",
+    "fotomext" : "http://media-cdn.tripadvisor.com/media/photo-s/05/db/bd/d1/sura-hagia-sophia-hotel.jpg",
+    "fotoint1": "http://akaponto.com/wp-content/uploads/2014/04/sura-hagia-sophia-hotel-very-near-sultanahmet-istanbul-turkey-13.jpg",
+    "fotomint1": "http://akaponto.com/wp-content/uploads/2014/04/sura-hagia-sophia-hotel-very-near-sultanahmet-istanbul-turkey-13.jpg",
+     "fotoint2":"http://media-cdn.tripadvisor.com/media/photo-s/06/6f/f9/cf/sura-hagia-sophia-hotel.jpg",
+    "fotomint2":"http://media-cdn.tripadvisor.com/media/photo-s/06/6f/f9/cf/sura-hagia-sophia-hotel.jpg",
+    "enlace":"http://surahagiasophiahotel.com/hagiasophia"
+  },
+  {
+    "nombre": "Rixos Pera Istanbul",
+    "descripcion": "El Rixos Pera está situado en la zona histórica de Taksim, a solo 200 metros de la bulliciosa avenida Istiklal. Ofrece instalaciones de spa, 5 restaurantes a la carta y alojamientos con una decoración elegante, aire acondicionado y TV vía satélite.Las habitaciones y suites amplias del Rixos Pera Istanbul disponen de minibar y caja fuerte para ordenador portátil. Algunas habitaciones tienen vistas al estuario Cuerno de Oro.El establecimiento cuenta con el Cafe Royal, con vistas al Cuerno de Oro, aperitivos y bebidas; el Chapelle, de aire parisino y diferentes cocinas del mundo; el bar restaurante Jack Russel, con un menú de platos deliciosos; el Park Samdan de cocina gourmet; y el Aija Shima y su gran variedad de entrantes y platos de sushi del Lejano Oriente.",
+    "fotomext" : "http://exp.cdn-hotels.com/hotels/6000000/5810000/5801200/5801140/5801140_67_z.jpg",
+    "fotoint1": "http://exp.cdn-hotels.com/hotels/6000000/5810000/5801200/5801140/5801140_67_z.jpg",
+    "fotomint1": "http://www.alrashedtravel.com/files/6d26e78a-efae-48fc-8d20-d76c057cd5ac.jpg",
+    "fotoint2":"http://files.begonija.lv/system/user_files/hotel_images/6-34059.jpg",
+    "fotomint2":"http://files.begonija.lv/system/user_files/hotel_images/6-34059.jpg",
+    "enlace":"http://peraistanbul-tr.rixos.com/genel-bakis/detay/GENEL-BAKIS/2/1/0"
+  }
+]
+}
