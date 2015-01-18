@@ -1,0 +1,67 @@
+#id_usuarios {
+    width: 100%;
+    padding-top: 60px;
+}
+
+#admin-input-container,
+#admin-input {
+    width: 100%;
+}
+
+#admin-input {
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#userName {
+    float: left;
+    width: 70%;
+}
+
+#boton_buscar {
+    float: right;
+    width: 28%;
+}
+
+table {
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px solid #d3d3d3;
+    background: #fefefe;
+    width: 70%;
+    border-radius:5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+tr {
+    width: 100%;
+}
+
+th, td {
+    width: 25%;
+    padding: 5px;
+    text-align:center;
+}
+
+th {
+    padding-top:22px;
+    text-shadow: 1px 1px 1px #fff;
+    background:#e8eaeb;
+}
+
+td {
+    border-top:1px solid #e0e0e0;
+    border-right:1px solid #e0e0e0; 
+    border-left:1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+td button {
+    width: 100%;
+}
+
+tr:first-of-type td{
+    background-image: url("../images/img01.jpg");
+    color:white;
+}
