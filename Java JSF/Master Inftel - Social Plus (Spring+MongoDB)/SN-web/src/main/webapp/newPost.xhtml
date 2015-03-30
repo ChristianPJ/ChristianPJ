@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+        <title>Example of Bootstrap 3 Vertical Form Layout</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"/>
+        <link href="resources/css/styles.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
+        <f:metadata>
+            <f:viewParam name="grupo" />
+        </f:metadata> 
+
+    </h:head>
+
+    <h:body>
+        <ui:composition template="/template/common/plantilla.xhtml">
+            <ui:define name="content">
+                <h:panelGroup id="masthead" layout="block">  
+                    <h:panelGroup class="container" layout="block">
+                        <h:panelGroup class="row" layout="block">
+                            <h:panelGroup class="col-md-7" layout="block">
+                                <f:view>
+                                    <h:panelGroup class="tituloPost" layout="block">
+                                        <h:outputText  class="formattext"  value="#{msg.NewPostOn}" />
+                                        <ui:fragment rendered="#{comentarioBean.nombreGrupo==''}">
+                                            #{msg.tablonPersonal}
+                                        </ui:fragment>
+                                        <ui:fragment rendered="#{comentarioBean.nombreGrupo!=''}">
+                                            #{comentarioBean.nombreGrupo}
+                                        </ui:fragment> 
+                                    </h:panelGroup>
+                                    <div class="bs-example">
+                                        <h:form>
+                                            <div class="form-group">
+                                                #{msg.Title}: <h:inputText size="50" class="form-control" value="#{comentarioBean.titulo}" /><br />
+                                            </div>
+                                            <div class="form-group">
+                                                #{msg.comment}: <br /><h:inputTextarea  class="form-control textarea"  required="true" cols="50" rows="10" value="#{comentarioBean.texto}"  /><br />
+                                                #{msg.image}: <h:inputText size="50" class="form-control" value="#{comentarioBean.imagen}"/><br />
+                                                Video: <h:inputText  class="form-control" value="#{comentarioBean.video}" size="50" /><br />
+
+                                            </div>
+                                            <div class="checkbox">
+                                                <ui:fragment rendered="#{comentarioBean.nombreGrupo.length()==0}">
+                                                    <h:selectBooleanCheckbox   value="#{comentarioBean.privado}" />#{msg.MarcarComoPrivado}<br /><br />
+                                                </ui:fragment> 
+                                                <h:inputHidden value="#{comentarioBean.nombreGrupo}"/>
+
+                                            </div>
+                                            <h:commandButton  class="btn btn-primary" value="#{msg.CreateComment}" action="#{comentarioBean.insertarComentario()}" />
+
+                                        </h:form>
+                                    </div>
+                                </f:view>
+                            </h:panelGroup>
+                        </h:panelGroup>
+                    </h:panelGroup>
+                </h:panelGroup>
+            </ui:define>
+
+        </ui:composition>
+    </h:body>
+</html>
+

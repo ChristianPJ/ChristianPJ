@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <head>
+        <title>Social+</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js">
+        </script>
+        <h:outputScript rendered="#{sessionBean.usuario != null}" library="js" name="redirectToIndex.js" />
+        <script src="resources/jquery/jquery-1.8.3.js"></script>
+        <link href="resources/css/styles-login.css" rel="stylesheet"/>
+        <script src="resources/js/loginProccessing.js"></script>
+        <script>
+            (function () {
+                var po = document.createElement('script');
+                po.type = 'text/javascript';
+                po.async = true;
+                po.src = 'https://plus.google.com/js/client:plusone.js?onload=start';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(po, s);
+            })();
+        </script>
+    </head>
+    <body>
+        <h:panelGroup id="wrap" layout="block">
+            <h:graphicImage class="bgfade" value="resources/images/background1.jpg"/>
+            <h:graphicImage class="bgfade" value="resources/images/background2.jpg"/>
+            <h:graphicImage class="bgfade" value="resources/images/background3.jpg"/>
+        </h:panelGroup>
+         
+        <h:graphicImage class="img-circle" value="resources/images/logo.jpg"  style="width:200px;height:200px" /> 
+             
+        <h:panelGroup layout="block" id="signinButton" class="googleButton">
+            <span class="g-signin"
+                  data-scope="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"
+                  data-clientid="926013150486-qorbtv1i63hgaugjfc0fovbajbvjrgg6.apps.googleusercontent.com"
+                  data-redirecturi="postmessage"
+                  data-accesstype="offline"
+                  data-cookiepolicy="single_host_origin"
+                  data-callback="signInCallback">
+            </span>
+        </h:panelGroup>
+    </body>
+</html>

@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"> 
+    <h:head>
+        <f:metadata>
+            <f:viewParam name="grupo" />
+        </f:metadata>           
+    </h:head>
+    <h:body>
+        <ui:composition template="/template/common/plantilla.xhtml">
+            <ui:define name="content">
+                <h:outputFormat>
+                    <f:param name="grupo" value="#{groupsBean.name}" />
+                </h:outputFormat>
+
+                <h:panelGroup id="masthead" layout="block">  
+                    <h:panelGroup class="container" layout="block">
+                        <h:panelGroup class="row" layout="block">
+                            <h:panelGroup class="col-md-7" layout="block">
+                                <h:panelGroup class="main-story-img" layout="block" >
+                                    <img src="#{usuarioBean.usuario.foto}" style="width:200px;height:200px" class="img-circle"/>  
+                                    <h1>#{usuarioBean.usuario.nombre}</h1>
+                                    <p class="lead2">#{usuarioBean.usuario.apellido}</p>
+                                    <p class="lead">#{usuarioBean.usuario.email}</p>
+                                    <p class="lead"><h:outputLink value="#{usuarioBean.usuario.linkGoogle}" target="_blank">Google+ </h:outputLink></p>
+
+                                    <f:event type="preRenderView" listener="#{friendBean.checkFriend()}" />
+                                    <h:panelGroup class="col-md-5" layout="block" rendered="#{sessionBean.usuario.email != usuarioBean.usuario.email}">
+                                        <h:panelGroup class="main-story-img" layout="block" rendered="#{friendBean.isFriend == false}">
+                                            <f:view>
+                                                <h:form id="add">
+                                                    <h:commandButton action="#{friendBean.addFriend()}"  class="btn btn-danger btnNext" value="Añadir a amigos" />
+                                                </h:form>
+                                            </f:view>
+                                        </h:panelGroup>
+                                        <h:panelGroup class="main-story-img" layout="block" rendered="#{friendBean.isFriend == true}">
+                                            <f:view>
+                                                <h:form id="remove">
+                                                    <h:commandButton action="#{friendBean.removeFriend()}"  class="btn btn-danger btnNext" value="Quitar a amigos" />
+                                                </h:form>
+                                            </f:view>
+                                        </h:panelGroup>
+                                        <h:panelGroup class="main-story-img" layout="block">
+                                            <h:form>
+                                                <ui:repeat value="#{groupsBean.obtenerPosiblesGrupo()}" var="grupos">
+                                                    <h:commandButton class="btn btn-primary btnNext" value="Añadir a '#{grupos.name}' " action="#{groupsBean.agregarUsuario(grupos)}" /><br /><br />
+                                                </ui:repeat> 
+                                            </h:form>
+                                        </h:panelGroup>
+                                    </h:panelGroup>   
+                                </h:panelGroup>
+                            </h:panelGroup>
+                        </h:panelGroup>
+                    </h:panelGroup>
+                </h:panelGroup>
+                <h:panelGroup class="container" layout="block">
+                    <h:panelGroup class="row" layout="block">
+                        <h:panelGroup class="col-md-12" layout="block"> 
+                            <h:panelGroup class="panel" layout="block">
+                                <h:panelGroup class="panel-body" layout="block">
+
+                                    <!--/stories-->
+                                    <h:outputLabel class="sin-comentarios" value="#{msg.noTienesComentarios}" rendered="#{usuarioBean.listaComentarios.size()==0}" /> 
+                                    <h:outputLabel  value="#{usuarioBean.listaComentarios.size()} #{msg.comment}" rendered="#{usuarioBean.listaComentarios.size()==1}" /> 
+                                    <h:outputLabel  value="#{usuarioBean.listaComentarios.size()} #{msg.comments}" rendered="#{usuarioBean.listaComentarios.size()>1}" /> 
+
+                                    <ui:repeat value="#{usuarioBean.listaComentarios}" var="comentarioPost">
+                                        <ui:fragment rendered="#{!comentarioPost.privado}">
+                                            <hr>
+                                                <h:panelGroup class="row" layout="block">    
+                                                    <br/>
+                                                    <h:panelGroup class="col-md-2 col-sm-3 text-center imagen-y-nombre" layout="block">
+                                                        <h2 class="nombre-comentario">#{comentarioPost.nombre}</h2>
+                                                        <h2 class="apellido-comentario">#{comentarioPost.apellido}</h2>
+                                                        <a class="story-img" href="#">
+                                                            <img src="#{comentarioPost.imagenUsuario}" style="width:100px;height:100px" class="img-circle"/>
+                                                        </a>
+                                                    </h:panelGroup>
+                                                    <h:panelGroup class="col-md-10 col-sm-9" layout="block">
+                                                        <h3>#{comentarioPost.titulo}</h3>
+                                                        <h:panelGroup class="row" layout="block">
+
+                                                            <h:panelGroup class="col-xs-9" layout="block" >
+                                                                <h:panelGroup styleClass="preformatted">
+                                                                    <p>#{comentarioPost.texto}</p><br/>
+                                                                </h:panelGroup>
+                                                                <h:panelGroup id="imagen" rendered="#{!empty comentarioPost.imagen}">
+                                                                    <h:graphicImage class="imagen2"  value="#{comentarioPost.imagen}"  rendered="#{!empty comentarioPost.imagen}"   width="100%" height="100%" /><br/>
+                                                                </h:panelGroup>
+
+                                                                <h:panelGroup  rendered="#{!empty comentarioPost.video}">
+                                                                    <div class="videoWrapper">
+                                                                        <iframe width="540" height="349" src="#{comentarioPost.video}" frameborder="0" allowfullscreen="true" ></iframe>
+                                                                    </div>
+                                                                </h:panelGroup> 
+
+                                                                    <h:panelGroup rendered="#{sessionBean.usuario.email != comentarioPost.perfil}">
+
+                                                                        <f:view>
+                                                                            <h:form>
+                                                                                <h:commandLink action="#{commentBean.copy()}" class="btn btn-success" value="#{msg.copy}" >
+                                                                                    <i class="fa fa-files-o"></i>
+                                                                                    <f:setPropertyActionListener target="#{commentBean.id}" value="#{comentarioPost.id}" />
+                                                                                </h:commandLink>
+
+
+
+                                                                            </h:form>
+                                                                        </f:view>
+
+                                                                    </h:panelGroup>
+                                                                    <h:panelGroup rendered="#{sessionBean.usuario.email == comentarioPost.perfil}">
+
+                                                                        <f:view>
+                                                                            <h:form>
+
+                                                                                <h:commandLink action="#{commentBean.delete()}" class="btn btn-danger" value="#{msg.delete}" >
+                                                                                    <i class="fa fa-trash-o fa-lg"></i>
+                                                                                    <f:setPropertyActionListener target="#{commentBean.id}" value="#{comentarioPost.id}" />
+                                                                                </h:commandLink>
+                                                                            </h:form>
+                                                                        </f:view>
+
+                                                                    </h:panelGroup>
+                                                                <h:panelGroup class="col-xs-9" layout="block" >
+
+                                                                    <p class="pull-right privadoPublico">
+                                                                        <ui:fragment rendered="#{!comentarioPost.privado}">
+                                                                            <span class="label label-default" >#{msg.public}</span>
+                                                                        </ui:fragment>
+                                                                        <ui:fragment rendered="#{comentarioPost.privado}">
+                                                                            <span class="label label-default" >#{msg.Privado}</span>
+                                                                        </ui:fragment>
+
+                                                                    </p>
+                                                                    <ul class="list-inline fecha" >
+                                                                        <li>#{comentarioPost.fecha}</li>
+                                                                    </ul>
+
+                                                                </h:panelGroup>
+                                                                <h:panelGroup class="col-xs-3"></h:panelGroup>
+
+                                                            </h:panelGroup>
+                                                        </h:panelGroup>
+                                                        <br/><br/>
+                                                    </h:panelGroup>
+                                                </h:panelGroup>
+
+                                            </hr>
+                                        </ui:fragment>
+                                    </ui:repeat>
+
+                                </h:panelGroup>
+                            </h:panelGroup>
+                        </h:panelGroup>
+                    </h:panelGroup>
+                </h:panelGroup>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+

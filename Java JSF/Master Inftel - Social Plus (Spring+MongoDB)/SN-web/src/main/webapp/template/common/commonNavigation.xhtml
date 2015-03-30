@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"> 
+    <h:head>
+
+    </h:head>
+    <body>
+        <ui:composition>
+            <h:panelGroup class="navbar navbar-default navbar-fixed-top" layout="block">
+
+                <h:panelGroup class="container" layout="block">
+                    <h:panelGroup class="navbar-header" layout="block">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                            <h:panelGroup class="sr-only">Toggle navigation</h:panelGroup>
+                            <h:panelGroup class="icon-bar"></h:panelGroup>
+                            <h:panelGroup class="icon-bar"></h:panelGroup>
+                            <h:panelGroup class="icon-bar"></h:panelGroup>
+                        </button>
+                        <h:link outcome="index" class="navbar-brand">
+                            <i class="fa fa-home"></i> Social<i style="font-style: italic">+</i>
+                        </h:link>
+                    </h:panelGroup>
+                    <h:panelGroup  class="container" layout="block">
+                        <h:panelGroup class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                
+                                <!-- Inicio --> 
+                                <li>
+                                    <ui:fragment rendered="#{view.viewId.contains('group.xhtml')}">
+                                        <h4 class="NombreGrupo">#{groupsBean.name}</h4>
+                                    </ui:fragment>
+                                </li>
+                                
+                                <!-- Nuevo Post -->    
+                                <li>
+                                    <ui:fragment rendered="#{not view.viewId.contains('group.xhtml')}">
+                                        <h:link outcome="newPost">
+                                            <i class="fa fa-pencil"></i> #{msg.newPost}
+                                            <f:param name="grupo" value="" />
+                                        </h:link> 
+                                    </ui:fragment>
+
+                                    <ui:fragment rendered="#{view.viewId.contains('group.xhtml') and not empty param.grupo}">
+                                        <h:link outcome="newPost">
+                                            <i class="fa fa-pencil"></i> #{msg.newPost}
+                                            <f:param name="grupo" value="#{groupsBean.name}" />
+                                        </h:link> 
+                                    </ui:fragment>   
+                                </li>
+                                
+                                <!-- Grupos --> 
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="fa fa-comments"></i> #{msg.groups} <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <ui:repeat value="#{groupsBean.obtenerGrupos()}" var="grupo">
+                                            <li>
+                                                <h:link value="#{grupo.name}" outcome="group">
+                                                    <f:param name="grupo" value="#{grupo.name}" />
+                                                </h:link>    
+                                            </li>
+                                        </ui:repeat> 
+                                        <li class="divider"></li>
+                                        <li><h:form style="padding: 5px">
+                                            #{msg.nuevoGrupo}: <br />
+                                            <h:inputText p:placeholder="#{msg.name}" class="form-control" value="#{groupsBean.name}"  required="true"  />
+                                            <h:inputText p:placeholder="#{msg.image}" class="form-control" value="#{groupsBean.imageUrl}"  required="true" />
+                                            <center><h:commandButton class="btn btn-default form-control" action="#{groupsBean.existeGroup()}" value="#{msg.enviar}"/></center>
+                                            </h:form></li>
+                                    </ul>
+                                </li>
+                                
+                                <!-- Participantes --> 
+                                <ui:fragment rendered="#{view.viewId.contains('group.xhtml')}">
+                                    <li class="dropdown">
+
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-users"></i> #{msg.participants} <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <h:outputText class="no-friends-label2" rendered="#{groupsBean.obtenerMiembrosGrupo().size()==0}" value="#{msg.NoTieneParticipantes}"/>
+                                            <h:outputText class="no-friends-label2" rendered="#{groupsBean.obtenerMiembrosGrupo().size()==1}" value="#{msg.UstedEstaSoloEnElGrupo}"/> 
+                                            <ui:repeat var="miembros" value="#{groupsBean.obtenerMiembrosGrupo()}">
+                                                <li>
+                                                    <h:link value="#{miembros.email}" outcome="userProfile">
+                                                        <f:param name="email" value="#{miembros.email}" />
+                                                    </h:link>
+                                                </li>
+                                            </ui:repeat>
+                                        </ul>
+                                    </li>
+                                </ui:fragment>
+                                
+                                <!-- Amigos --> 
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="fa fa-star"></i> #{msg.friends} <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <h:outputText class="no-friends-label2" rendered="#{friendsBean.friends.size()==0}" value=" #{msg.noTieneAmigos}" />
+                                        <ui:repeat var="friend" value="#{friendsBean.friends}">
+                                            <li>
+                                                <h:link value="#{friend.friendEmail}" outcome="userProfile">
+                                                    <f:param name="email" value="#{friend.friendEmail}" />
+                                                </h:link>
+                                            </li>
+                                        </ui:repeat>
+                                    </ul>
+                                </li>
+                                
+                                <!-- Internalización --> 
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="fa fa-flag"></i> #{msg.idiomas} <b class="caret"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><h:form><h:commandLink value="Español" action="#{internacionalizacionBean.cambiarLocale('es')}"/></h:form></li>
+                                        <li><h:form><h:commandLink value="English" action="#{internacionalizacionBean.cambiarLocale('en')}"/></h:form></li>
+                                        <li><h:form><h:commandLink value="Français" action="#{internacionalizacionBean.cambiarLocale('fr')}"/></h:form></li>
+                                    </ul>
+                                </li>
+                                
+                                <!-- Logout --> 
+                                <li>
+                                    <a href="" onclick="disconnectUser(event, #{sessionBean.accessToken})" ><i class="fa fa-sign-out"></i> #{msg.logout}</a>
+                                </li>      
+                            </ul>
+                            
+                            <!-- Buscar -->
+                            <ul class="nav navbar-right navbar-nav">
+                                <h:form class="form-inline">
+                                    <h:inputText  class="form-control pull-left" value="#{usuarioBean.emailBusqueda}" p:placeholder="#{msg.shearch}"/>
+                                    <h:commandLink  type="submit" action="#{usuarioBean.find()}"  class="btn btn-default pull-right botonbuscar">
+                                        <i class="glyphicon glyphicon-search"/>
+                                    </h:commandLink>
+                                </h:form>
+                            </ul>
+                        </h:panelGroup>
+                    </h:panelGroup>
+                </h:panelGroup>
+
+            </h:panelGroup>
+        </ui:composition>   
+    </body>
+</html>

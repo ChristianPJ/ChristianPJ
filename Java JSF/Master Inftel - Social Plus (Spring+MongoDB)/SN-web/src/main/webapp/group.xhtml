@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"> 
+    <h:head>
+        <f:metadata>
+            <f:viewParam name="grupo" />
+            <f:viewParam name="emailMiembro"/>
+        </f:metadata>          
+    </h:head>
+    <h:body>
+        <ui:composition template="/template/common/plantilla.xhtml">
+            <ui:define name="content">
+                <h:outputFormat>
+                    <f:param name="grupo" value="#{groupsBean.name}" />
+                </h:outputFormat>
+                <h:panelGroup id="masthead" layout="block">  
+                    <h:panelGroup class="container" layout="block">
+                        <h:panelGroup class="row" layout="block">
+                            <h:panelGroup class="col-md-7" layout="block">
+                                <h:panelGroup class="main-story-img" layout="block" >
+                                    <img src="#{groupsBean.imageUrl}" onError="this.onerror=null;this.src='resources/images/nogroup.png';" style="width:200px;height:200px" class="img-circle"/>  
+                                    <h1 class="color-blue">#{groupsBean.name}</h1><br/>
+                                    <h:outputLabel class="participantes color-blue" value="#{groupsBean.obtenerMiembrosGrupo().size()} #{msg.participant}" rendered="#{groupsBean.obtenerMiembrosGrupo().size()==1}" /> 
+                                    <h:outputLabel class="participantes color-blue" value="#{groupsBean.obtenerMiembrosGrupo().size()} #{msg.participants}" rendered="#{groupsBean.obtenerMiembrosGrupo().size()>1}" /> 
+                                </h:panelGroup>
+                            </h:panelGroup>
+                            
+                            <h:panelGroup class="col-md-5" layout="block" >
+                                <h:panelGroup class="main-story-img" layout="block">
+                                    <f:view>
+                                        <h:form id="leave">
+                                            <h:inputHidden value="#{groupsBean.name}" />
+                                            
+                                            
+                                            <h:commandLink action="#{groupsBean.leaveGroup()}" class="btn btn-warning" value="#{msg.dejarGrupo}" >
+                                                                                    <i class="fa fa-user-times"></i>
+                                                                                    
+                                                                                    </h:commandLink>
+                                            
+                                            
+                                        </h:form>
+                                    </f:view>
+                                </h:panelGroup>
+                            </h:panelGroup>
+                        </h:panelGroup>
+                    </h:panelGroup>
+                </h:panelGroup>
+                
+                <h:panelGroup class="container" layout="block">
+                    <h:panelGroup class="row" layout="block">
+                        <h:panelGroup class="col-md-12" layout="block"> 
+                            <h:panelGroup class="panel" layout="block">
+                                <h:panelGroup class="panel-body" layout="block">
+
+                                    <h:outputLabel class="sin-comentarios color-blue" value="#{msg.noTienesComentarios}" rendered="#{comentarioBean.listaComentariosGrupo.size()==0}" /> 
+                                    <h:outputLabel class="color-blue" value="#{comentarioBean.listaComentariosGrupo.size()} #{msg.comment}" rendered="#{comentarioBean.listaComentariosGrupo.size()==1}" /> 
+                                    <h:outputLabel class="color-blue" value="#{comentarioBean.listaComentariosGrupo.size()} #{msg.comments}" rendered="#{comentarioBean.listaComentariosGrupo.size()>1}" /> 
+
+                                    <ui:repeat value="#{comentarioBean.listaComentariosGrupo}" var="comentarioPost">
+                                        <hr>
+                                            
+                                                <h:panelGroup class="row" layout="block">    
+                                                    <br/>
+                                                    <h:panelGroup class="col-md-2 col-sm-3 text-center imagen-y-nombre" layout="block">
+                                                        <h2 class="nombre-comentario">#{comentarioPost.nombre}</h2>
+                                                        <h2 class="apellido-comentario">#{comentarioPost.apellido}</h2>
+                                                        <a class="story-img" href="#">
+                                                            <img src="#{comentarioPost.imagenUsuario}" style="width:100px;height:100px" class="img-circle"/>
+                                                        </a>
+                                                    </h:panelGroup>
+                                                    <h:panelGroup class="col-md-10 col-sm-9" layout="block">
+                                                        <h3>#{comentarioPost.titulo}</h3>
+                                                        <h:panelGroup class="row" layout="block">
+
+                                                            <h:panelGroup class="col-xs-9" layout="block" >
+                                                                <h:panelGroup styleClass="preformatted">
+                                                                    <p>#{comentarioPost.texto}</p><br/>
+                                                                </h:panelGroup>
+                                                                <h:panelGroup id="imagen" rendered="#{!empty comentarioPost.imagen}">
+                                                                    <h:graphicImage class="imagen2"  value="#{comentarioPost.imagen}"  rendered="#{!empty comentarioPost.imagen}"   width="100%" height="100%" /><br/>
+                                                                </h:panelGroup>
+
+                                                                <h:panelGroup  rendered="#{!empty comentarioPost.video}">
+                                                                    <div class="videoWrapper">
+                                                                        <iframe width="540" height="349" src="#{comentarioPost.video}" frameborder="0" allowfullscreen="true" ></iframe>
+                                                                    </div>
+                                                                </h:panelGroup> 
+                                                                <h:panelGroup class="col-xs-9" layout="block" >
+                                                                    <p class="pull-right privadoPublico">
+                                                                        <ui:fragment rendered="#{!comentarioPost.privado}">
+                                                                            <span class="label label-default" >#{msg.public}</span>
+                                                                        </ui:fragment>
+                                                                        <ui:fragment rendered="#{comentarioPost.privado}">
+                                                                            <span class="label label-default" >#{msg.Privado}</span>
+                                                                        </ui:fragment>
+
+                                                                    </p>
+                                                                    <ul class="list-inline fecha" >
+                                                                        <li>#{comentarioPost.fecha}</li>
+                                                                    </ul>
+                                                                </h:panelGroup>
+                                                                <h:panelGroup class="col-xs-3"></h:panelGroup>
+                                                            </h:panelGroup>
+                                                            <br/><br/>
+                                                        </h:panelGroup>
+                                                    </h:panelGroup>
+                                                </h:panelGroup>
+                                            
+                                        </hr>
+                                    </ui:repeat>
+                                </h:panelGroup>
+                            </h:panelGroup>                                         
+                        </h:panelGroup>
+                    </h:panelGroup>
+                </h:panelGroup>
+
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
