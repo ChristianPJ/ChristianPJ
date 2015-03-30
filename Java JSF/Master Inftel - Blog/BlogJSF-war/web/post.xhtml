@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+    
+    <h:head>
+        <f:metadata>
+            <f:viewParam name="id" />
+        </f:metadata>
+    </h:head>
+    
+    <h:body>
+        <ui:composition template="WEB-INF/templates/default-layout.xhtml">
+            <ui:define name="css">
+                <ui:include src="WEB-INF/includes/default-css.xhtml" />
+                <h:outputStylesheet library="css" name="maps.css" />
+                <h:outputStylesheet library="css" name="galeria.css" />
+                <h:outputStylesheet library="js-lib-responsive-carousel" name="responsive-carousel.css" />
+                <h:outputStylesheet library="js-lib-responsive-carousel" name="responsive-carousel.slide.css" />
+                <h:outputStylesheet library="css" name="post.css" />
+            </ui:define>
+
+             <ui:define name="content">
+                <h:panelGroup id="content" layout="block">
+                    <div class="post">
+                        <h2 class="title">#{postBean.titulo}</h2>
+                        <div class="meta">
+                            <span class="date">
+                                <h:outputText value="#{postBean.fechaCreacion}">
+                                    <f:convertDateTime type="both" dateStyle="short" timeStyle="short" ></f:convertDateTime>
+                                </h:outputText>
+                            </span>
+                                <span class="posted">#{msgs['escrito-por']} 
+                                    <h:link outcome="busqueda" value="#{postBean.autorPost.username}">
+                                        <f:param name="username" value="#{postBean.autorPost.username}" />
+                                    </h:link>
+                                </span>
+                        </div>
+                        <div class="entry">
+                            
+                            <ui:fragment rendered="#{not empty postBean.imagenes}">
+                                <h:panelGroup styleClass="carousel" layout="block">
+                                    <ui:repeat var="f" value="#{postBean.imagenes}">
+                                        <h:panelGroup styleClass="placeholder" layout="block">
+                                            <p:graphicImage value="#{imagenesPostBean.postImage}" cache="false">
+                                                <f:param name="idImagen" value="#{f.id}" />
+                                            </p:graphicImage>
+                                        </h:panelGroup>
+                                    </ui:repeat>
+                                </h:panelGroup>
+                            </ui:fragment>
+                            
+                            <div class="entry">
+                                <ui:repeat var="linea" value="#{postBean.parrafosPost}">
+                                    <h:outputText value="#{linea}"></h:outputText><br />
+                                </ui:repeat>
+                            </div>
+                            
+                            <div id="mapitas">
+                                <ui:fragment rendered="#{not empty postBean.mapa}">
+                                    <h:form>
+                                        <h:inputHidden id="latitud" value="#{postBean.latitud}"/><br />
+                                        <h:inputHidden id="longitud" value="#{postBean.longitud}"/><br />
+                                        <div id="map-canvas"></div>
+                                    </h:form>
+                                </ui:fragment>
+                            </div>
+                            
+                            <div class="etiquetas">
+                               <ui:fragment rendered="#{not empty postBean.listaEtiquetas}">
+                                        #{msgs["etiquetas"]}:
+                                        <ui:repeat var="e" value="#{postBean.listaEtiquetas}">
+                                            <h:link outcome="busqueda" value="#{e.nombre}">
+                                                <f:param name="etiqueta" value="#{e.nombre}" />
+                                            </h:link>,
+                                        </ui:repeat>
+                                    </ui:fragment>
+                            </div>
+                        </div>
+                        <ui:fragment rendered="#{postView.post.fechaCreacion != postView.post.fechaModificacion}">
+                            <span class="date mod-date">#{msgs['ultima-modificacion']} 
+                            <h:outputText value="#{postBean.fechaModificacion}">
+                                <f:convertDateTime type="both" dateStyle="short" timeStyle="short" ></f:convertDateTime>
+                            </h:outputText>
+                            </span>
+                        </ui:fragment>
+                        <div class="botones-post">
+                            <ui:fragment rendered="#{not empty usuarioBean.usuario and usuarioBean.usuario.tipo == 0}">
+                                <h:form>
+                                    <h:commandLink value="#{msgs['borrar']}" action="#{postBean.borrarPost()}" styleClass="button botonBorrarPost" />
+                                </h:form>
+                            </ui:fragment>
+                            <ui:fragment rendered="#{not empty usuarioBean.usuario and usuarioBean.usuario.tipo == 1 and usuarioBean.usuario.id == postBean.post.usuarioId.id}">
+                                <div class="botonEditarPost" id="post-${postBean.post.id}">
+                                    <h:link outcome="editarPost" value="#{msgs['editar']}" styleClass="button botonBorrarPost">
+                                        <f:param name="id" value="#{postBean.post.id}" />
+                                    </h:link>
+                                </div>
+                           </ui:fragment>
+                        </div>
+                    </div>
+                    <ui:fragment rendered="#{not empty usuarioBean.usuario}">
+                        <ui:fragment rendered="#{usuarioBean.usuario.tipo != 3}"> 
+                            <div class="post">
+                                <div class="entry">
+                                    <h:form >
+                                        <label>#{msgs['comentario']}</label>
+                                        <h:inputTextarea pt:placeholder="Inserte comentario" value="#{postBean.comentariosTexto}" rows="10" cols="15" id="entrada" styleClass="form-item"/>  
+                                        <h:commandButton action="#{postBean.crearComentario()}" value="#{msgs['btn-guardar']}" styleClass="button form-item form-submit-button boton-crear-comentario" />
+                                    </h:form>
+                                </div>
+                            </div>
+                        </ui:fragment>
+                    </ui:fragment>
+                    <ui:fragment rendered="#{not empty usuarioBean.usuario}">
+                        <ui:fragment rendered="#{(postBean.post.comentarioCollection.size()) > 0}">
+                            <div class="post">
+                                <h:panelGroup class="entry" id="comentarios" layout="block">
+                                    <ui:repeat var="comentario" value="#{postBean.listaComentarios}">
+                                        <li id="commentBody">
+                                            <ui:fragment rendered="#{usuarioBean.usuario.tipo == 0}">
+                                                <div class="botonBorrarComentario" id="comentario-#{comentario.id}">
+                                                    <h:form>
+                                                        <h:commandButton value="#{msgs['borrar']}" class="button" >
+                                                            <f:param name="idComentario" value="#{comentario.id}" />
+                                                            <f:ajax execute="@form" render=":comentarios" listener="#{postBean.borrarComentario()}"/>
+                                                        </h:commandButton>       
+                                                    </h:form>
+                                                </div>
+                                            </ui:fragment>
+                                            <div class="useravatar">
+                                                <div id="avatar-comentario">
+                                                    <p:graphicImage value="#{usuarioBean.streamedAvatarIdUsuario}" cache="false">
+                                                        <f:param name="idUsuario" value="#{comentario.usuarioId.id}" />
+                                                    </p:graphicImage>
+                                                </div>
+                                                <div class="metadata-comentario">
+                                                    <h3 class="title2" >
+                                                        <h:link outcome="busqueda" value="#{comentario.usuarioId.username}">
+                                                            <f:param name="username" value="#{comentario.usuarioId.username}" />
+                                                        </h:link>
+                                                    </h3>
+                                                    <div class="fechaComentario">
+                                                        <h:outputText value="#{comentario.fechaCreacion}">
+                                                            <f:convertDateTime type="both" dateStyle="short" timeStyle="short" ></f:convertDateTime>
+                                                        </h:outputText>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mostrarcomentario" >#{comentario.texto}</div>
+                                            <hr />
+                                        </li>
+                                    </ui:repeat>
+                                </h:panelGroup>
+                            </div>
+                        </ui:fragment>
+                    </ui:fragment>
+                </h:panelGroup>
+            </ui:define>
+            
+            <ui:define name="footer">
+                <div id="footer">
+                <div id="barra-idiomas">
+                    <h:form>
+                        <h:commandButton action="#{idiomaBean.cambiarIdioma('es_ES')}" value="Español" styleClass="button button-idioma" >
+                            <f:param name="id" value="#{id}" />
+                        </h:commandButton>
+                        <h:commandButton action="#{idiomaBean.cambiarIdioma('en_UK')}" value="English" styleClass="button button-idioma" >
+                            <f:param name="id" value="#{id}" />
+                        </h:commandButton>
+                    </h:form>
+                </div>
+                <p>María Expósito, Alfredo Gallego, Christian Pareja y Miguel Vicente</p>
+            </div>
+            </ui:define>
+            
+            <ui:define name="scripts">
+                <ui:include src="WEB-INF/includes/default-scripts.xhtml" />
+                
+                <!-- Si el post contiene mas de 1 imagen, agregamos atributos al carousel para que funcione en modo bucle -->
+                <!-- Estos atributos hay que agregarlos con JavaScript porque JSF no permite agregar atributos personalizados de HTML5 -->
+                <ui:fragment rendered="#{postBean.imagenes.size() gt 1}">
+                    <script>
+                        $(function () {
+                            var $carousel = $('.carousel').first();
+                            $carousel.attr('data-transition', 'slide');
+                            $carousel.attr('data-autoplay', '');
+                            $carousel.attr('data-loop', 'true');
+                        });
+                    </script>
+                </ui:fragment>
+                
+                <script>
+                    $(function () {
+                        pintarMapa();
+                    });
+                </script>
+                <h:outputScript library="js" name="create.js" />
+                <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>    
+                <h:outputScript library="js" name="maps.js" />
+                <h:outputScript library="js" name="comentarios.js" />
+                <h:outputScript library="js-lib-responsive-carousel" name="responsive-carousel.js" />
+                <h:outputScript library="js-lib-responsive-carousel" name="responsive-carousel.loop.min.js" />
+                <h:outputScript library="js-lib-responsive-carousel" name="responsive-carousel.autoplay.js" />
+                <h:outputScript library="js" name="galeria.js" />
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <h:body>
+        <ui:composition template="WEB-INF/templates/default-layout.xhtml">
+            <ui:define name="content">
+                <div id="content">
+                    <ui:repeat var="postSummary" value="#{indexBean.currentPagePostSummaries}">
+                        <div class="post">
+                            <h2 class="title">
+                                <h:link outcome="post" value="#{postSummary.titulo}">
+                                    <f:param name="id" value="#{postSummary.id}" />
+                                </h:link>
+                            </h2>
+                            <div class="meta">
+                                <span class="date">
+                                    <h:outputText value="#{postSummary.fechaCreacion}">
+                                        <f:convertDateTime type="both" dateStyle="short" timeStyle="short" />
+                                    </h:outputText>
+                                </span>
+                                <span class="posted">#{msgs["escrito-por"]} 
+                                    <h:link outcome="busqueda" value="#{postSummary.username}">
+                                        <f:param name="username" value="#{postSummary.username}" />
+                                    </h:link>
+                                </span>
+                            </div>
+                            <div class="entry">
+                                <ui:repeat var="p" value="#{postSummary.parrafos}">
+                                    <p>${p}</p>
+                                </ui:repeat>
+                                <div class="links">
+                                    <h:link outcome="post" value="#{msgs['leer-mas']}" styleClass="button more">
+                                        <f:param name="id" value="#{postSummary.id}" />
+                                    </h:link>
+                                </div>
+                                <div class="etiquetas">
+                                    <ui:fragment rendered="#{not empty postSummary.listEtiqueta}">
+                                        #{msgs["etiquetas"]}:
+                                        <ui:repeat var="e" value="#{postSummary.listEtiqueta}">
+                                            <h:link outcome="busqueda" value="#{e.nombre}">
+                                                <f:param name="etiqueta" value="#{e.nombre}" />
+                                            </h:link>,
+                                        </ui:repeat>
+                                    </ui:fragment>
+                                </div>     
+                            </div>
+                        </div>
+                    </ui:repeat>
+                    <div class="pagination-container">
+                        <div class="pagination">
+                            <h:form>
+                                <h:commandButton action="#{indexBean.obtainFirstPagePosts()}" value="&laquo;" styleClass="pagination-button first" />
+                                <h:commandButton action="#{indexBean.obtainPreviousPagePosts()}" value="&lsaquo;" styleClass="pagination-button previous" />
+                                <h:inputText readonly="readonly" value="#{indexBean.currentPage}" styleClass="pagination-field" />/
+                                <h:inputText readonly="readonly" value="#{indexBean.lastPage}" styleClass="pagination-field" />
+                                <h:commandButton action="#{indexBean.obtainNextPagePosts()}" value="&rsaquo;" styleClass="pagination-button next" />
+                                <h:commandButton action="#{indexBean.obtainLastPagePosts()}" value="&raquo;" styleClass="pagination-button last" />
+                            </h:form>
+                        </div>
+                    </div>
+                </div>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>

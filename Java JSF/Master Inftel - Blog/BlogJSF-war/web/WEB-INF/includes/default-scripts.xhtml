@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    
+    <h:body>
+        <ui:composition>
+            <h:outputScript library="js-lib-jquery" name="jquery-1.10.2.js" />
+            <ui:fragment rendered="#{idiomaBean.locale == 'es_ES'}">
+                <h:outputScript library="js" name="archivo_messages_es_ES.js" />
+            </ui:fragment>
+            <ui:fragment rendered="#{idiomaBean.locale == 'en_UK'}">
+                <h:outputScript library="js" name="archivo_messages_en_UK.js" />
+            </ui:fragment>
+            <h:outputScript library="js" name="archivo.js" />
+        </ui:composition>
+    </h:body>
+</html>
+

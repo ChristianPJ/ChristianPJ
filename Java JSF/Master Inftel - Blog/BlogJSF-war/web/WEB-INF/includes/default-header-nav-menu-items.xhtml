@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    
+    <h:body>
+        <ui:composition>
+            <li><h:link styleClass="button button-nav current-page-item" outcome="index">#{msgs["btn-inicio"]}</h:link></li>
+
+            <ui:fragment rendered="#{empty usuarioBean.usuario}">
+                <li><h:link styleClass="button button-nav" outcome="login">#{msgs["btn-identificarse"]}</h:link></li>
+                <li><h:link styleClass="button button-nav" outcome="registro">#{msgs["btn-registrarse"]}</h:link></li>
+            </ui:fragment>
+            <ui:fragment rendered="#{not empty usuarioBean.usuario}">
+                <ui:fragment rendered="#{usuarioBean.usuario.tipo == 0}">
+                    <li><h:link styleClass="button button-nav" outcome="admin">#{msgs["btn-admin"]}</h:link></li>
+                </ui:fragment>
+                <ui:fragment rendered="#{usuarioBean.usuario.tipo == 1}">
+                    <li><h:link styleClass="button button-nav" outcome="crearPost">#{msgs["btn-crear-entrada"]}</h:link></li>
+                </ui:fragment>
+                <ui:fragment rendered="#{usuarioBean.usuario.tipo != 3}">
+                    <li><h:link styleClass="button button-nav" outcome="perfil">#{msgs["btn-editar-perfil"]}</h:link></li>
+                </ui:fragment>
+                <li>
+                    <h:form>
+                        <h:commandButton value="#{msgs['btn-desconectarse']}" action="#{usuarioBean.logout()}" styleClass="button button-nav" />
+                    </h:form>
+                </li>
+            </ui:fragment>
+        </ui:composition>
+    </h:body>
+</html>
+

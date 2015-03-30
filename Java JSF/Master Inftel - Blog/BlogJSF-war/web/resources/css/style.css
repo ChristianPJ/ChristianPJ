@@ -1,0 +1,685 @@
+/*
+Original design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #050505 url(../resources/images/img01.jpg) repeat;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #5B5B5B;
+}
+
+h1, h2, h3 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 200;
+    color: #222222;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.8em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+p, ul, ol {
+    margin-top: 0;
+    line-height: 180%;
+}
+
+a {
+    color: #5E5E5E;
+}
+
+.clear {
+    position: relative;
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+hr{
+    height: 3px;
+    background-color: #B0C4DE;
+    margin-bottom: 20px;
+}
+.button {
+    display: block;
+    float: left;
+    width: 88px;
+    padding: 5px 5px;
+    background: #222222;
+    color: #FFFFFF;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+}
+
+.button:hover {
+    background: #5F5F5F;
+    cursor: pointer;
+}
+
+.pagination-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pagination {
+    width: auto;
+}
+
+.pagination-button {
+    padding: 5px 10px;
+    background: #222222;
+    color: #FFFFFF;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    font-size: 110%;
+}
+
+.pagination-field {
+    width: 30px;
+    margin: 5px 10px;
+    text-align: center;
+}
+
+.entry p {
+    margin-bottom: 5px;
+}
+
+.etiquetas {
+    margin-top: 60px;
+}
+
+.comentbody{
+    background: #FFF;
+    border: 1px solid #5E5E5E;
+    color: #222;
+    display: inline-block;
+    font-family: arial;
+    font-size: 13px;
+    padding: 5px 2px 2px 5px;
+    vertical-align: top;
+    width: 100%;
+    box-sizing: border-box;
+}
+.mostrarcomentario{
+    margin-top: 20px;
+    color: #222;
+    font-family: arial;
+    font-size: 13px;
+    padding: 5px 2px 2px 5px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+
+}
+.useravatar{
+    overflow: hidden;
+}
+
+.form-item {
+    line-height: 150%;
+    margin: 5px 0;
+}
+
+.form-item:first-child {
+    margin-top: 5px;
+}
+
+.form-item:nth-child(even) {
+    margin-bottom: 20px;
+}
+
+.form-item,
+.error,
+.error-message {
+    float: left;
+    clear: both;
+    width: 99%;
+}
+
+.form-submit-button {
+    height: 30px;
+    margin-top: 15px;
+}
+
+.entry {
+    overflow-x: inherit;
+    overflow-y: hidden;
+}
+
+.error,
+.error-message {
+    color: #FF0000;
+}
+
+#wrapper {
+    background: #FFFFFF url(../resources/images/img05.jpg) repeat;
+}
+
+#avatar-perfil {
+    text-align: center;
+}
+
+#avatar-perfil img {
+    width: 80%;
+}
+
+#avatar-perfil-preview {
+    text-align: center;
+}
+
+#avatar-perfil-preview img {
+    width: 40%;
+}
+
+#avatar-comentario img{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.no-float {
+    float: none;
+}
+
+.campo-busqueda {
+    width: 97%;
+}
+
+.boton-buscar {
+    width: 100%;
+}
+
+
+/* Header */
+
+#header-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+#header-wrapper,
+#page {
+    width: 100%;
+}
+
+/* Logo */
+
+#logo {
+    float: left;
+}
+
+#logo h1 {
+    line-height: 120px;
+    letter-spacing: -2px;
+    font-size: 3.8em;
+}
+
+#logo a {
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* Menu */
+
+#menu {
+    float: left;
+    width: 100%;
+    padding: 0;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 20px 0px 0px 0px;
+    list-style: none;
+    line-height: normal;
+}
+
+#menu li {
+    float: left;
+    width: 32%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#menu li a {
+    height: 100%;
+}
+
+.button-nav {
+    width: auto;
+    min-width: 120px;
+    padding: 20px 10px 20px 10px;
+    margin-right: 1px;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0,0,0,.2);
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #1F1F1F;
+    background-color: transparent;
+    border: none;
+    margin:  0 auto;
+    float:  none;
+}
+
+#menu a,
+#menu input {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button-nav:hover,
+#menu .current-page-item {
+    background: url(../resources/images/img01.jpg) repeat;
+    color: #FFFFFF;
+}
+
+#menu a:hover,
+#menu input:hover,
+#menu .current-page-item a {
+    color: #FFFFFF;
+}
+
+@media only screen and (min-width: 768px) {
+    #menu {
+        float: left;
+        width: 100%;
+        padding: 0;
+    }
+
+    #menu ul {
+        margin: 0;
+        padding: 20px 0px 0px 0px;
+        list-style: none;
+        line-height: normal;
+    }
+
+    #menu li {
+        float: left;
+        /* width: 33%; */
+
+        /* margin: 0 auto; */
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #menu {
+        float: right;
+        width: auto;
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    #menu ul {
+        float: right;
+        margin: 0;
+        padding: 20px 0px 0px 0px;
+        list-style: none;
+        line-height: normal;
+    }
+
+    #menu li {
+        float: left;
+        width: auto;
+    }
+}
+
+
+/* Banner */
+
+#banner {
+    float: left;
+    clear: both;
+    padding-top: 10px;
+}
+
+#banner img {
+    width: 100%;
+}
+
+
+/* Page */
+
+#page {
+    width: 100%;
+    padding: 30px 0px;
+}
+
+
+/* Content */
+
+#content {
+    float: left;
+    width: 100%;
+    padding: 0;
+}
+
+.post {
+    overflow: hidden;
+    padding: 30px 30px 20px 30px;
+    margin-bottom: 20px;
+    margin-top:  20px;
+    border: 1px solid #E7EBED;
+    background: #FFF;
+}
+
+.post .title {
+    padding: 7px 0px 0px 0px;
+    letter-spacing: -1px;
+}
+
+.post .title a {
+    border: none;
+    text-decoration: none;
+    color: #222222;
+}
+.post .title2 {
+    float:left;
+    padding: 7px 0px 0px 0px;
+    letter-spacing: -1px;
+}
+
+.post .title2 a {
+    border: none;
+    float: left;
+    text-decoration: none;
+    color: #222222;
+}
+
+.metadata-comentario {
+    float: left;
+    margin-left: 40px;
+}
+
+.post .fechaComentario {
+    padding: 10px 0px 0px 0px;
+    letter-spacing: -1px;
+    clear: both;
+}
+
+.post .fechaComentario a {
+    border: none;
+    text-decoration: none;
+    color: #222222;
+}
+
+.post .meta {
+    margin-bottom: 50px;
+    padding: 10px 0px 0px 0px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.post .meta .date {
+    float: left;
+}
+
+.post .meta .posted {
+    float: right;
+}
+
+.post .entry {
+    padding: 0px 0px 40px 0px;
+    text-align: justify;
+}
+
+.links {
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.more {
+    margin-right: 10px;
+}
+
+
+/* Sidebar */
+
+#sidebar {
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+
+#sidebar-content {
+    padding: 30px 50px 30px 50px;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#sidebar li ul {
+    padding-bottom: 0px;
+}
+
+#sidebar li li {
+    overflow: hidden;
+    line-height: 30px;
+    margin: 0px 0px;
+    border-left: none;
+}
+
+#sidebar li li span {
+    display: block;
+    margin-top: -20px;
+    padding: 0;
+    font-size: 10px;
+    font-style: italic;
+}
+
+#sidebar li li a {
+    padding: 0px 0px 0px 10px;
+    // background: url(../images/img04.jpg) no-repeat left 50%;
+}
+
+#sidebar h2 {
+    height: 38px;
+    padding: 0px 0px 8px 0px;
+    letter-spacing: -.5px;
+    font-size: 1.8em;
+    color: #222222;
+}
+
+#sidebar p {
+    padding: 0;
+    margin: 0px 30px 20px 30px;
+}
+
+#sidebar a {
+    border: none;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+}
+
+#sidebar-content > ul > li {
+    margin-bottom: 40px;
+}
+
+#sidebar-content > ul > li {
+    margin-bottom: 40px;
+}
+
+.archive-year-entry,
+.archive-month-entry,
+.archive-title-entry {
+    cursor: pointer;
+}
+
+.archive-year-entry > p,
+.archive-month-entry > p,
+.archive-title-entry {
+    margin: 0 !important;
+    padding: 0px 0px 0px 20px;
+    background: url(../resources/images/img04.jpg) no-repeat left 50%;
+}
+
+.archive-year-entry > p {
+    margin: 0;
+    padding-left: 15px !important;
+}
+
+.archive-month-entry > p {
+    margin: 0;
+    padding-left: 25px !important;
+    background-position-x: 15px;
+}
+
+.archive-title-entry {
+    margin: 0;
+    padding-left: 35px !important;
+    background-position-x: 25px !important;
+}
+
+.archive-months,
+.archive-months-posts {
+    padding-bottom: 0 !important;
+}
+
+
+/* Footer */
+
+#footer {
+    height: 140px;
+    margin: 0 auto;
+    padding: 50px 0 15px 0;
+}
+
+#footer p {
+    margin: 0;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    color: #5E5E5E;
+}
+
+#footer a {
+    color: #5E5E5E;
+}
+
+#barra-idiomas {
+    text-align: center;
+}
+
+.button-idioma {
+    float: none;
+    margin-right: 5px;
+    display: inline;
+    color: #FFFFFF !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .post {
+        border-radius: 8px;
+    }
+
+    #content {
+        float: left;
+        width: 68%;
+        padding: 0;
+    }
+
+    #sidebar {
+        float: right;
+        width: 27%;
+    }
+
+    #sidebar-content {
+        padding: 30px 0px 0px 0px;
+    }
+
+    .post {
+        padding: 50px 50px 30px 50px;
+        border: 1px solid #E7EBED;
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #header-wrapper,
+    #page {
+        margin: 0 auto;
+        width: 1000px;
+        padding: 0;
+    }
+
+    #banner img {
+        border-radius: 8px;
+    }
+}
+
+#trend_etiquetas {
+    margin-top: 0;
+}
+
+.botones-post {
+    overflow: hidden;
+}
+
+#commentBody {
+    list-style: none;
+}
+
+.botonBorrarComentario,
+.botonBorrarPost {
+    position: relative;
+    float: right;
+}
+
+#label-entrada {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ui-widget-content{
+    border: none;
+    background: none;
+}
+
+[class^=ui-tagcloud-strength-] {
+    overflow: visible !important;
+}
+
+[class^=ui-tagcloud-strength-] a {
+    background: none !important;
+    padding: 0 5px !important;
+    font-size: 85%;
+}
+
+[class^=ui-tagcloud-strength-] a.ui-state-hover {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.ui-tagcloud ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}

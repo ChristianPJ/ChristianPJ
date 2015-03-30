@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <h:body>
+        <ui:composition template="WEB-INF/templates/default-layout.xhtml">
+            <ui:define name="content">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title">#{msgs["modificar-datos-usuario"]}</h2>
+                        <div class="entry">
+                            <h:form id="form-perfil" enctype="multipart/form-data">
+                                <label for="password" class="form-item">#{msgs["contraseña"]}</label>
+                                <h:inputSecret value="#{perfilBean.password}" id="password" styleClass="form-item" />
+                                <label for="password2" class="form-item">#{msgs["repetir-contraseña"]}</label>
+                                <h:inputSecret value="#{perfilBean.password2}" id="password2" styleClass="form-item" />
+                                <label for="email" class="form-item">#{msgs["email"]}</label>
+                                <h:inputText value="#{perfilBean.email}" id="email" styleClass="form-item" />
+                                <label for="avatar" class="form-item">#{msgs["avatar"]}</label>
+                                <h:inputFile value="#{perfilBean.avatar}" id="avatar" class="form-item" />
+                                <div id="avatar-perfil-preview">
+                                    <p:graphicImage value="#{usuarioBean.streamedAvatar}" cache="false" />
+                                </div>
+                                <h:commandButton value="#{msgs['btn-modificar']}" action="#{perfilBean.modificarUsuario()}" styleClass="button form-item form-submit-button" />
+                            </h:form>
+                        </div>
+                    </div>
+                </div>
+            </ui:define>
+
+            <ui:define name="scripts">
+                <ui:include src="WEB-INF/includes/default-scripts.xhtml" />
+                
+                <h:outputScript library="js-lib-jquery-validation" name="jquery.validate.min.js" />
+                <h:outputScript library="js-lib-jquery-validation" name="additional-methods.min.js" />
+
+                <ui:fragment rendered="#{idiomaBean.locale == 'es_ES'}">
+                    <h:outputScript library="js-lib-jquery-validation" name="messages_es.min.js" />
+                    <h:outputScript library="js" name="additional-methods_messages_es.js" />
+                </ui:fragment>
+                <h:outputScript library="js" name="perfil.js" />
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>

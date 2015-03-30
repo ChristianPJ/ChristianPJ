@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <h:body>
+        <ui:composition>
+            <div id="sidebar">
+                <div id="sidebar-content">
+                    <ul>
+                        <ui:fragment rendered="#{not empty usuarioBean.usuario}">
+                            <li>
+                                <h2>#{usuarioBean.usuario.username}</h2>
+                                <div id="avatar-perfil">
+                                    <p:graphicImage value="#{usuarioBean.streamedAvatar}" cache="false" />
+                                </div>
+                            </li>
+                        </ui:fragment>
+                        <li>
+                            <h2>#{msgs["buscador"]}</h2>
+                            <h:form>
+                                <h:inputText value="#{sidebarViewBean.cadena}" id="buscador" styleClass="form-item no-float campo-busqueda" />
+                                <h:commandButton action="#{sidebarViewBean.buscarPostsPorTitulo()}" class="button form-item form-submit-button no-float" id="boton-buscar" value="#{msgs['btn-buscar']}" />
+                            </h:form>
+                        </li>                             
+                        <li>
+                            <h2>#{msgs["etiquetas"]}</h2>
+                            <h:form>
+                                <p:tagCloud model="#{etiquetasBean.model}" />
+                            </h:form>
+                        </li>                           
+                        <li>
+                            <h2>#{msgs["archivo"]}</h2>
+                            <ul id="archivo">
+                                <ui:repeat var="yearEntry" value="#{sidebarViewBean.mapToList(sidebarViewBean.postsArchive)}">
+                                    <li class="archive-year-entry">
+                                        <p>#{yearEntry.key}</p>
+                                        <ul class="archive-months hide">
+                                            <ui:repeat var="monthEntry" value="#{sidebarViewBean.mapToList(yearEntry.value)}">
+                                                <li class="archive-month-entry">
+                                                    <p>#{monthEntry.key}</p>
+                                                    <ul class="archive-months-posts hide">
+                                                        <ui:repeat var="post" value="#{monthEntry.value}">
+                                                            <li>
+                                                                <h:link outcome="post" value="#{post.titulo}" styleClass="archive-title-entry">
+                                                                    <f:param name="id" value="#{post.id}" />
+                                                                </h:link>
+                                                            </li>
+                                                        </ui:repeat>
+                                                    </ul>
+                                                </li>
+                                            </ui:repeat>
+                                        </ul>
+                                    </li>
+                                </ui:repeat>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </ui:composition>
+    </h:body>
+</html>
+

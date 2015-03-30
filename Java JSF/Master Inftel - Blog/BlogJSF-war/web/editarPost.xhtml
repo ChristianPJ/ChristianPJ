@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    
+    <h:body>
+        <ui:composition template="WEB-INF/templates/default-layout.xhtml">
+            <ui:define name="css">
+                <ui:include src="WEB-INF/includes/default-css.xhtml" />
+                <h:outputStylesheet library="css" name="maps.css" />
+            </ui:define>
+
+            <ui:define name="content">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title"> #{msg["editar-post"]}</h2>
+                        <div class="entry">
+                            <h:form id="form-editarEntrada" enctype="multipart/form-data">
+                                 <label for="titulo" class="form-item">#{msgs["titulo"]}</label>
+                                <h:inputHidden value="#{postBean.idPost}" id="id"/>
+                                <h:inputText value="#{postBean.titulo}" id="titulo" styleClass="form-item"/>
+                                <label for="entrada" class="form-item">#{msgs["entrada"]}</label>
+                                <h:inputTextarea value="#{postBean.texto}" rows="20" cols="30" id="entrada" styleClass="form-item"/>
+                                <label for="etiquetas" class="form-item">#{msgs["etiquetas"]}</label>
+                                <h:inputText id="etiqueta" size="60" maxlength="60" value="#{postBean.etiqueta}"/>
+                                <h:commandButton value="#{msgs['btn-editar-post']}" action="#{postBean.editarPost()}" styleClass="button form-item form-submit-button"/>
+                            </h:form>
+                        </div>
+                    </div>
+                </div>
+            </ui:define>
+            <ui:define name="scripts">
+                <ui:include src="WEB-INF/includes/default-scripts.xhtml" />
+                <h:outputScript library="js" name="create.js" />
+                <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>    
+                <h:outputScript library="js" name="maps.js" />
+            </ui:define>
+        </ui:composition>
+        </h:body>
+    </html>
+

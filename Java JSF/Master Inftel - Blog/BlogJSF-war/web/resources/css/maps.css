@@ -1,0 +1,24 @@
+#map-canvas{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 40px;
+    width: 100%;
+    height: 350px;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+}
+
+#panel {
+    background-color: #fff;
+    border:0;
+}
+
+#panel input:first-of-type{
+    margin: 5px 0;
+}
+
+#botonBuscar {
+    margin-bottom: 20px;
+}

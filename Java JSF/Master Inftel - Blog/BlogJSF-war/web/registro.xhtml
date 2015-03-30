@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    
+    <h:body>
+        <ui:composition template="WEB-INF/templates/default-layout.xhtml">
+            <ui:define name="header-nav-menu-items">
+                <li><h:link styleClass="button button-nav" outcome="index">#{msgs["btn-inicio"]}</h:link></li>
+                <li><h:link styleClass="button button-nav" outcome="login">#{msgs["btn-identificarse"]}</h:link></li>
+                <li><h:link styleClass="button button-nav current-page-item" outcome="registro">#{msgs["btn-registrarse"]}</h:link></li>
+            </ui:define>
+            
+            <ui:define name="content">
+                <div id="content">
+                    <div class="post">
+                        <h2 class="title">#{msgs["registrarse"]}</h2>
+                        <div class="entry">
+                            <h:form id="form-registro" enctype="multipart/form-data">
+                                <label for="username" class="form-item">#{msgs["usuario"]}</label>
+                                <h:inputText value="#{registroBean.username}" id="username" styleClass="form-item" />
+                                <label for="password" class="form-item">#{msgs["contraseña"]}</label>
+                                <h:inputSecret value="#{registroBean.password}" id="password" styleClass="form-item" />
+                                <label for="password2" class="form-item">#{msgs["repetir-contraseña"]}</label>
+                                <h:inputSecret value="#{registroBean.password2}" id="password2" styleClass="form-item" />
+                                <label for="email" class="form-item">#{msgs["email"]}</label>
+                                <h:inputText value="#{registroBean.email}" id="email" styleClass="form-item" />
+                                <label for="avatar" class="form-item">#{msgs["avatar"]}</label>
+                                <h:inputFile value="#{registroBean.avatar}" id="avatar" class="form-item" />
+                                <h:commandButton value="#{msgs['btn-registrarse']}" action="#{registroBean.registrarUsuario()}" styleClass="button form-item form-submit-button" />
+                            </h:form>
+                            <ui:fragment rendered="${registroBean.errorRegistro == true}">
+                                <p id="error-user-exists" class="error-message">#{msgs["usuario-registrado"]}</p>
+                            </ui:fragment>
+                        </div>
+                    </div>
+                </div>
+            </ui:define>
+            
+            <ui:define name="scripts">
+                <ui:include src="WEB-INF/includes/default-scripts.xhtml" />
+                
+                <h:outputScript library="js-lib-jquery-validation" name="jquery.validate.min.js" />
+                <h:outputScript library="js-lib-jquery-validation" name="additional-methods.min.js" />
+
+                <ui:fragment rendered="#{idiomaBean.locale == 'es_ES'}">
+                    <h:outputScript library="js-lib-jquery-validation" name="messages_es.min.js" />
+                    <h:outputScript library="js" name="additional-methods_messages_es.js" />
+                </ui:fragment>
+                <h:outputScript library="js" name="registro.js" />
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
