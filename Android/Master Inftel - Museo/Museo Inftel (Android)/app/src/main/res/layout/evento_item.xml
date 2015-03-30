@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:padding="5dp"
+    style="@style/item_evento_style">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/eventoImg"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/Imagen_info"
+            android:layout_marginRight="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/titulo_evento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/event_text_color"
+                android:textSize="25sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/labelInicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha inicio: "
+                    style="@style/event_text_color"
+                    android:textSize="10dp"/>
+                <TextView
+                    android:id="@+id/fecha_inicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/event_text_color"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/labelFin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha fin: "
+                    style="@style/event_text_color"
+                    android:textSize="10dp"/>
+
+                <TextView
+                    android:id="@+id/fecha_fin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/event_text_color"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/descripcion_evento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/event_text_color"/>
+            </LinearLayout>
+</LinearLayout>

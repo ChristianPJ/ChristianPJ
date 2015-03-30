@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Museo Inftel</string>
+    <string name="hello_world">Hola Mundo!</string>
+    <string name="action_settings">Opciones</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main_activity2">MainActivity2Activity</string>
+    <string name="title_activity_qr_scan">QrScanActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_gallery">GalleryActivity</string>
+    <string name="title_activity_swipe_views">SwipeViewsActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_fragment_evento">Ultimos eventos</string>
+    <string name="direccion">Paseo del Prado s/n</string>
+    <string name="email"><u>pruebamuseo@gmail.com</u></string>
+    <string name="Titulo">Museo Nacional Del Prado</string>
+    <string name="local">Ver Localización</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="str_next">Siguiente</string>
+    <string name="menu_settings">Opciones</string>
+    <string name="title_activity_dropbox">DropboxActivity</string>
+    <string name="Imagen_info">Imagen_de_obra</string>
+    <string name="idioma">Idioma</string>
+</resources>

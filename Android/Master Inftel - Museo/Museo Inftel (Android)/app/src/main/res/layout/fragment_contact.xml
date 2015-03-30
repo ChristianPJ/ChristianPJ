@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/museo"
+            android:adjustViewBounds="false" />
+        <TextView  android:id = "@+id/Titulo"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "@string/Titulo"
+            android:autoText="false"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+        <TextView  android:id = "@+id/direccion"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:hint = "@string/direccion"
+            android:autoText="false"
+            android:layout_marginLeft="10dp"
+            android:text="@string/direccion"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/email"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:id="@+id/email"
+            android:onClick="sendEmail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:text="@string/local"
+            android:id="@+id/local"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/twitter"
+                android:onClick="sendTwiter"
+                android:layout_marginLeft="10dp"/>
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/facebook"
+                android:onClick="sendFacebook"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
