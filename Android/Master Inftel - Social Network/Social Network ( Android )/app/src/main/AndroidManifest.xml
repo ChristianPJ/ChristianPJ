@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inftel.socialnetwork" >
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/circulo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.LoginActivity"
+
+            android:label="@string/app_name" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_main" >
+
+        </activity>
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                
+
+                <!-- Change this to be db- followed by your app key -->
+                <data android:scheme="db-wrlnff8alvxrujm" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".activity.GooglePlayServicesActivity"
+            android:label="@string/title_activity_google_play_services" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".activity.GroupsListActivity"
+            android:label="@string/title_activity_groups" >
+        </activity>
+        <activity
+            android:name=".activity.NewGroupActivity"
+            android:label="@string/title_activity_new_group" >
+        </activity>
+        <activity
+            android:name=".activity.NewGroupMembersActivity"
+            android:label="@string/title_activity_new_group_members" >
+        </activity>
+        <activity
+            android:name=".activity.GroupActivity"
+            android:label="@string/title_activity_group" >
+        </activity>
+        <activity
+            android:name=".activity.FriendsListActivity"
+            android:label="@string/title_activity_friends_list" >
+        </activity>
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".activity.QRActivity"
+            android:label="@string/title_activity_qr" >
+        </activity>
+        <activity
+            android:name=".activity.FullScreenActivity"
+            android:label="@string/title_activity_full_screen" >
+        </activity>
+        <activity
+            android:name=".activity.CommentActivity"
+            android:label="@string/title_activity_comment" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SearchUserActivity"
+            android:label="@string/title_activity_search_user" >
+        </activity>
+        <activity
+            android:name=".activity.TecladoActivity"
+            android:label="@string/title_activity_teclado" >
+
+        </activity>
+    </application>
+
+</manifest>

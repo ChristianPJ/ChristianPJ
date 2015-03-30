@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Social Network</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="hello">Hello!</string>
+
+    <string name="action_settings">Opciones</string>
+    <string name="action_quit_friend">Quitar amigo</string>
+    <string name="action_add_friend">Añadir amigos</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_group">Grupos</string>
+    <string name="action_new_group">Crear Grupo</string>
+
+    <string name="title_activity_google_play_services">GooglePlayServicesActivity</string>
+    <string name="title_activity_main">Tablón Principal</string>
+    <string name="title_activity_groups">Grupos</string>
+    <string name="title_activity_new_group">Nuevo Grupo</string>
+    <string name="title_activity_new_group_members">Añadir Participantes</string>
+    <string name="title_activity_group">Tablón Grupo</string>
+    <string name="title_create_post">Crear Post</string>
+    <string name="title_activity_friends_list">Lista de Amigos</string>
+    <string name="title_activity_profile">Tablón Perfil</string>
+    <string name="title_keyboard">Teclado</string>
+    <string name="title_activity_full_screen">Full Screen</string>
+    <string name="title_activity_comment">Crear Comentario</string>
+    <string name="title_activity_teclado">Teclado</string>
+    <string name="title_activity_search_user">Búsqueda</string>
+    <string name="title_activity_qr">QR</string>
+
+    <string name="confirm">Confirmar</string>
+    <string name="verificar_comentario_insertado">Comentario insertado</string>
+    <string name="error_comentario">Error: comentario no insertado</string>
+    <string name="message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="icon_desc">Icon</string>
+    <string name="leave_group">dejar grupo</string>
+    <string name="save">guardar</string>
+    <string name="cancel">cancelar</string>
+    <string name="no_results">No Results</string>
+    <string name="video">video</string>
+    <string name="search_user_hint">Buscar</string>
+
+    <string name="error_grupo">error grupo</string>
+    <string name="error_grupo_existe">error grupo existe</string>
+    <string name="error_eliminar_grupo">Error: no se pudo eliminar el grupo</string>
+    <string name="error_usuario_no_existe">Error: Usuario no existe</string>
+    <string name="error_eliminar_amigo">Error: no se pudo elimiar amigo</string>
+    <string name="error_anadir_amigo_">Error: no se pudo añadir amigo</string>
+
+    <string-array name="nav_options">
+        <item>Perfil</item>
+        <item>Comentar</item>
+        <item>Amigos</item>
+        <item>Grupos</item>
+        <item>QR</item>
+    </string-array>
+    <array name="navigation_iconos">
+        <item>@drawable/ic_action_user</item>
+        <item>@drawable/ic_action_labels</item>
+        <item>@drawable/ic_action_star</item>
+        <item>@drawable/abc_ic_voice_search_api_mtrl_alpha</item>
+        <item>@drawable/abc_ic_menu_selectall_mtrl_alpha</item>
+    </array>
+
+</resources>

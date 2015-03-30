@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/icono"
+        android:src="@drawable/blank_avatar"/>
+
+    <!--***********************-->
+    <!--*** TOOLBAR LAYOUT ****-->
+    <!--***********************-->
+
+    <TextView android:id="@+id/title"
+              android:padding="20dip"
+              android:focusable="false"
+              android:focusableInTouchMode="false"
+              android:layout_width="264dp"
+              android:layout_height="wrap_content"
+
+              android:ellipsize="marquee"
+              android:singleLine="true"
+              android:layout_toRightOf="@+id/icono"/>
+
+
+
+    <TextView android:id="@+id/fecha"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="300dp"
+
+        android:textSize="10dp"/>
+
+    <TextView android:id="@+id/grupo"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="300dp"
+
+        android:textSize="10dp"/>
+
+
+</RelativeLayout>
+    <LinearLayout android:id="@+id/toolbar"
+          android:layout_marginBottom="-50dip"
+          android:visibility="gone"
+          android:orientation="vertical"
+          android:layout_height="match_parent"
+          android:layout_width="match_parent">
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="12dp"
+            android:textColor="#444444"
+            android:layout_below="@+id/icono"
+            android:text="@string/message"
+            />
+
+
+
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="80dp"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:id="@+id/imagenc"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/text"
+            android:visibility="gone"
+            />
+
+  <Button
+      android:layout_width="60dp"
+      android:layout_height="40dp"
+      android:layout_marginLeft="150dp"
+      android:focusable="false"
+      android:layout_marginTop="10dp"
+      android:focusableInTouchMode="false"
+      android:visibility="gone"
+      android:layout_toRightOf="@+id/text"
+      android:background="@drawable/youtube"
+      android:id="@+id/bvideo"/>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

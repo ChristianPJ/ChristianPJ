@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.inftel.socialnetwork.activity.GroupActivity"
+    >
+
+
+
+    <item android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_action_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+
+    <item android:id="@+id/action_add_friend"
+        android:icon="@drawable/invite"
+        android:title="@string/action_add_friend"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_leave_group"
+        android:icon="@drawable/stop"
+        android:title="@string/leave_group"
+        app:showAsAction="always" />
+
+
+
+</menu>

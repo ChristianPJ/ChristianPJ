@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:id="@+id/imagefondo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/prueba2" />
+
+        <TextView android:id="@+id/nombre"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="50dp"
+            android:text="nombre"
+            android:layout_toRightOf="@+id/imagen"
+            android:textSize="28dp"/>
+
+        <ImageView
+            android:layout_marginTop="15dip"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imagen"
+            android:layout_marginBottom="30dip"
+            android:layout_marginLeft="30dip"
+            android:src="@drawable/blank_avatar"/>
+
+        <ListView android:id="@+id/comentList"
+            android:layout_below="@+id/imagefondo"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"/>
+
+    </RelativeLayout>
+    <!-- The navigation drawer -->
+    <ListView android:id="@+id/listaNav"
+        android:layout_width="200dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#2E2E2E"
+        android:dividerHeight="2dp"
+        android:background="#424242"
+        android:textColor="#424242"
+        />
+</android.support.v4.widget.DrawerLayout>
+
+

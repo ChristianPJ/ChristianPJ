@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.inftel.socialnetwork.activity.ProfileActivity">
+
+
+
+    <item android:id="@+id/action_search"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_action_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+
+    <item android:id="@+id/action_quit_amigo"
+        android:icon="@drawable/blocked_user"
+        android:title="@string/action_add_friend"
+        app:showAsAction="always"
+        android:visibility="gone"/>
+
+
+    <item android:id="@+id/action_add_amigo"
+        android:icon="@drawable/invite"
+        android:title="@string/action_quit_friend"
+        app:showAsAction="always"
+        android:visibility="gone"/>
+</menu>
