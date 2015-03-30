@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C15CAAA1A66F29C00599899 /* IRRecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C15CAA91A66F29C00599899 /* IRRecipeDetailViewController.m */; };
+		4C15CAAD1A6732AA00599899 /* IRLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C15CAAC1A6732AA00599899 /* IRLoginViewController.m */; };
+		4CC812241A69BE6800CB9162 /* inicio.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC812231A69BE6800CB9162 /* inicio.png */; };
+		4CC812261A69C42200CB9162 /* Comer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CC812251A69C42200CB9162 /* Comer.jpg */; };
+		4CFD9CA91A68A3CE000B23FE /* IRIngredientsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD9CA81A68A3CE000B23FE /* IRIngredientsTableViewController.m */; };
+		7CAC71B51A669E3500892E4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAC71B41A669E3500892E4F /* main.m */; };
+		7CAC71B81A669E3500892E4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAC71B71A669E3500892E4F /* AppDelegate.m */; };
+		7CAC71BE1A669E3600892E4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CAC71BC1A669E3600892E4F /* Main.storyboard */; };
+		7CAC71C01A669E3600892E4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CAC71BF1A669E3600892E4F /* Images.xcassets */; };
+		7CAC71C31A669E3600892E4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CAC71C11A669E3600892E4F /* LaunchScreen.xib */; };
+		7CAC71CF1A669E3600892E4F /* iRecipeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAC71CE1A669E3600892E4F /* iRecipeTests.m */; };
+		850CA8E71A67E5E100320FA5 /* IRRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 850CA8E61A67E5E100320FA5 /* IRRecipe.m */; };
+		850CA8EA1A68126900320FA5 /* IRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 850CA8E91A68126900320FA5 /* IRPerson.m */; };
+		850CA8ED1A68267E00320FA5 /* IRDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 850CA8EC1A68267E00320FA5 /* IRDataLoader.m */; };
+		850CA8F01A68390900320FA5 /* IRIngredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 850CA8EF1A68390900320FA5 /* IRIngredient.m */; };
+		B560D6C71A66E93800E4E09C /* IRRecipesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B560D6C61A66E93800E4E09C /* IRRecipesTableViewController.m */; };
+		B560D6CA1A66E97500E4E09C /* IRAddRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B560D6C91A66E97500E4E09C /* IRAddRecipeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CAC71C91A669E3600892E4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CAC71A71A669E3500892E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CAC71AE1A669E3500892E4F;
+			remoteInfo = iRecipe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C15CAA81A66F29C00599899 /* IRRecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRRecipeDetailViewController.h; sourceTree = "<group>"; };
+		4C15CAA91A66F29C00599899 /* IRRecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRRecipeDetailViewController.m; sourceTree = "<group>"; };
+		4C15CAAB1A6732AA00599899 /* IRLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRLoginViewController.h; sourceTree = "<group>"; };
+		4C15CAAC1A6732AA00599899 /* IRLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRLoginViewController.m; sourceTree = "<group>"; };
+		4CC812231A69BE6800CB9162 /* inicio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inicio.png; sourceTree = "<group>"; };
+		4CC812251A69C42200CB9162 /* Comer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Comer.jpg; sourceTree = "<group>"; };
+		4CFD9CA71A68A3CE000B23FE /* IRIngredientsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRIngredientsTableViewController.h; sourceTree = "<group>"; };
+		4CFD9CA81A68A3CE000B23FE /* IRIngredientsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRIngredientsTableViewController.m; sourceTree = "<group>"; };
+		7CAC71AF1A669E3500892E4F /* iRecipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRecipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CAC71B31A669E3500892E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CAC71B41A669E3500892E4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7CAC71B61A669E3500892E4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7CAC71B71A669E3500892E4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7CAC71BD1A669E3600892E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CAC71BF1A669E3600892E4F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7CAC71C21A669E3600892E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7CAC71C81A669E3600892E4F /* iRecipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iRecipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CAC71CD1A669E3600892E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CAC71CE1A669E3600892E4F /* iRecipeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iRecipeTests.m; sourceTree = "<group>"; };
+		850CA8E51A67E5E100320FA5 /* IRRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRRecipe.h; sourceTree = "<group>"; };
+		850CA8E61A67E5E100320FA5 /* IRRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRRecipe.m; sourceTree = "<group>"; };
+		850CA8E81A68126900320FA5 /* IRPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRPerson.h; sourceTree = "<group>"; };
+		850CA8E91A68126900320FA5 /* IRPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRPerson.m; sourceTree = "<group>"; };
+		850CA8EB1A68267E00320FA5 /* IRDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRDataLoader.h; sourceTree = "<group>"; };
+		850CA8EC1A68267E00320FA5 /* IRDataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRDataLoader.m; sourceTree = "<group>"; };
+		850CA8EE1A68390900320FA5 /* IRIngredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRIngredient.h; sourceTree = "<group>"; };
+		850CA8EF1A68390900320FA5 /* IRIngredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRIngredient.m; sourceTree = "<group>"; };
+		B560D6C51A66E93800E4E09C /* IRRecipesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRRecipesTableViewController.h; sourceTree = "<group>"; };
+		B560D6C61A66E93800E4E09C /* IRRecipesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRRecipesTableViewController.m; sourceTree = "<group>"; };
+		B560D6C81A66E97500E4E09C /* IRAddRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRAddRecipeViewController.h; sourceTree = "<group>"; };
+		B560D6C91A66E97500E4E09C /* IRAddRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRAddRecipeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CAC71AC1A669E3500892E4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CAC71C51A669E3600892E4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CAC71A61A669E3500892E4F = {
+			isa = PBXGroup;
+			children = (
+				7CAC71B11A669E3500892E4F /* iRecipe */,
+				7CAC71CB1A669E3600892E4F /* iRecipeTests */,
+				7CAC71B01A669E3500892E4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CAC71B01A669E3500892E4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CAC71AF1A669E3500892E4F /* iRecipe.app */,
+				7CAC71C81A669E3600892E4F /* iRecipeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CAC71B11A669E3500892E4F /* iRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				4CC812251A69C42200CB9162 /* Comer.jpg */,
+				4CC812231A69BE6800CB9162 /* inicio.png */,
+				7CAC71B61A669E3500892E4F /* AppDelegate.h */,
+				7CAC71B71A669E3500892E4F /* AppDelegate.m */,
+				7CAC71BC1A669E3600892E4F /* Main.storyboard */,
+				B560D6C51A66E93800E4E09C /* IRRecipesTableViewController.h */,
+				B560D6C61A66E93800E4E09C /* IRRecipesTableViewController.m */,
+				B560D6C81A66E97500E4E09C /* IRAddRecipeViewController.h */,
+				B560D6C91A66E97500E4E09C /* IRAddRecipeViewController.m */,
+				7CAC71BF1A669E3600892E4F /* Images.xcassets */,
+				7CAC71C11A669E3600892E4F /* LaunchScreen.xib */,
+				7CAC71B21A669E3500892E4F /* Supporting Files */,
+				4C15CAA81A66F29C00599899 /* IRRecipeDetailViewController.h */,
+				4C15CAA91A66F29C00599899 /* IRRecipeDetailViewController.m */,
+				4C15CAAB1A6732AA00599899 /* IRLoginViewController.h */,
+				4C15CAAC1A6732AA00599899 /* IRLoginViewController.m */,
+				850CA8E51A67E5E100320FA5 /* IRRecipe.h */,
+				850CA8E61A67E5E100320FA5 /* IRRecipe.m */,
+				850CA8E81A68126900320FA5 /* IRPerson.h */,
+				850CA8E91A68126900320FA5 /* IRPerson.m */,
+				850CA8EB1A68267E00320FA5 /* IRDataLoader.h */,
+				850CA8EC1A68267E00320FA5 /* IRDataLoader.m */,
+				850CA8EE1A68390900320FA5 /* IRIngredient.h */,
+				850CA8EF1A68390900320FA5 /* IRIngredient.m */,
+				4CFD9CA71A68A3CE000B23FE /* IRIngredientsTableViewController.h */,
+				4CFD9CA81A68A3CE000B23FE /* IRIngredientsTableViewController.m */,
+			);
+			path = iRecipe;
+			sourceTree = "<group>";
+		};
+		7CAC71B21A669E3500892E4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CAC71B31A669E3500892E4F /* Info.plist */,
+				7CAC71B41A669E3500892E4F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CAC71CB1A669E3600892E4F /* iRecipeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CAC71CE1A669E3600892E4F /* iRecipeTests.m */,
+				7CAC71CC1A669E3600892E4F /* Supporting Files */,
+			);
+			path = iRecipeTests;
+			sourceTree = "<group>";
+		};
+		7CAC71CC1A669E3600892E4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CAC71CD1A669E3600892E4F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CAC71AE1A669E3500892E4F /* iRecipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CAC71D21A669E3600892E4F /* Build configuration list for PBXNativeTarget "iRecipe" */;
+			buildPhases = (
+				7CAC71AB1A669E3500892E4F /* Sources */,
+				7CAC71AC1A669E3500892E4F /* Frameworks */,
+				7CAC71AD1A669E3500892E4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iRecipe;
+			productName = iRecipe;
+			productReference = 7CAC71AF1A669E3500892E4F /* iRecipe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CAC71C71A669E3600892E4F /* iRecipeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CAC71D51A669E3600892E4F /* Build configuration list for PBXNativeTarget "iRecipeTests" */;
+			buildPhases = (
+				7CAC71C41A669E3600892E4F /* Sources */,
+				7CAC71C51A669E3600892E4F /* Frameworks */,
+				7CAC71C61A669E3600892E4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CAC71CA1A669E3600892E4F /* PBXTargetDependency */,
+			);
+			name = iRecipeTests;
+			productName = iRecipeTests;
+			productReference = 7CAC71C81A669E3600892E4F /* iRecipeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CAC71A71A669E3500892E4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "INFTEL 16";
+				TargetAttributes = {
+					7CAC71AE1A669E3500892E4F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					7CAC71C71A669E3600892E4F = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 7CAC71AE1A669E3500892E4F;
+					};
+				};
+			};
+			buildConfigurationList = 7CAC71AA1A669E3500892E4F /* Build configuration list for PBXProject "iRecipe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CAC71A61A669E3500892E4F;
+			productRefGroup = 7CAC71B01A669E3500892E4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CAC71AE1A669E3500892E4F /* iRecipe */,
+				7CAC71C71A669E3600892E4F /* iRecipeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CAC71AD1A669E3500892E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CAC71BE1A669E3600892E4F /* Main.storyboard in Resources */,
+				7CAC71C31A669E3600892E4F /* LaunchScreen.xib in Resources */,
+				7CAC71C01A669E3600892E4F /* Images.xcassets in Resources */,
+				4CC812241A69BE6800CB9162 /* inicio.png in Resources */,
+				4CC812261A69C42200CB9162 /* Comer.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CAC71C61A669E3600892E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CAC71AB1A669E3500892E4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				850CA8E71A67E5E100320FA5 /* IRRecipe.m in Sources */,
+				4C15CAAD1A6732AA00599899 /* IRLoginViewController.m in Sources */,
+				4CFD9CA91A68A3CE000B23FE /* IRIngredientsTableViewController.m in Sources */,
+				B560D6CA1A66E97500E4E09C /* IRAddRecipeViewController.m in Sources */,
+				850CA8ED1A68267E00320FA5 /* IRDataLoader.m in Sources */,
+				B560D6C71A66E93800E4E09C /* IRRecipesTableViewController.m in Sources */,
+				850CA8EA1A68126900320FA5 /* IRPerson.m in Sources */,
+				7CAC71B81A669E3500892E4F /* AppDelegate.m in Sources */,
+				850CA8F01A68390900320FA5 /* IRIngredient.m in Sources */,
+				4C15CAAA1A66F29C00599899 /* IRRecipeDetailViewController.m in Sources */,
+				7CAC71B51A669E3500892E4F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CAC71C41A669E3600892E4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CAC71CF1A669E3600892E4F /* iRecipeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CAC71CA1A669E3600892E4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CAC71AE1A669E3500892E4F /* iRecipe */;
+			targetProxy = 7CAC71C91A669E3600892E4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CAC71BC1A669E3600892E4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CAC71BD1A669E3600892E4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CAC71C11A669E3600892E4F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CAC71C21A669E3600892E4F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CAC71D01A669E3600892E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CAC71D11A669E3600892E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CAC71D31A669E3600892E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iRecipe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7CAC71D41A669E3600892E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = iRecipe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7CAC71D61A669E3600892E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iRecipeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iRecipe.app/iRecipe";
+			};
+			name = Debug;
+		};
+		7CAC71D71A669E3600892E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iRecipeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iRecipe.app/iRecipe";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CAC71AA1A669E3500892E4F /* Build configuration list for PBXProject "iRecipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CAC71D01A669E3600892E4F /* Debug */,
+				7CAC71D11A669E3600892E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CAC71D21A669E3600892E4F /* Build configuration list for PBXNativeTarget "iRecipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CAC71D31A669E3600892E4F /* Debug */,
+				7CAC71D41A669E3600892E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CAC71D51A669E3600892E4F /* Build configuration list for PBXNativeTarget "iRecipeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CAC71D61A669E3600892E4F /* Debug */,
+				7CAC71D71A669E3600892E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CAC71A71A669E3500892E4F /* Project object */;
+}

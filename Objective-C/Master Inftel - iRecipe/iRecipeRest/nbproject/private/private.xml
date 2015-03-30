@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/inftel22/NetBeansProjects/RecipeRest/src/java/es/inftel/reciperest/data/Recipe.java</file>
+            <file>file:/Users/inftel22/NetBeansProjects/RecipeRest/src/java/es/inftel/reciperest/data/Ingredient.java</file>
+            <file>file:/Users/inftel22/NetBeansProjects/RecipeRest/src/java/es/inftel/reciperest/data/service/RecipeFacadeREST.java</file>
+            <file>file:/Users/inftel22/NetBeansProjects/RecipeRest/src/java/es/inftel/reciperest/data/Person.java</file>
+            <file>file:/Users/inftel22/NetBeansProjects/RecipeRest/src/java/es/inftel/reciperest/data/service/PersonFacadeREST.java</file>
+            <file>file:/Users/inftel22/NetBeansProjects/RecipeRest/src/java/es/inftel/reciperest/data/service/PersonHasIngredientFacadeREST.java</file>
+            <file>file:/Users/inftel22/NetBeansProjects/RecipeRest/src/java/es/inftel/reciperest/data/service/IngredientFacadeREST.java</file>
+            <file>file:/Users/inftel22/NetBeansProjects/RecipeRest/src/java/es/inftel/reciperest/data/service/ApplicationConfig.java</file>
+            <file>file:/Users/inftel22/NetBeansProjects/RecipeRest/src/conf/persistence.xml</file>
+        </group>
+    </open-files>
+</project-private>
