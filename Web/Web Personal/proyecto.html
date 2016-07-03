@@ -14,8 +14,267 @@
 	<![endif]-->
 	<script src="js/jquery.carouFredSel-5.5.0-packed.js" type="text/javascript"></script>
 	<script src="js/functions.js" type="text/javascript"></script>
+        
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <style>
+
+        .material-menu { display: none; }
+
+        a { text-decoration: none; }
+
+        #main {
+          width: 100%;
+          display: block;
+          float: left;
+        }
+
+        .material-container {
+          max-width: 1200px;
+          margin: 0 auto;
+          width: 100%;
+        }
+
+        .material-navigation {
+          display: block;
+          margin: 20px 0;
+          background: #009788;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+          border-radius: 3px;
+        }
+
+        .material-navigation ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: block;
+        }
+
+        .material-navigation li {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: inline-block;
+          position: relative;
+          font-size: 17px;
+          color: #def1f0;
+        }
+
+        .material-navigation li a {
+          padding: 10px 15px;
+          font-size: 17px;
+          color: #def1f0;
+          display: inline-block;
+          outline: 0;
+          font-weight: 400;
+        }
+
+        .material-navigation li:hover ul.dropdown { display: block; }
+
+        .material-navigation li ul.dropdown {
+          position: absolute;
+          display: none;
+          width: 200px;
+          background: #00695b;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+          padding-top: 0;
+        }
+
+        .material-navigation li ul.dropdown li {
+          display: block;
+          list-style-type: none;
+        }
+
+        .material-navigation li ul.dropdown li a {
+          padding: 10px;
+          font-size: 15px;
+          color: #fff;
+          display: block;
+          border-bottom: 1px solid #005c4d;
+          font-weight: 400;
+        }
+
+        .material-navigation li ul.dropdown li:last-child a { border-bottom: none; }
+
+        .material-navigation li:hover a {
+          background: #00695b;
+          color: #fff !important;
+        }
+
+        .material-navigation li:first-child:hover a { border-radius: 3px 0 0 3px; }
+
+        .material-navigation li ul.dropdown li:hover a { background: #56b5ae; }
+
+        .material-navigation li ul.dropdown li:first-child:hover a { border-radius: 0; }
+
+        .material-navigation li:hover .arrow-down { border-top: 5px solid #fff; }
+
+
+         @media only screen and (max-width:600px) {
+
+        * {
+          margin: 0;
+          padding: 0;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+
+        .material-menu { display: block; }
+
+        .material-navigation {
+          background: #fff;
+          width: 200px;
+          height: 100%;
+          display: block;
+          position: fixed;
+          left: -200px;
+          top: 0px;
+          transition: left 0.3s linear;
+          margin: 0;
+          border: 0;
+          border-radius: 0;
+          overflow-y: auto;
+          overflow-x: hidden;
+          height: 100%;
+        }
+
+        .material-navigation.visible {
+          left: 0px;
+          transition: left 0.3s linear;
+        }
+
+        .nav_bg {
+          display: inline-block;
+          vertical-align: middle;
+          width: 100%;
+          height: 50px;
+          margin: 0;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          background: #00ACEF;
+          padding: 12px 0 0 10px;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        }
+
+        .nav_bar {
+          display: inline-block;
+          vertical-align: middle;
+          height: 50px;
+          cursor: pointer;
+          margin: 0;
+        }
+
+        .nav_bar span {
+          height: 2px;
+          background: #fff;
+          margin: 5px;
+          display: block;
+          width: 20px;
+        }
+
+        .nav_bar span:nth-child(2) { width: 20px; }
+
+        .nav_bar span:nth-child(3) { width: 20px; }
+
+        .material-navigation ul { padding-top: 50px; }
+
+        .material-navigation li {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: block;
+          position: relative;
+          font-size: 17px;
+          color: #def1f0;
+        }
+
+        .material-navigation li a {
+          display: block;
+          color: #505050;
+          font-weight: 500;
+        }
+
+        .material-navigation li:first-child:hover a { border-radius: 0; }
+
+        .material-navigation li ul.dropdown { position: relative; }
+
+        .material-navigation li ul.dropdown li a {
+          background: #00695b !important;
+          border-bottom: none;
+          color: #fff !important;
+        }
+
+        .material-navigation li:hover a {
+          background: #00ACEF;
+          color: #fff !important;
+        }
+
+        .material-navigation li ul.dropdown li:hover a {
+          background: #56b5ae !important;
+          color: #fff !important;
+        }
+
+        .material-navigation li ul.dropdown li a { padding: 10px 10px 10px 30px; }
+
+        .material-navigation li:hover .arrow-down { border-top: 5px solid #fff; }
+
+        .arrow-down {
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid #505050;
+          position: absolute;
+          top: 20px;
+          right: 10px;
+          content: '';
+        }
+
+        .opacity {
+          background: rgba(0,0,0,0.7);
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+        }
+
+        </style>
+        
+     
+        
+        
 </head>
-<body>
+<body onload="testimonials()">
+    
+<div class="material-container">
+    <div class="material-menu">
+        <nav>
+          <div class="material-navigation">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="proyecto.html">Proyecto</a></li>
+            </ul>
+          </div>
+          <div class="nav_bg">
+            <div class="nav_bar"> <span></span> <span></span> <span></span> </div>
+          </div>
+        </nav>
+    </div>
+    <h1 style="margin-top:50px;"></h1>
+   
+    
+    
+    
 <!-- wrapper -->
 <div id="wrapper">
 	<!-- shell -->
@@ -25,96 +284,39 @@
 			<!-- header -->
 			<header id="header">
 				<section class="titulos">
-					<div class="titulo">
-						<h1 id="logo"><a href="#">Christian</a></h1>
-						<!-- <p>Ingeniero Técnico en Informática de Sistemas</p> -->
-					</div>
-					<div class="idioma">
-						<img src="css/images/spain.png" alt="" />
-						<img src="css/images/denmark.png" alt="" />
-						<img src="css/images/uk.png" alt="" />
-					</div>
+                                    <div class="titulo">
+                                            <h1 id="logo"><a href="index.html">Christian</a></h1>
+                                            <!-- <p>Ingeniero Técnico en Informática de Sistemas</p> -->
+                                    </div>
+                                    <div class="idioma" style="padding-right: 20px; width: 158px;">
+                                        <img src="css/images/spain.png" style="margin-left: 9px;" alt="" />
+                                        <img src="css/images/denmark.png" style="margin-left: 6px;" alt="No disponible / Ikke tilgængelig" title="No disponible / Ikke tilgængelig"/>
+                                        <img src="css/images/uk.png" style="margin-left: 6px;" alt="No disponible / Not available" title="No disponible / Not available"/>
+                                    </div>
 				</section>
 			</header>
 			<!-- end of header -->
 			<!-- navigaation -->
 			<nav id="navigation">
-				<a href="#" class="nav-btn">HOME<span></span></a>
+				<a href="index.html" class="nav-btn">HOME<span></span></a>
 				<ul>
 					<li><a href="index.html">Inicio</a></li>
 					<li><a href="curriculum.html">Curriculum</a></li>
 					<li><a href="servicios.html">Servicios</a></li>
-					<li class="active"><a href="#">Proyecto</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
+					<li class="active"><a href="#">Proyecto PFC</a></li>
+					<!--<li><a href="contacto.html">Contacto</a></li>-->
 				</ul>
 				<div class="cl">&nbsp;</div>
 			</nav>
 			<!-- end of navigation -->
-			<!-- slider-holder -->
-			<div class="slider-holder">
-				
-				<!-- slider -->
-				<div class="slider">
-					<div class="arrs">
-						<a href="#" class="prev-arr"></a>
-						<a href="#" class="next-arr"></a>
-					</div>
-
-					<ul>
-						<li id="img1">
-							<img src="css/images/proyecto/presupuesto.png" alt="" />
-						</li>
-
-						<li id="img2">
-							<img src="css/images/proyecto/vbnet.png" alt="" />
-						</li>
-
-						<li id="img3">
-							<img src="css/images/proyecto/tablas.png" alt="" />
-						</li>
-
-						<li id="img4">
-							<img src="css/images/proyecto/esquemas.png" alt="" />
-						</li>
-						
-						<li id="img5">
-							<img src="css/images/proyecto/esquema.png" alt="" />
-						</li>
-
-						<li id="img6">
-							<img src="css/images/proyecto/inicio.png" alt="" />
-						</li>
-
-						<li id="img7">
-						</li>
-
-						<li id="img8">
-						</li>
-					</ul>
-				</div>
-				<!-- end of slider -->
-
-				<!-- thumbs -->
-				<div id="thumbs2-wrapper">
-					<div id="thumbs2">
-						<a href="#img1" class="selected"><img src="css/images/thumb.png"/></a>
-						<a href="#img2"><img src="css/images/thumb2.png" /></a>
-						<a href="#img3"><img src="css/images/thumb3.png" /></a>
-						<a href="#img4"><img src="css/images/thumb4.png" /></a>
-						<a href="#img5"><img src="css/images/thumb.png"  /></a>
-						<a href="#img6"><img src="css/images/thumb2.png" /></a>
-						<a href="#img7"><img src="css/images/thumb3.png" /></a>
-						<a href="#img8"><img src="css/images/thumb4.png" /></a>
-					</div>
-					<a id="prev" href="#"></a>
-					<a id="next" href="#"></a>
-				</div>
-				<!-- end of thumbs -->
-			</div>
+                        
+                        <div class="central-barra">
+                                <img src="css/images/slider-bar.jpg" alt="" />
+                        </div>
 
 			<!-- main -->
 			<div class="texto">
-				<h2><strong><center><b color:#00acef;>Desarrollo de una Aplicación de Contabilidad para una Empresa de Alimentación</b></center></strong></h2>
+				<h1 class="titulo-proyecto">Desarrollo de una Aplicación de Contabilidad para una Empresa de Alimentación</h1>
 				</br>
 				<p>El proyecto consiste en la elaboración de una aplicación de Contabilidad para
 					una empresa. Este software realizará las tareas básicas exigidas en la economía de una
@@ -144,69 +346,68 @@
 					dispone la empresa, por si nos es de alguna utilidad, así como un estudio posterior
 					para valorar posibles líneas futuras del proyecto.</p></br></br>
 			</div>		
-			<div class="main">
+			
+                        <div class="main">
 
-				<div class="featured">
-					<h4>Descargue la Memoria Completa en PDF.</h4>
-					<a href="#" class="blue-btn">Memoria</a>
-				</div>
-				<section class="entries">
-					<div class="entry">
-						<h3>Últimos Trabajos</h3>
-						<div class="entry-inner">
-							<div class="date">
-								<strong>01</strong>
-								<span>2014</span>
-								<em>jun</em>
-							</div>
-							<div class="cnt">
-								<p><a href="#">Inauguración Página Web</a></p>
-								<p class="meta">Christian Pareja Jensen</p>
-							</div>
-						</div>
-						<div class="entry-inner">
-							<div class="date">
-								<strong>28</strong>
-								<span>2014</span>
-								<em>jan</em>
-							</div>
-							<div class="cnt">
-								<p><a href="#">AAAaaaAAAaaa<br /> BBBbbbBBBbbb</a></p>
-								<p class="meta">Christian Pareja Jensen</p>
-							</div>
-						</div>
-						<div class="entry-inner">
-							<div class="date">
-								<strong>04</strong>
-								<span>2013</span>
-								<em>feb</em>
-							</div>
-							<div class="cnt">
-								<p><a href="#">"Desarrollo de una aplicación de Contabilidad para una empresa de alimentación</a></p>
-								<p class="meta"  style="margin-left : 6.5em;"><b>Christian Pareja Jensen / </br> Universidad de Málaga</b></p>
-							</div>
-						</div>
-					</div>
-					<div class="entry">
-						<h3>Información Personal</h3>
-						<h2>Christian Pareja Jensen </h2>
-						<br />
-						<p><b>Dirección:</b> C/Canal, nº 4</p>
-						<p>Urb.Cortijo de Mazas – Churriana (Malaga)</p>
-						<p><b>Teléfono:</b> 952 37 45 45</p>
-						<p><b>Móvil:</b> 667 34 97 45</p>
-						<p><b>Email:</b> christian_pareja@hotmail.com</p>
-					</div>
-					<div class="entry">
-						<h3>Citas</h3>
+                            <div class="featured">
+                                    <h4 class="memoria-pdf">Descargar Memoria Completa en PDF</h4>
+                                    <a href="#" class="blue-btn" onclick="window.open('Memoria.pdf')">Memoria</a>
+                            </div>
+                            <section class="entries">
+                                <div class="entry">
+                                    <h3>Últimos Trabajos</h3>
+                                    <div class="entry-inner">
+                                        <div class="date">
+                                            <strong>01</strong>
+                                            <span>2016</span>
+                                            <em>jun</em>
+                                        </div>
+                                        <div class="cnt">
+                                            <p><a href="#"><b>Inauguración Página Web</b></a></p>
+                                            <p class="meta"><b>Christian Pareja Jensen</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="entry-inner">
+                                        <div class="date">
+                                            <strong>31</strong>
+                                            <span>2015</span>
+                                            <em>may</em>
+                                        </div>
+                                        <div class="cnt">
+                                            <p><a href="servicios.html"><b>Master Inftel</b></a></p>
+                                            <p class="meta"><b>Christian Pareja Jensen / </br> Universidad de Málaga</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="entry-inner">
+                                        <div class="date">
+                                            <strong>04</strong>
+                                            <span>2013</span>
+                                            <em>feb</em>
+                                        </div>
+                                        <div class="cnt">
+                                            <p><a href="proyecto.html"><b>"Desarrollo de una aplicación de Contabilidad para una empresa de alimentación</b></a></p>
+                                            <p class="meta"><b>Christian Pareja Jensen / </br> Universidad de Málaga</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="entry">
+                                    <h3>Información Personal</h3>
+                                    <h2>Christian Pareja Jensen </h2>
+                                    <h4><em>Desarrollador de Software</em></h4>
+                                    <br/>
+                                    <p><b>Teléfono:</b> 667 34 97 45</p>
+                                    <p><b>Email:</b> parejajensen@gmail.com</p>
+                                </div>
 
-						<div class="testimonials">					
-							<p><strong>“</strong>One machine can do the work of fifty ordinary men. No machine can do the work of one extraordinary man.</p>
-							<p class="author">Elbert Hubbard</p>
-						</div>
-					</div>
-					<div class="cl">&nbsp;</div>
-				</section>
+                                <div class="entry">
+                                    <h3>Citas</h3>
+
+                                    <div class="testimonials">					
+                                        <!-- Carga con Javascript -->
+                                    </div>
+                                </div>
+                                <div class="cl">&nbsp;</div>
+                            </section>
 			</div>
 			<!-- end of main -->
 			<div class="cl">&nbsp;</div>
@@ -219,8 +420,6 @@
 						<li><a href="#">Curriculum</a></li>
 						<li><a href="#">Servicios</a></li>
 						<li><a href="#">Proyecto</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contacto</a></li>
 					</ul>
 					<div class="cl">&nbsp;</div>
 				</div>
@@ -232,6 +431,19 @@
 	</div>
 	<!-- end of shell -->
 </div>
+</div> 
 <!-- end of wrapper -->
+    
+    <script src="js/utils.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
+    <script>
+    $(document).ready(function(){
+                    $('.nav_bar').click(function(){
+                            $('.material-navigation').toggleClass('visible');
+                            $('body').toggleClass('opacity');
+                    });
+            });
+    </script>
+    
 </body>
 </html>

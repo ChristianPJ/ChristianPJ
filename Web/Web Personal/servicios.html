@@ -9,198 +9,162 @@
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,200,100' rel='stylesheet' type='text/css'>
 	
 	<script src="js/jquery-1.8.0.min.js" type="text/javascript"></script>
-	<!--[if lt IE 9]>
-		<script src="js/modernizr.custom.js"></script>
-	<![endif]-->
 	<script src="js/jquery.carouFredSel-5.5.0-packed.js" type="text/javascript"></script>
 	<script src="js/functions.js" type="text/javascript"></script>
 </head>
-<body>
-<!-- wrapper -->
-<div id="wrapper">
+<body onLoad="document.getElementById('btn-android').click();testimonials();">
+    <!-- wrapper -->
+    <div id="wrapper">
 	<!-- shell -->
 	<div class="shell">
-		<!-- container -->
-		<div class="container">
-			<!-- header -->
-			<header id="header">
-				<section class="titulos">
-					<div class="titulo">
-						<h1 id="logo"><a href="#">Christian</a></h1>
-						<!-- <p>Ingeniero Técnico en Informática de Sistemas</p> -->
-					</div>
-					<div class="idioma">
-						<img src="css/images/spain.png" alt="" />
-						<img src="css/images/denmark.png" alt="" />
-						<img src="css/images/uk.png" alt="" />
-					</div>
-				</section>
-			</header>
-			<!-- end of header -->
-			<!-- navigaation -->
-			<nav id="navigation">
-				<a href="#" class="nav-btn">HOME<span></span></a>
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="curriculum.html">Curriculum</a></li>
-					<li class="active"><a href="#">Servicios</a></li>
-					<li><a href="proyecto.html">Proyecto</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-				</ul>
-				<div class="cl">&nbsp;</div>
-			</nav>
-			<!-- end of navigation -->
-			<!-- slider-holder -->
-		
-			<div class="central-barra">
-				<img src="css/images/slider-bar.jpg" alt="" />
-			</div>
-			
-			<div class="central">				
-				<div id="menu">
-					<ul id="lista">
-						<li></br></li>
-						<li><a href="#vbnet" class="blue-btn" class="active"><span class="vbnet">Visual Basic .Net</a></li>
-						<li></br></li>
-						<li><a href="#sql" class="blue-btn"><span class="sql">SQL</a></li>
-						<li></br></li>
-						<li><a href="#c++" class="blue-btn"><span class="c++">C++</a></li>
-						<li></br></li>
-						<li><a href="#html" class="blue-btn"><span class="html">HTML5 / CSS3</a></li>
-						<li></br></li>
-						<li><a href="#java" class="blue-btn"><span class="java">Java</a></li>			
-					</ul>
-				</div>
-					
-				<div id="tipos">					
-					<div id="vbnet">
-					<h2>Visual Basic .Net</h2>
-					</br>						
-					<p class="bigtext"> Desarrollo de Proyecto Fin de Carrera titulado "Desarrollo de una Aplicación de Contabilidad para una Empresa de Alimentación". Control de Información en Base de Datos bajo entorno Microsoft SQL Server.</p>
-					<div class="highlight"><img class="floatleft" src="css/images/web.png" width="64" height="64" /><strong>Additional Management</strong> functionality is available on a per module basis for actions specifically suited to that functionality.</div>
-					</br>
-					</p></div>					
-					
-					<div id="sql">
-					<h2>SQL</h2>
-					</br>
-					<p class="bigtext">Info.</p>
-					<div class="highlight"><img class="floatleft" src="css/images/database.png" width="64" height="64" /><strong>Additional Management</strong> functionality is available on a per module basis for actions specifically suited to that functionality.</div>
-					</br>
-					</p></div>
+            <!-- container -->
+            <div class="container">
+                <!-- header -->
+                <header id="header">
+                        <section class="titulos">
+                            <div class="titulo">
+                                    <h1 id="logo"><a href="index.html">Christian</a></h1>
+                                    <!-- <p>Ingeniero Técnico en Informática de Sistemas</p> -->
+                            </div>
+                            <div class="idioma" style="padding-right: 20px; width: 158px;">
+                                <img src="css/images/spain.png" style="margin-left: 9px;" alt="" />
+                                <img src="css/images/denmark.png" style="margin-left: 6px;" alt="No disponible / Ikke tilgængelig" title="No disponible / Ikke tilgængelig"/>
+                                <img src="css/images/uk.png" style="margin-left: 6px;" alt="No disponible / Not available" title="No disponible / Not available"/>
+                            </div>
+                        </section>
+                </header>
+                <!-- end of header -->
+                <!-- navigaation -->
+                <nav id="navigation">
+                        <a class="nav-btn">Inicio<span></span></a>
+                        <ul>
+                                <li><a href="index.html">Inicio</a></li>
+                                <li><a href="curriculum.html">Curriculum</a></li>
+                                <li class="active"><a href="#">Servicios</a></li>
+                                <li><a href="proyecto.html">Proyecto PFC</a></li>
+                                <!--<li><a href="contacto.html">Contacto</a></li>-->
+                        </ul>
+                        <div class="cl">&nbsp;</div>
+                </nav>
+                <!-- end of navigation -->
+                <!-- slider-holder -->
 
-					<div id="c++">
-					<h2>C++</h2>
-					</br>
-					<p class="bigtext">Info.</p>
-					<div class="highlight"><img class="floatleft" src="css/images/book3.png" width="64" height="64" /><strong>Additional Management</strong> functionality is available on a per module basis for actions specifically suited to that functionality.</div>
-					</br>
-					</p></div>	
+                <div class="central-barra">
+                        <img src="css/images/slider-bar.jpg" alt="" />
+                </div>
 
-					<div id="html">
-					<h2>HTML5 / CSS3</h2>
-					</br>
-					<p class="bigtext">Info.</p>
-					</br>
-					</p></div>	
+                <div class="central">				
+                    <div id="menu">
+                        <ul id="lista">
+                            <li><a id="btn-android" class="blue-btn">Android</a></li>
+                            <li><a id="btn-bbdd" class="blue-btn">Bases de Datos</a></li>
+                            <li><a id="btn-java" class="blue-btn">Java</a></li>
+                            <li><a id="btn-ios" class="blue-btn">Objective-C</a></li>
+                            <li><a id="btn-python" class="blue-btn">Python</a></li>
+                            <li><a id="btn-vbnet" class="blue-btn">Visual Basic .Net</a></li>
+                            <!--<li><a id="btn-web" class="blue-btn">Web</a></li>-->
+                        </ul>
+                    </div>
 
-					<div id="java">
-					<h2>Java</h2>
-					</br>
-					<p class="bigtext">Info.</p>
-					</br>
-					</p></div>							
-				</div>				
-			</div>
-			
-			
-			<div class="central-barra">
-				<img src="css/images/slider-bar.jpg" alt="" />
-			</div>	
-			<!-- main -->
-			<div class="main">
-				<section class="entries">
-					<div class="entry">
-						<h3>Últimos Trabajos</h3>
-						<div class="entry-inner">
-							<div class="date">
-								<strong>01</strong>
-								<span>2014</span>
-								<em>jun</em>
-							</div>
-							<div class="cnt">
-								<p><a href="#">Inauguración Página Web</a></p>
-								<p class="meta">Christian Pareja Jensen</p>
-							</div>
-						</div>
-						<div class="entry-inner">
-							<div class="date">
-								<strong>28</strong>
-								<span>2014</span>
-								<em>jan</em>
-							</div>
-							<div class="cnt">
-								<p><a href="#">AAAaaaAAAaaa<br /> BBBbbbBBBbbb</a></p>
-								<p class="meta">Christian Pareja Jensen</p>
-							</div>
-						</div>
-						<div class="entry-inner">
-							<div class="date">
-								<strong>04</strong>
-								<span>2013</span>
-								<em>feb</em>
-							</div>
-							<div class="cnt">
-								<p><a href="#">"Desarrollo de una aplicación de Contabilidad para una empresa de alimentación</a></p>
-								<p class="meta"  style="margin-left : 6.5em;"><b>Christian Pareja Jensen / </br> Universidad de Málaga</b></p>
-							</div>
-						</div>
-					</div>
-					<div class="entry">
-						<h3>Información Personal</h3>
-						<h2>Christian Pareja Jensen </h2>
-						<br />
-						<p><b>Dirección:</b> C/Canal, nº 4</p>
-						<p>Urb.Cortijo de Mazas – Churriana (Malaga)</p>
-						<p><b>Teléfono:</b> 952 37 45 45</p>
-						<p><b>Móvil:</b> 667 34 97 45</p>
-						<p><b>Email:</b> christian_pareja@hotmail.com</p>
-					</div>
-					<div class="entry">
-						<h3>Citas</h3>
+                    <div id="info">
+			<!-- Carga de información -->			
+                    </div>				
+                </div>
 
-						<div class="testimonials">					
-							<p><strong>“</strong> One machine can do the work of fifty ordinary men. No machine can do the work of one extraordinary man.<strong>”</strong></p>
-							<p class="author">Elbert Hubbard</p>
-						</div>
-					</div>
-					<div class="cl">&nbsp;</div>
-				</section>
-			</div>
-			<!-- end of main -->
-			<div class="cl">&nbsp;</div>
-			
-			<!-- footer -->
-			<div id="footer">
-				<div class="footer-nav">
-					<ul>
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Curriculum</a></li>
-						<li><a href="#">Servicios</a></li>
-						<li><a href="#">Proyecto</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contacto</a></li>
-					</ul>
-					<div class="cl">&nbsp;</div>
-				</div>
-			<div class="cl">&nbsp;</div>
-			</div>
-			<!-- end of footer -->
-		</div>
-		<!-- end of container -->
+
+                <div class="central-barra">
+                        <img src="css/images/slider-bar.jpg" alt="" />
+                </div>	
+                <!-- main -->
+                <div class="main">
+                    <section class="entries">
+                        <div class="entry">
+                            <h3>Últimos Trabajos</h3>
+                            <div class="entry-inner">
+                                <div class="date">
+                                    <strong>01</strong>
+                                    <span>2016</span>
+                                    <em>jun</em>
+                                </div>
+                                <div class="cnt">
+                                    <p><a href="#"><b>Inauguración Página Web</b></a></p>
+                                    <p class="meta"><b>Christian Pareja Jensen</b></p>
+                                </div>
+                            </div>
+                            <div class="entry-inner">
+                                <div class="date">
+                                    <strong>31</strong>
+                                    <span>2015</span>
+                                    <em>may</em>
+                                </div>
+                                <div class="cnt">
+                                    <p><a href="servicios.html"><b>Master Inftel</b></a></p>
+                                    <p class="meta"><b>Christian Pareja Jensen / </br> Universidad de Málaga</b></p>
+                                </div>
+                            </div>
+                            <div class="entry-inner">
+                                <div class="date">
+                                    <strong>04</strong>
+                                    <span>2013</span>
+                                    <em>feb</em>
+                                </div>
+                                <div class="cnt">
+                                    <p><a href="proyecto.html"><b>"Desarrollo de una aplicación de Contabilidad para una empresa de alimentación</b></a></p>
+                                    <p class="meta"><b>Christian Pareja Jensen / </br> Universidad de Málaga</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entry">
+                            <h3>Información Personal</h3>
+                            <h2>Christian Pareja Jensen </h2>
+                            <h4><em>Desarrollador de Software</em></h4>
+                            <br/>
+                            <p><b>Teléfono:</b> 667 34 97 45</p>
+                            <p><b>Email:</b> parejajensen@gmail.com</p>
+                        </div>
+
+                        <div class="entry">
+                            <h3>Citas</h3>
+
+                            <div class="testimonials">					
+                                <!-- Carga con Javascript -->
+                            </div>
+                        </div>
+                        <div class="cl">&nbsp;</div>
+                    </section>
+                </div>
+                <!-- end of main -->
+                <div class="cl">&nbsp;</div>
+
+                <!-- footer -->
+                <div id="footer">
+                        <div class="footer-nav">
+                                <ul>
+                                        <li><a href="#">Inicio</a></li>
+                                        <li><a href="#">Curriculum</a></li>
+                                        <li><a href="#">Servicios</a></li>
+                                        <li><a href="#">Proyecto PFC</a></li>
+                                </ul>
+                                <div class="cl">&nbsp;</div>
+                        </div>
+                <div class="cl">&nbsp;</div>
+                </div>
+                <!-- end of footer -->
+            </div>
+            <!-- end of container -->
 	</div>
 	<!-- end of shell -->
-</div>
-<!-- end of wrapper -->
+    </div>
+    <!-- end of wrapper -->    
+    <script src="js/info-android.js" type="text/javascript"></script>
+    <script src="js/info-bbdd.js" type="text/javascript"></script>
+    <script src="js/info-ios.js" type="text/javascript"></script>
+    <script src="js/info-java.js" type="text/javascript"></script>
+    <script src="js/info-python.js" type="text/javascript"></script>
+    <script src="js/info-vbnet.js" type="text/javascript"></script>
+    <!--<script src="js/info-web.js" type="text/javascript"></script>-->
+    
+    <script src="js/utils.js" type="text/javascript"></script>
+    
 </body>
 </html>

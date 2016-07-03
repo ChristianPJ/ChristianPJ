@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<style>
+    
+.material-menu { display: none; }
+
+a { text-decoration: none; }
+
+#main {
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+.material-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.material-navigation {
+  display: block;
+  margin: 20px 0;
+  background: #009788;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 3px;
+}
+
+.material-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.material-navigation li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  font-size: 17px;
+  color: #def1f0;
+}
+
+.material-navigation li a {
+  padding: 10px 15px;
+  font-size: 17px;
+  color: #def1f0;
+  display: inline-block;
+  outline: 0;
+  font-weight: 400;
+}
+
+.material-navigation li:hover ul.dropdown { display: block; }
+
+.material-navigation li ul.dropdown {
+  position: absolute;
+  display: none;
+  width: 200px;
+  background: #00695b;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  padding-top: 0;
+}
+
+.material-navigation li ul.dropdown li {
+  display: block;
+  list-style-type: none;
+}
+
+.material-navigation li ul.dropdown li a {
+  padding: 10px;
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  border-bottom: 1px solid #005c4d;
+  font-weight: 400;
+}
+
+.material-navigation li ul.dropdown li:last-child a { border-bottom: none; }
+
+.material-navigation li:hover a {
+  background: #00695b;
+  color: #fff !important;
+}
+
+.material-navigation li:first-child:hover a { border-radius: 3px 0 0 3px; }
+
+.material-navigation li ul.dropdown li:hover a { background: #56b5ae; }
+
+.material-navigation li ul.dropdown li:first-child:hover a { border-radius: 0; }
+
+.material-navigation li:hover .arrow-down { border-top: 5px solid #fff; }
+
+
+ @media only screen and (max-width:600px) {
+     
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+     
+.material-menu { display: block; }
+
+.material-navigation {
+  background: #fff;
+  width: 200px;
+  height: 100%;
+  display: block;
+  position: fixed;
+  left: -200px;
+  top: 0px;
+  transition: left 0.3s linear;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.material-navigation.visible {
+  left: 0px;
+  transition: left 0.3s linear;
+}
+
+.nav_bg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #00ACEF;
+  padding: 12px 0 0 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.nav_bar {
+  display: inline-block;
+  vertical-align: middle;
+  height: 50px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.nav_bar span {
+  height: 2px;
+  background: #fff;
+  margin: 5px;
+  display: block;
+  width: 20px;
+}
+
+.nav_bar span:nth-child(2) { width: 20px; }
+
+.nav_bar span:nth-child(3) { width: 20px; }
+
+.material-navigation ul { padding-top: 50px; }
+
+.material-navigation li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+  font-size: 17px;
+  color: #def1f0;
+}
+
+.material-navigation li a {
+  display: block;
+  color: #505050;
+  font-weight: 500;
+}
+
+.material-navigation li:first-child:hover a { border-radius: 0; }
+
+.material-navigation li ul.dropdown { position: relative; }
+
+.material-navigation li ul.dropdown li a {
+  background: #00695b !important;
+  border-bottom: none;
+  color: #fff !important;
+}
+
+.material-navigation li:hover a {
+  background: #00ACEF;
+  color: #fff !important;
+}
+
+.material-navigation li ul.dropdown li:hover a {
+  background: #56b5ae !important;
+  color: #fff !important;
+}
+
+.material-navigation li ul.dropdown li a { padding: 10px 10px 10px 30px; }
+
+.material-navigation li:hover .arrow-down { border-top: 5px solid #fff; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #505050;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  content: '';
+}
+
+.opacity {
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+}
+
+</style>
+</head>
+
+<body>
+<div id="main">
+  <div class="material-container">
+    <div class="material-menu">
+        <nav>
+          <div class="material-navigation">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="proyecto.html">Proyecto</a></li>
+            </ul>
+          </div>
+          <div class="nav_bg">
+            <div class="nav_bar"> <span></span> <span></span> <span></span> </div>
+          </div>
+        </nav>
+    </div>
+    <h1 style="margin-top:150px;">Material Design Responsive Off-canvas Menu Demo</h1>
+  </div>
+</div>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script> 
+<script>
+$(document).ready(function(){
+		$('.nav_bar').click(function(){
+			$('.material-navigation').toggleClass('visible');
+			$('body').toggleClass('opacity');
+		});
+	});
+</script>
+</body>
+</html>

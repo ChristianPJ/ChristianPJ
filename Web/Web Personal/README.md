@@ -1,1 +1,0 @@
-[![Alt text for your video](http://uppic.es/images/2014/07/30/webyoutube234c9.jpg)](http://youtu.be/BZbyGihB-6M)
